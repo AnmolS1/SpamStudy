@@ -2,7 +2,7 @@
 Analyzes the spam in your Gmail
 
 Instructions:
-1. Disable the two factor authentication.
+1. User disable the two factor authentication.
 2. 
 
 TODO: 
