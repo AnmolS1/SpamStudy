@@ -1,7 +1,9 @@
 # SpamStudy
+
 Analyzes the spam in your Gmail
 
 To Use:
+
 1. Download the zip file
 2. Disable two-factor authentication
     * Go to [your account settings](https://myaccount.google.com)
