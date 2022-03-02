@@ -13,6 +13,8 @@ description = "Analyze spam email in your inbox"
 icon = "src/spamstudy/resources/spamstudy"
 sources = ['src/spamstudy']
 requires = [
+    "selenium",
+    "undetected_chromedriver"
 ]
 
 
