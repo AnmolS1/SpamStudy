@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0 15px 30px 15px;
     box-sizing: border-box;
-    background: #F3F3F3;
+    background: #C4C6C9;
 }
 
 body .static-header {
@@ -28,7 +28,7 @@ body .static-header nav {
 body .static-header nav a {
     display: inline-block;
     color: #666666;
-    text-decoration: noone;
+    text-decoration: none;
     font-size: 14px;
     cursor: pointer;
 }
@@ -105,20 +105,36 @@ body .container-content {
 
 body .container-content > div {
     min-height: 500px;
-    display: block;
     overflow: hidden;
 }
 
 body .container-content > div h1 {
     text-align: center;
-    line-height: 500px;
     color: #666666;
     margin: 0;
 }
 
-body .container-content > div.instructions {
-    background: #FFD6CD;
+#instructions {
+    background: #A1BEC1;
 }
-body .container-content > div.download {
-    background: #DDEBFD;
+
+#download {
+    background: #CED7E5;
+}
+
+.centerer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#special_link {
+    text-decoration: none;
+    color: #2C537F;
+}
+
+#special_link:hover {
+    text-decoration: underline;
+    font-weight: 500;
 }
