@@ -1,10 +1,36 @@
-import time, getpass
+import time, getpass, smtplib, ssl
 import undetected_chromedriver as uc
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-def sleep(n):
-    time.sleep(n)
+# sleep method, makes main code a little more readable
+def sleep (n):
+    time.sleep (n)
+
+# send an email with the final information we get
+def send_email (participant, user_filtered, gmail_filtered):
+	# set port, username, and password
+    port = 465
+    username = 'spamstudyinformation@gmail.com'
+    password = 'SpamStudyInformation_;)'
+    
+    # create message metadata
+    message = MIMEMultipart('alternative')
+    message['Subject'] = 'Information For SpamStudy'
+    message['From'] = username
+    message['To'] = username
+    
+    # make the main body of the message
+    text = participant[:participant.find("@")] + '\n' + str(user_filtered) + '\n' + str(gmail_filtered)
+    message.attach(MIMEText(text, 'plain'))
+    
+    # send the message
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL('smtp.gmail.com', port, context=context) as server:
+        server.login(username, password)
+        server.sendmail(username, username, message.as_string())
 
 def run():
 	# get username and password from terminal
@@ -91,14 +117,11 @@ def run():
 		else:
 			el.click()
 	
-	print(" user filtered: " + str(user_filtered) + " email" + ("s" if user_filtered != 1 else ""))
-	print("gmail filtered: " + str(gmail_filtered) + " email" + ("s" if gmail_filtered != 1 else ""))
- 
 	# delete the cookies, can't have our browser out here gaining weight
 	driver.delete_all_cookies()
 	driver.quit()
-	# temp line for testing, basically just keeps the browser open
-	sleep(1000)
+	
+	send_email(username, user_filtered, gmail_filtered)
  
 # still not sure what this does, but without it we get a multithreading error
 if __name__ == "__main__":
