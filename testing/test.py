@@ -8,8 +8,8 @@ def sleep(n):
 
 def run():
 	# get username and password from terminal
-	username = 'anmolsaxena456@gmail.com'#input("Enter Gmail username: ")
-	password = 'kamalakar102675diyapari'#getpass.getpass(prompt="Enter Gmail password: ")
+	username = input("Enter Gmail username: ")
+	password = getpass.getpass(prompt="Enter Gmail password: ")
 	
 	# chrome option list, basically disable all the security stuff
 	chrome_options = uc.ChromeOptions()
