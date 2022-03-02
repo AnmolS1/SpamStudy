@@ -1,0 +1,124 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 15px 30px 15px;
+    box-sizing: border-box;
+    background: #F3F3F3;
+}
+
+body .static-header {
+    max-width: 900px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 20px auto;
+    text-align: center;
+}
+
+body .static-header img {
+    margin: 0 auto;
+}
+
+body .static-header nav {
+    padding: 20px 0 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+body .static-header nav a {
+    display: inline-block;
+    color: #666666;
+    text-decoration: noone;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+body .static-header nav a:not(:last-of-type) {
+    padding-right: 30px;
+}
+
+body .static-header nav a:hover {
+    color: #333333;
+}
+
+body .fixed-header {
+    display: none;
+    position: fixed;
+    top: 0;
+    background: #FFFFFF;
+    margin: 0 -15px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    z-index: 100;
+}
+
+body .fixed-header .header-container {
+    max-width: 900px;
+    padding: 15px 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body .fixed-header .header-container img {
+    float: left;
+    height: 30px;
+    width: auto;
+}
+
+body .fixed-header .header-container nav {
+    padding: 5px 0;
+    max-width: 400px;
+    float: right;
+    text-align: right;
+}
+
+body .fixed-header .header-container nav a {
+    display: inline-block;
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+body .fixed-header .header-container nav a:not(:last-of-type) {
+    padding-right: 15px;
+}
+
+body .fixed-header .header-container nav a:hover {
+    color: #333333;
+}
+
+body .container-content {
+    margin: 0 auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    min-height: 1000px;
+    overflow: hidden;
+    padding: 15px;
+    clear: both;
+}
+
+body .container-content > div {
+    min-height: 500px;
+    display: block;
+    overflow: hidden;
+}
+
+body .container-content > div h1 {
+    text-align: center;
+    line-height: 500px;
+    color: #666666;
+    margin: 0;
+}
+
+body .container-content > div.instructions {
+    background: #FFD6CD;
+}
+body .container-content > div.download {
+    background: #DDEBFD;
+}
