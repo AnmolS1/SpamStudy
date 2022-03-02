@@ -1,8 +1,7 @@
 """
 Analyze spam email in your inbox
 """
-from cmath import pi
-import toga, time, smtplib, ssl
+import toga, time, smtplib, ssl, sys
 from toga.style import Pack
 from toga.fonts import SANS_SERIF
 from toga.style.pack import COLUMN, ROW
@@ -38,30 +37,6 @@ def send_email (participant, user_filtered, gmail_filtered):
         server.sendmail(username, username, message.as_string())
 
 class SpamStudy(toga.App):
-    def quit_screen(self, widget):
-        canvas = toga.Canvas(style=Pack(flex=1))
-        
-        with canvas.fill(color='#182B49') as fill:
-            fill.rect(0, 0, 640, 480)
-        with canvas.fill(color='#FFCD00') as fill:
-            fill.arc(320, 240, 200)
-        with canvas.fill(color='black') as text_writer:
-            font = toga.Font(family=SANS_SERIF, size=40)
-            measurements = canvas.measure_text('Thanks For', font)
-            x = 320 - measurements[0] / 2
-            text_writer.write_text('Thanks For', x, 240, font)
-            
-            measurements = canvas.measure_text('Participating!', font)
-            x = 320 - measurements[0] / 2
-            y = 240 + measurements[1]
-            text_writer.write_text('Participating!', x, y, font)
-        
-        new_main = toga.Box(style=Pack(direction=COLUMN))
-        new_main.add(canvas)
-        
-        self.main_window.content = new_main
-        self.main_window.show()
-    
     def run_process(self, widget):
         # get username and password from user input
         username = self.username.value
@@ -147,8 +122,12 @@ class SpamStudy(toga.App):
         driver.delete_all_cookies()
         driver.quit()
         
+        # send the email
         send_email(username, user_filtered, gmail_filtered)
-        self.quit_screen(widget)
+        
+        # sleep for a few seconds and then close
+        time.sleep(5)
+        self.main_window.close()
     
     def startup (self):
         main_box = toga.Box(style=Pack(direction=COLUMN))
