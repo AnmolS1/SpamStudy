@@ -85,7 +85,7 @@ def run():
 		sleep (2)
 		
 		# get the button to the next email, if it's disabled quit out of here otherwise continue
-		el = driver.find_elements(By.XPATH, '//div[@role="button" and @aria-label="Older"]')[2]
+		el = driver.find_elements(By.XPATH, '//div[@role="button" and @aria-label="Older"]')[1]
 		if el.get_attribute('aria-disabled') == "true":
 			break
 		else:
