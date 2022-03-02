@@ -3,7 +3,6 @@ import undetected_chromedriver as uc
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 
 # sleep method, makes main code a little more readable
 def sleep (n):
@@ -47,7 +46,7 @@ def run():
 	chrome_options.add_argument("user_agent=DN")
 	
 	# driver instance in chrome
-	driver = uc.Chrome(options=chrome_options)
+	driver = uc.Chrome(options=chrome_options,version_main=98)
 	# go to gmail's sign-in page
 	driver.get("https://mail.google.com/mail/u/0/?tab=rm#inbox")
 	
