@@ -104,7 +104,7 @@ class SpamStudy(toga.App):
             # if the header has dangerous in it, it's the version that says "This email is dangerous"
             # and that it was filtered by google's thingy
             # otherwise, if it has the words "you reported" in it, it'll obviously be reported by the user
-            if "You reported" in label.text:
+            if "You reported" in label.text or "You have blocked" in label.text:
                 user_filtered = user_filtered + 1
             else:
                 gmail_filtered = gmail_filtered + 1
