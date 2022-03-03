@@ -1,0 +1,54 @@
+[tool.briefcase]
+project_name = "SpamStudy"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/spamstudy"
+license = "MIT license"
+author = 'Anmol Saxena'
+author_email = "anmolsaxena456@gmail.com"
+
+[tool.briefcase.app.spamstudy]
+formal_name = "SpamStudy"
+description = "Analyze spam email in your inbox"
+icon = "src/spamstudy/resources/spamstudy"
+sources = ['src/spamstudy']
+requires = [
+    "selenium",
+    "undetected_chromedriver"
+]
+
+
+[tool.briefcase.app.spamstudy.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev32',
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.spamstudy.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev32',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.spamstudy.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev32',
+]
+
+# Mobile deployments
+[tool.briefcase.app.spamstudy.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev32',
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.spamstudy.android]
+requires = [
+    'toga-android>=0.3.0.dev32'
+]
