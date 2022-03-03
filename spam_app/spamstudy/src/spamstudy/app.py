@@ -17,8 +17,8 @@ def sleep(n):
 def send_email (participant, user_filtered, gmail_filtered):
     # set port, username, and password
     port = 465
-    username = 'spamstudyinformation@gmail.com'
-    password = 'SpamStudyInformation_;)'
+    username = 'aristohxrl@gmail.com'
+    password = '$16qm9NM$c04G'
     
     # create message metadata
     message = MIMEMultipart('alternative')
