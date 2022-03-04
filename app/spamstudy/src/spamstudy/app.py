@@ -13,7 +13,6 @@ from selenium.webdriver.common.by import By
 def sleep(n):
     time.sleep(n)
 
-# send an email with the final information we get
 def send_email (participant, user_filtered, gmail_filtered):
     # set port, username, and password
     port = 465
@@ -128,8 +127,8 @@ class SpamStudy(toga.App):
         # sleep for a few seconds and then close
         time.sleep(5)
         self.main_window.close()
-    
-    def startup (self):
+
+    def startup(self):
         main_box = toga.Box(style=Pack(direction=COLUMN))
         
         user_label = toga.Label('Enter your username: ', style=Pack(padding=(0, 5)))

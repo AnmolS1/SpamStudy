@@ -131,4 +131,4 @@ dmypy.json
 # System and text editor stuff
 .DS_Store
 .vscode/**
-spam_app/study_venv/**
+app/app_venv/**
