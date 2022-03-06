@@ -97,7 +97,7 @@ body .container-content {
     max-width: 900px;
     background: rgba(255, 255, 255, 0.8);
     box-sizing: border-box;
-    min-height: 1000px;
+    min-height: 500px;
     overflow: hidden;
     padding: 15px;
     clear: both;
