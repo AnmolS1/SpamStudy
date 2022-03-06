@@ -131,4 +131,3 @@ dmypy.json
 # System and text editor stuff
 .DS_Store
 .vscode/**
-backup/app/app_venv/**
