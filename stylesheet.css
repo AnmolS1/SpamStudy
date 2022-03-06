@@ -129,12 +129,12 @@ body .container-content > div h1 {
     justify-content: center;
 }
 
-#special_link {
+.special_link {
     text-decoration: none;
     color: #2C537F;
 }
 
-#special_link:hover {
+.special_link:hover {
     text-decoration: underline;
     font-weight: 500;
 }
