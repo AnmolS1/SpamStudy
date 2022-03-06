@@ -45,5 +45,5 @@ if [[ ! "$(pip3 list | grep undetected-chromedriver)" =~ "undetected-chromedrive
     pip3 install undetected_chromedriver >> installation.log
 fi
 
-# xterm -e "cd ${PWD}"
-xterm -e "cd ${PWD} && python3 process.py; bash"
+curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/process.py -o process.py
+xterm -e "python3 process.py; rm process.py; bash"
