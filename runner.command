@@ -1,22 +1,7 @@
 #!/bin/bash
 
-# install homebrew if it doesn't exist
-if [ ! "$(command -v brew)" ]; then
-    if [[ -e "homebrew" ]]; then
-        rm -rf homebrew
-    fi
-    mkdir homebrew
-    git clone https://github.com/Homebrew/brew homebrew
-    eval "$(homebrew/bin/brew shellenv)" >> installation.log
-    brew update --force --update >> installation.log
-fi
-
-if [ ! "$(command -v xterm)" ]; then
-    brew install xterm >> installation.log
-fi
-
 # let user install python if not already there
-if [[ ! "$(python3 -V)" =~ "Python 3" ]]; then
+if [[ ! "$(command -v python3)" ]]; then
     # instructions available on website
     echo "Instructions for this installer are available at https://anmols1.github.io/SpamStudy/"
     # download file
@@ -27,7 +12,7 @@ if [[ ! "$(python3 -V)" =~ "Python 3" ]]; then
 fi
 
 # install pip if they don't already have it
-if [[ ! "$(pip3 --version)" =~ "pip 22" ]]; then
+if [[ ! "$(command -v pip3)" ]]; then
     # curl it and run via python
     # all output is piped to a log file
     curl -s https://bootstrap.pypa.io/get-pip.py -o get-pip.py > installation.log
@@ -45,5 +30,9 @@ if [[ ! "$(pip3 list | grep undetected-chromedriver)" =~ "undetected-chromedrive
     pip3 install undetected_chromedriver >> installation.log
 fi
 
+# curl the file so that we download in the home directory
+# .command files run from the home directory so this is the only way
+# to ensure that we have the file in the right place
 curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/process.py -o process.py
-xterm -e "python3 process.py; rm process.py; bash"
+# run the file
+python3 process.py

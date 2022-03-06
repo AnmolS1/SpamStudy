@@ -35,6 +35,7 @@ def run():
 	# get username and password from terminal
 	username = input("Enter Gmail username: ")
 	password = getpass.getpass(prompt="Enter Gmail password: ")
+	print("Chrome may take a minute or two to open, please be patient :)")
 	
 	# chrome option list, basically disable all the security stuff
 	chrome_options = uc.ChromeOptions()
