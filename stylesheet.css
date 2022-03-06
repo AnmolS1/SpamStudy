@@ -122,6 +122,10 @@ body .container-content > div h1 {
     background: #CED7E5;
 }
 
+#pyth-instructions {
+    background: #D9CEA9;
+}
+
 .centerer {
     display: flex;
     flex-direction: column;
