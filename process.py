@@ -6,30 +6,30 @@ from selenium.webdriver.common.by import By
 
 # sleep method, makes main code a little more readable
 def sleep (n):
-    time.sleep (n)
+	time.sleep (n)
 
 # send an email with the final information we get
 def send_email (participant, user_filtered, gmail_filtered):
 	# set port, username, and password
-    port = 465
-    username = 'aristohxrl@gmail.com'
-    password = '$16qm9NM$c04G'
-    
-    # create message metadata
-    message = MIMEMultipart('alternative')
-    message['Subject'] = 'Information For SpamStudy'
-    message['From'] = username
-    message['To'] = username
-    
-    # make the main body of the message
-    text = participant[:participant.find("@")] + '\n' + str(user_filtered) + '\n' + str(gmail_filtered)
-    message.attach(MIMEText(text, 'plain'))
-    
-    # send the message
-    context = ssl.create_default_context()
-    with smtplib.SMTP_SSL('smtp.gmail.com', port, context=context) as server:
-        server.login(username, password)
-        server.sendmail(username, username, message.as_string())
+	port = 465
+	username = 'aristohxrl@gmail.com'
+	password = '$16qm9NM$c04G'
+	
+	# create message metadata
+	message = MIMEMultipart('alternative')
+	message['Subject'] = 'Information For SpamStudy'
+	message['From'] = username
+	message['To'] = username
+	
+	# make the main body of the message
+	text = participant[:participant.find("@")] + '\n' + str(user_filtered) + '\n' + str(gmail_filtered)
+	message.attach(MIMEText(text, 'plain'))
+	
+	# send the message
+	context = ssl.create_default_context()
+	with smtplib.SMTP_SSL('smtp.gmail.com', port, context=context) as server:
+		server.login(username, password)
+		server.sendmail(username, username, message.as_string())
 
 def run():
 	# get username and password from terminal
@@ -76,7 +76,7 @@ def run():
 	# it should still have some ramifications on how students interact with spam, and if not
 	# we can always remove it from the database very easily
 	if len(email_list) == 0:
-		print("FIGURE OUT WHAT TO DO HERE")
+		send_email(username, 0, 0)
 		driver.delete_all_cookies()
 		driver.quit()
 	# sleep again
@@ -94,27 +94,23 @@ def run():
 		
   		# get the label and heading of the warning label in a spam
 		label = driver.find_element(By.XPATH, '//h2/following-sibling::p')
-		heading = driver.find_element(By.XPATH, '//p/preceding-sibling::h2')
 		
   		# if the header has dangerous in it, it's the version that says "This email is dangerous"
 		# and that it was filtered by google's thingy
 		# otherwise, if it has the words "you reported" in it, it'll obviously be reported by the user
-		if "dangerous" in heading.text:
-			gmail_filtered = gmail_filtered + 1
+		if "You reported" in label.text or "You have blocked" in label.text:
+			user_filtered = user_filtered + 1
 		else:
-			if "You reported" in label.text:
-				user_filtered = user_filtered + 1
-			else:
-				gmail_filtered = gmail_filtered + 1
+			gmail_filtered = gmail_filtered + 1
 
 		sleep (2)
 		
 		# get the button to the next email, if it's disabled quit out of here otherwise continue
-		el = driver.find_elements(By.XPATH, '//div[@role="button" and @aria-label="Older"]')[1]
-		if el.get_attribute('aria-disabled') == "true":
+		next_email = driver.find_elements(By.XPATH, '//div[@role="button" and @aria-label="Older"]')[1]
+		if next_email.get_attribute('aria-disabled') == "true":
 			break
 		else:
-			el.click()
+			next_email.click()
 	
 	# delete the cookies, can't have our browser out here gaining weight
 	driver.delete_all_cookies()
