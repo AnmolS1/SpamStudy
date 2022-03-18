@@ -24,7 +24,7 @@ Before Using:
 
 To Use:
 
-[comment] #(1. Click [here](https://anmols1.github.io/SpamStudy/#download) to go to the download)
+1. Click [here](https://anmols1.github.io/SpamStudy/#download) to go to the download
 2. Scroll down and Click "Download" to get the zip file
 3. Open the zip file and a file should pop out
 4. Right click the file named "runner.command" and click "Open"
