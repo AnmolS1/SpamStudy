@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-# sleep method, makes main code a little more readable
+# sleep method, suspend execution for n seconds
 def sleep (n):
 	time.sleep (n)
 
@@ -54,7 +54,7 @@ def run():
 	chrome_options.add_argument('--disable-extensions')
 	#pop-ups will distract our automation on clicking and sendkeys by changing the structure of html or website arrangement
 	chrome_options.add_argument('--disable-popup-blocking')
-	#User data directory by default: Chrome launched with default user, regardless the last account user uses.
+	#User data directory/folder by default: Chrome launched with default user, regardless the last account user uses.
 	chrome_options.add_argument('--profile-directory=Default')
 	#since in Selenium Webdriver, each run occurs on a new profile doesn't have SSL Certificates,
 	#we need to ignore the error from web server's use of certificate.
@@ -75,7 +75,7 @@ def run():
 	# click on the 'next' button
 	driver.find_element(By.XPATH, '//*[@id="identifierNext"]').click()
 	
-	# sleep for a bit because login do be takin a hot sec to load
+	# sleep for a bit for login
 	sleep (5)
 	
 	# find the password input box, send the password
@@ -83,14 +83,14 @@ def run():
 	# click on the 'next' button
 	driver.find_elements(By.TAG_NAME, 'button')[1].click()
 	
-	# sleep for a bit again, another hot sec for loading
+	# sleep again for loading
 	sleep (7)
-	# boom baby we in da spam box
+	# go to spam box
 	driver.get('https://mail.google.com/mail/u/0/#spam')
 	
 	# need lots of sleeping here otherwise google puts up some bs authentication issue
 	sleep (5)
-	# get the 3rd table of emails (don't ask why bc i don't know) and then get the emails as a list
+	# get the 3rd table of emails and then get the emails as a list
 	email_list = driver.find_elements(By.XPATH, '//table[@role="grid"]')[1].find_elements(By.XPATH, './/tr[@role="row"]')
 	# arrays with all emails' information
 	labels = []
@@ -136,6 +136,6 @@ def run():
 	
 	send_email(username, labels, time_stamps)
  
-# still not sure what this does, but without it we get a multithreading error
+# without it we get a multithreading error
 if __name__ == '__main__':
 	run()
