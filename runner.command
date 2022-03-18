@@ -4,7 +4,8 @@
 cd /Applications
 if [[ !(-e "Python 3.9") ]]; then
     # instructions available on website
-    echo "Instructions for this installer are available at https://anmols1.github.io/SpamStudy/"
+    echo "Please install Python"
+    echo "Instructions for the python installer are available at https://anmols1.github.io/SpamStudy/"
     # download file
     curl -s https://www.python.org/ftp/python/3.9.10/python-3.9.10-macos11.pkg -o python-3.9.10.pkg
     open python-3.9.10.pkg
