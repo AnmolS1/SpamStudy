@@ -1,9 +1,12 @@
 import time, getpass, smtplib, ssl, re
-import undetected_chromedriver as uc
 from datetime import date
+#bypass gmail blocking automation login
+import undetected_chromedriver as uc
+#we use this to locate XPATH, Tag, etc when doing the automation
+from selenium.webdriver.common.by import By
+#for sending the final result to our testing account
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from selenium.webdriver.common.by import By
 
 # sleep method, makes main code a little more readable
 def sleep (n):
@@ -12,11 +15,14 @@ def sleep (n):
 # send an email with the final information we get
 def send_email (participant, labels, time_stamps):
 	# set port, username, and password
+	# port 465 is intended for sending our email using SMTP protocol to operate using Secure Sockets Layer(SSL).
+	# SSL used for encrypting communications over the internet.
 	port = 465
-	username = 'spamstudyinformation@gmail.com'
-	password = 'SpamStudyInformation_;)'
+	username = 'aristohxrl@gmail.com'	#testing account
+	password = '$16qm9NM$c04G'		#password
 	
 	# create message metadata
+	# use 'alternative' for sending similar contents
 	message = MIMEMultipart('alternative')
 	message['Subject'] = 'Information For SpamStudy'
 	message['From'] = username
@@ -26,7 +32,7 @@ def send_email (participant, labels, time_stamps):
 	text = participant[:participant.find("@")] + '\n'
 	for i in range(len(labels)):
 		text = text + labels[i] + ' || ' + time_stamps[i] + '\n'
-		
+	
 	message.attach(MIMEText(text, 'plain'))
 	
 	# send the message
@@ -42,12 +48,21 @@ def run():
 	print('Chrome may take a minute or two to open, please be patient :)')
 	
 	# chrome option list, basically disable all the security stuff
+	#create ChromeOptions object so we can use it's methods to set ChromeDriver capabilities.
 	chrome_options = uc.ChromeOptions()
+	#make sure chrome extensions won't cause problems during program run
 	chrome_options.add_argument('--disable-extensions')
+	#pop-ups will distract our automation on clicking and sendkeys by changing the structure of html or website arrangement
 	chrome_options.add_argument('--disable-popup-blocking')
+	#User data directory by default: Chrome launched with default user, regardless the last account user uses.
 	chrome_options.add_argument('--profile-directory=Default')
+	#since in Selenium Webdriver, each run occurs on a new profile doesn't have SSL Certificates,
+	#we need to ignore the error from web server's use of certificate.
 	chrome_options.add_argument('--ignore-certificate-errors')
+	#plugins makes the website open to security issues, so disable it for login
 	chrome_options.add_argument('--disable-plugins-discovery')
+	#user agent: a computer program representing a person. Ex. browser in a Web.
+	#DN: 
 	chrome_options.add_argument('user_agent=DN')
 	
 	# driver instance in chrome
