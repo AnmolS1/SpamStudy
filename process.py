@@ -1,10 +1,10 @@
 import time, getpass, smtplib, ssl, re
 from datetime import date
-#bypass gmail blocking automation login
+# used to create bot-driven instance of chrome
 import undetected_chromedriver as uc
-#we use this to locate XPATH, Tag, etc when doing the automation
+# allows us to choose how to locate elements (XPATH, Tag, etc.)
 from selenium.webdriver.common.by import By
-#for sending the final result to our testing account
+# used for rich-text emails
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
@@ -15,15 +15,15 @@ def sleep (n):
 # send an email with the final information we get
 def send_email (participant, labels, time_stamps):
 	# set port, username, and password
-	# port 465 is intended for sending our email using SMTP protocol to operate using Secure Sockets Layer(SSL).
-	# SSL used for encrypting communications over the internet.
+	# 465 is the outgoing SMTP SSL port, allows for safe mailing
 	port = 465
-	username = 'aristohxrl@gmail.com'	#testing account
-	password = '$16qm9NM$c04G'		#password
+	# user/pass for the account to send data to
+	username = 'aristohxrl@gmail.com'
+	password = '$16qm9NM$c04G'
 	
-	# create message metadata
-	# use 'alternative' for sending similar contents
+	# 'alternative' allows message to be viewed either in html or plain text
 	message = MIMEMultipart('alternative')
+	# set up the metadata
 	message['Subject'] = 'Information For SpamStudy'
 	message['From'] = username
 	message['To'] = username
@@ -48,21 +48,20 @@ def run():
 	print('Chrome may take a minute or two to open, please be patient :)')
 	
 	# chrome option list, basically disable all the security stuff
-	#create ChromeOptions object so we can use it's methods to set ChromeDriver capabilities.
+	# create ChromeOptions object so we can use its methods to set ChromeDriver capabilities
 	chrome_options = uc.ChromeOptions()
-	#make sure chrome extensions won't cause problems during program run
+	# make sure chrome extensions won't cause problems during program run
 	chrome_options.add_argument('--disable-extensions')
-	#pop-ups will distract our automation on clicking and sendkeys by changing the structure of html or website arrangement
+	# pop-ups can interfere with the inner html of a webpage so disable them
 	chrome_options.add_argument('--disable-popup-blocking')
-	#User data directory by default: Chrome launched with default user, regardless the last account user uses.
+	# use whatever default profile directory there is
 	chrome_options.add_argument('--profile-directory=Default')
-	#since in Selenium Webdriver, each run occurs on a new profile doesn't have SSL Certificates,
-	#we need to ignore the error from web server's use of certificate.
+	# any certificate issues will cause a new tab with a warning which we don't wanan deal with
 	chrome_options.add_argument('--ignore-certificate-errors')
-	#plugins makes the website open to security issues, so disable it for login
+	# plugins makes the website open to security issues, so disable it for login
 	chrome_options.add_argument('--disable-plugins-discovery')
-	#user agent: a computer program representing a person. Ex. browser in a Web.
-	#DN: 
+	# user agent: a computer program representing a person. Ex. browser in a Web
+	# DN: 
 	chrome_options.add_argument('user_agent=DN')
 	
 	# driver instance in chrome
@@ -88,7 +87,7 @@ def run():
 	# boom baby we in da spam box
 	driver.get('https://mail.google.com/mail/u/0/#spam')
 	
-	# need lots of sleeping here otherwise google puts up some bs authentication issue
+	# need lots of sleeping here otherwise google puts up an authentication issue
 	sleep (5)
 	# get the 3rd table of emails (don't ask why bc i don't know) and then get the emails as a list
 	email_list = driver.find_elements(By.XPATH, '//table[@role="grid"]')[1].find_elements(By.XPATH, './/tr[@role="row"]')
@@ -96,9 +95,9 @@ def run():
 	labels = []
 	time_stamps = []
 	
-	# in case the user has no spam emails, we'll just send two zeros in an email and call it a day
+	# in case the user has no spam emails, we'll just send the blank array in an email and call it in
 	# it should still have some ramifications on how students interact with spam, and if not
-	# we can always remove it from the database very easily
+	# we can always remove it from the spreadsheet very easily
 	if len(email_list) == 0:
 		send_email(username, labels, time_stamps)
 		driver.delete_all_cookies()
@@ -114,13 +113,17 @@ def run():
 		
   		# get the label and time stamp of the email
 		labels.append(driver.find_element(By.XPATH, '//h2/following-sibling::p').text)
+		# we had to be incredibly specific here with XPATH b/c google doesn't
+		# make the time stamp stand out all that much
 		time_stamp = re.sub('\(.*\)', '', driver.find_element(By.XPATH, '//table/tbody/tr/td[2]/div/span[2]').text)
-		# CHECK IF TIME STAMP HAS "DAY OF WEEK, MONTH DAY, TIME" FORMAT, FIX IT IF NOT
+		
+  		# reformat dates for spam emails that were sent in the last 24 hours
 		if not ',' in time_stamp:
 			today = date.today()
 			time_stamp = today.strftime('%a, %b %-d, ') + time_stamp.strip()
 		time_stamps.append(time_stamp)
-
+		
+  		# sleepity sleep
 		sleep (2)
 		
 		# get the button to the next email, if it's disabled quit out of here otherwise continue
@@ -130,12 +133,12 @@ def run():
 		else:
 			next_email.click()
 	
-	# delete the cookies, can't have our browser out here gaining weight
+	# delete the cookies, there's a chance the browser won't let us login again otherwise
 	driver.delete_all_cookies()
 	driver.quit()
 	
 	send_email(username, labels, time_stamps)
  
-# still not sure what this does, but without it we get a multithreading error
+# not sure what this does, but without it we get a multithreading error
 if __name__ == '__main__':
 	run()
