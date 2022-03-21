@@ -3,8 +3,8 @@ name: sec
 on: [push, pull_request]
 
 jobs:
-	job1:
-	  - runs-on: ubuntu-latest
-		steps:
-		  - run: echo "url: ${{ secrets.DB_URL }}"
-			run: echo "key: ${{ secrets.DB_KEY }}"
+    job1:
+      - runs-on: ubuntu-latest
+        steps:
+          - run: echo "url: ${{ secrets.DB_URL }}"
+            run: echo "key: ${{ secrets.DB_KEY }}"
