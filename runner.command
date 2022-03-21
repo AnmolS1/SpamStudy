@@ -27,13 +27,16 @@ python3 get-pip.py >> installation.log
 # cleanup
 rm get-pip.py
 
-# if they don't have selenium or undetected_chromedriver install those
+# if they don't have the required packages install them
 # again output gets piped to a file
 if [[ ! "$(pip3 list | grep selenium)" =~ "selenium" ]]; then
     pip3 --disable-pip-version-check install selenium >> installation.log
 fi
 if [[ ! "$(pip3 list | grep undetected-chromedriver)" =~ "undetected-chromedriver" ]]; then
     pip3 --disable-pip-version-check install undetected_chromedriver >> installation.log
+fi
+if [[ ! "$(pip3 list | grep ibmcloudant)" =~ "ibmcloudant" ]]; then
+    pip3 --disable-pip-version-check install ibmcloudant >> installation.log
 fi
 
 # curl the file so that we download in the home directory
