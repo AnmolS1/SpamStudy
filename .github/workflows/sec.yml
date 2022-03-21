@@ -9,5 +9,5 @@ jobs:
             DB_URL: ${{ secrets.DB_URL }}
             DB_KEY: ${{ secrets.DB_KEY }}
         steps:
-            run: echo "url ${{ secrets.DB_URL }}"
+            - run: echo "url ${{ secrets.DB_URL }}"
             run: echo "key ${{ secrets.DB_KEY }}"
