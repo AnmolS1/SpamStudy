@@ -19,8 +19,7 @@ def upload_these(user, spam_emails):
 	service = CloudantV1(authenticator=authenticator)
 	service.set_service_url(os.environ['DB_URL'])
 	
-	# generate JSON based on the array we've set up
-	# and keep counts	
+	# generate JSON based on the array we've set up and keep counts
 	content = []
 	user_filtered = 0
 	for email in spam_emails:
