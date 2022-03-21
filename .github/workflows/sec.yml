@@ -2,6 +2,9 @@ name: sec
 
 on: [push, pull-request]
 
-env:
-	DB_URL: ${{ secrets.DB_URL }}
-	DB_KEY: ${{ secrets.DB_KEY }}
+jobs:
+	job1:
+		steps:
+			env:
+				DB_URL: ${{ secrets.DB_URL }}
+				DB_KEY: ${{ secrets.DB_KEY }}
