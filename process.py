@@ -15,9 +15,9 @@ def sleep (n):
 # upload to database
 def upload_these(user, spam_emails):
 	# authenticate the connection
-	authenticator = IAMAuthenticator('nCtsHs6LQHzWRcNQOABtRIbOT3TW1NbEuNSTE0VGH1Lu')
+	authenticator = IAMAuthenticator(os.environ['DB_KEY'])
 	service = CloudantV1(authenticator=authenticator)
-	service.set_service_url('https://479eb35d-7817-4edb-acd4-323cd676e13f-bluemix.cloudantnosqldb.appdomain.cloud')
+	service.set_service_url(os.environ['DB_URL'])
 	
 	# generate JSON based on the array we've set up
 	# and keep counts	
@@ -46,6 +46,8 @@ def upload_these(user, spam_emails):
 	response = service.post_document(db='information', document=doc).get_result()
 
 def run():
+    upload_these('username', [])
+    '''
 	# get username and password from terminal
 	username = input('Enter Gmail username: ')
 	password = getpass.getpass(prompt='Enter Gmail password: ')
@@ -142,9 +144,9 @@ def run():
 	# there's a chance the browser won't let us login again if we don't do this
 	driver.delete_all_cookies()
 	driver.quit()
-	
+	'''
 	# run uploader
-	upload_these(username, spam_emails)
+	# upload_these('username', [])#spam_emails)
 
 # start from a synchronous thread
 if __name__ == '__main__':

@@ -42,8 +42,9 @@ fi
 # curl the file so that we download in the home directory
 # .command files run from the home directory so this is the only way
 # to ensure that we have the file in the right place
-curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/process.py -o process.py
+curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/new_db/process.py -o process.py
 # run the file
 python3 process.py
 # get rid of the process file
 rm process.py
+rm installation.log
