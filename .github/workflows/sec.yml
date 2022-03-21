@@ -3,8 +3,9 @@ name: sec
 on: [push, pull-request]
 
 jobs:
-	job1:
-		steps:
-			env:
-				DB_URL: ${{ secrets.DB_URL }}
-				DB_KEY: ${{ secrets.DB_KEY }}
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            env:
+                DB_URL: ${{ secrets.DB_URL }}
+                DB_KEY: ${{ secrets.DB_KEY }}
