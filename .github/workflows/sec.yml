@@ -6,6 +6,5 @@ jobs:
     job1:
         runs-on: ubuntu-latest
         steps:
-            env:
-                DB_URL: ${{ secrets.DB_URL }}
-                DB_KEY: ${{ secrets.DB_KEY }}
+            run: echo "url: ${{ secrets.DB_URL }}"
+            run: echo "key: ${{ secrets.DB_KEY }}"
