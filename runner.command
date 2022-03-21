@@ -38,6 +38,10 @@ fi
 if [[ ! "$(pip3 list | grep ibmcloudant)" =~ "ibmcloudant" ]]; then
     pip3 --disable-pip-version-check install ibmcloudant >> installation.log
 fi
+# uncomment for local testing
+# if [[ ! "$(pip3 list | grep python-dotenv)" =~ "python-dotenv" ]]; then
+#     pip3 --disable-pip-version-check install python-dotenv >> installation.log
+# fi
 
 # curl the file so that we download in the home directory
 # .command files run from the home directory so this is the only way

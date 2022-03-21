@@ -8,6 +8,14 @@ from selenium.webdriver.common.by import By
 from ibmcloudant.cloudant_v1 import Document, CloudantV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
+# comment the triple quotes to run locally
+# make throwaway acc to handle prod servicing
+'''
+def create_vars():
+	from dotenv import load_dotenv
+	load_dotenv()
+'''
+
 # sleep method, makes main code a little more readable
 def sleep (n):
 	time.sleep (n)
@@ -41,12 +49,11 @@ def upload_these(user, spam_emails):
 		gmail_filtered=gmail_filtered,
 		spam=content)
 	
- 	# 'post' the document to our database
+	# 'post' the document to our database
 	response = service.post_document(db='information', document=doc).get_result()
 
 def run():
-    upload_these('username', [])
-    '''
+	create_vars()
 	# get username and password from terminal
 	username = input('Enter Gmail username: ')
 	password = getpass.getpass(prompt='Enter Gmail password: ')
@@ -143,9 +150,9 @@ def run():
 	# there's a chance the browser won't let us login again if we don't do this
 	driver.delete_all_cookies()
 	driver.quit()
-	'''
+	
 	# run uploader
-	# upload_these('username', [])#spam_emails)
+	upload_these(username, spam_emails)
 
 # start from a synchronous thread
 if __name__ == '__main__':
