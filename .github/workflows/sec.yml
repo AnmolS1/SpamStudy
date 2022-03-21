@@ -1,0 +1,12 @@
+name: sec
+
+on: [push, pull-request]
+
+jobs:
+	build:
+		steps:
+			run: echo $DB_URL
+			run: echo $DB_KEY
+			env:
+				DB_URL: ${{ secrets.DB_URL }}
+				DB_KEY: ${{ secrets.DB_KEY }}
