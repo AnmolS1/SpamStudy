@@ -1,51 +1,69 @@
-import time, getpass, smtplib, ssl, re
+import time, getpass, smtplib, ssl, re, os
 from datetime import date
 # used to create bot-driven instance of chrome
 import undetected_chromedriver as uc
 # allows us to choose how to locate elements (XPATH, Tag, etc.)
 from selenium.webdriver.common.by import By
-# used for rich-text emails
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
+# to upload to our database
+from ibmcloudant.cloudant_v1 import Document, CloudantV1
+from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+
+# retrieve environment variables
+db = {}
+def create_vars():
+	from dotenv import load_dotenv
+	import base64
+	
+	load_dotenv()
+	
+	temp_url = os.environ['DB_URL']
+	temp_key = os.environ['DB_KEY']
+	db['URL'] = base64.b64decode(f"{temp_url}{'=' * (4 - len(temp_url) % 4)}").decode('ascii')
+	db['KEY'] = base64.b64decode(f"{temp_key}{'=' * (4 - len(temp_key) % 4)}").decode('ascii')
 
 # sleep method, makes main code a little more readable
 def sleep (n):
 	time.sleep (n)
 
-# send an email with the final information we get
-def send_email (participant, labels, time_stamps):
-	# set port, username, and password
-	# 465 is the outgoing SMTP SSL port, allows for safe mailing
-	port = 465
-	# user/pass for the account to send data to
-	username = 'aristohxrl@gmail.com'
-	password = '$16qm9NM$c04G'
+# upload to database
+def upload_these(user, spam_emails):
+	# authenticate the connection
+	authenticator = IAMAuthenticator(db['KEY'])
+	service = CloudantV1(authenticator=authenticator)
+	service.set_service_url(db['URL'])
 	
-	# 'alternative' allows message to be viewed either in html or plain text
-	message = MIMEMultipart('alternative')
-	# set up the metadata
-	message['Subject'] = 'Information For SpamStudy'
-	message['From'] = username
-	message['To'] = username
+	# generate JSON based on the array we've set up in run and get counts
+	content = []
+	user_filtered = 0
+	for email in spam_emails:
+		user_filtered = user_filtered + (1 if 'user-filtered' == email[0] else 0)
+		content.append({
+			"category": email[0],    # category of email ('user-filtered' or 'gmail-filtered')
+			"from": email[1],        # who the email was from
+			"to": email[2],          # who the email is to (might seem redundant but will be useful in frontend)
+			"time_stamp": email[3],  # time stamp of email
+			"label": email[4],       # label associated with the email
+			"content": email[5]      # html content of the email (again useful in frontend)
+		})
+	# life hack: subtract to get gmail number
+	gmail_filtered = len(content) - user_filtered
 	
-	# make the main body of the message
-	text = participant[:participant.find("@")] + '\n'
-	for i in range(len(labels)):
-		text = text + labels[i] + ' || ' + time_stamps[i] + '\n'
+	# create the document to upload
+	doc = Document(
+		id=user[:user.index('@')],
+		user_filtered=user_filtered,
+		gmail_filtered=gmail_filtered,
+		spam=content)
 	
-	message.attach(MIMEText(text, 'plain'))
-	
-	# send the message
-	context = ssl.create_default_context()
-	with smtplib.SMTP_SSL('smtp.gmail.com', port, context=context) as server:
-		server.login(username, password)
-		server.sendmail(username, username, message.as_string())
+	# 'post' the document to our database
+	response = service.post_document(db='information', document=doc).get_result()
 
 def run():
+	create_vars()
 	# get username and password from terminal
 	username = input('Enter Gmail username: ')
 	password = getpass.getpass(prompt='Enter Gmail password: ')
-	print('Chrome may take a minute or two to open, please be patient :)')
+	print('\nWhen Chrome opens, please do not click away\nAlso, Chrome may take a minute or two to open, please be patient :)')
 	
 	# chrome option list, basically disable all the security stuff
 	# create ChromeOptions object so we can use its methods to set ChromeDriver capabilities
@@ -88,15 +106,14 @@ def run():
 	sleep (5)
 	# get the 3rd table of emails and then get the emails as a list
 	email_list = driver.find_elements(By.XPATH, '//table[@role="grid"]')[1].find_elements(By.XPATH, './/tr[@role="row"]')
-	# arrays with all emails' information
-	labels = []
-	time_stamps = []
+	# array with all emails' information
+	spam_emails = []
 	
 	# in case the user has no spam emails, we'll just send a blank array and call it in
 	# it should still have some ramifications on how students interact with spam, and if not
 	# we can always remove it from the database very easily
 	if len(email_list) == 0:
-		send_email(username, labels, time_stamps)
+		upload_these(spam_emails)
 		driver.delete_all_cookies()
 		driver.quit()
 	# sleep again
@@ -108,14 +125,23 @@ def run():
 	while True:
 		sleep (3)
 		
-  		# get the label and time stamp of the email
-		labels.append(driver.find_element(By.XPATH, '//h2/following-sibling::p').text)
-		time_stamp = re.sub('\(.*\)', '', driver.find_element(By.XPATH, '//table/tbody/tr/td[2]/div/span[2]').text)
-		# reformat dates for spam emails that were sent in the last 24 hours
-		if not ',' in time_stamp:
+		# get information from the email
+		email_from = driver.find_element(By.XPATH, '//td/h3/span/span').get_attribute('email')
+		email_to = username
+		email_label = driver.find_element(By.XPATH, '//h2/following-sibling::p').text
+		email_category = 'user-filtered' if 'You reported' in email_label or 'You have blocked' in email_label else 'gmail-filtered'
+		
+		# format the time for consistency
+		email_time = re.sub('\(.*\)', '', driver.find_element(By.XPATH, '//table/tbody/tr/td[2]/div/span[2]').text)
+		if not ',' in email_time:
 			today = date.today()
-			time_stamp = today.strftime('%a, %b %-d, ') + time_stamp.strip()
-		time_stamps.append(time_stamp)
+			email_time = today.strftime('%a, %b %-d, ') + email_time.strip()
+
+		# turned out a bit weird, basically uses the fact that
+		# the label's position is constant in relation to the content
+		email_content = driver.find_element(By.XPATH, '//h2/following-sibling::p/../../../../following-sibling::div').get_attribute('innerHTML')
+		# append information about this email to the list
+		spam_emails.append([email_category, email_from, email_to, email_time, email_label, email_content])
 
 		# sleepity sleep
 		sleep (2)
@@ -131,8 +157,9 @@ def run():
 	driver.delete_all_cookies()
 	driver.quit()
 	
-	send_email(username, labels, time_stamps)
- 
+	# run uploader
+	upload_these(username, spam_emails)
+
 # start from a synchronous thread
 if __name__ == '__main__':
 	run()

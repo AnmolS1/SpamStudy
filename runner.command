@@ -27,7 +27,7 @@ python3 get-pip.py >> installation.log
 # cleanup
 rm get-pip.py
 
-# if they don't have selenium or undetected_chromedriver install those
+# if they don't have the required packages install them
 # again output gets piped to a file
 if [[ ! "$(pip3 list | grep selenium)" =~ "selenium" ]]; then
     pip3 --disable-pip-version-check install selenium >> installation.log
@@ -35,12 +35,21 @@ fi
 if [[ ! "$(pip3 list | grep undetected-chromedriver)" =~ "undetected-chromedriver" ]]; then
     pip3 --disable-pip-version-check install undetected_chromedriver >> installation.log
 fi
+if [[ ! "$(pip3 list | grep ibmcloudant)" =~ "ibmcloudant" ]]; then
+    pip3 --disable-pip-version-check install ibmcloudant >> installation.log
+fi
+if [[ ! "$(pip3 list | grep python-dotenv)" =~ "python-dotenv" ]]; then
+    pip3 --disable-pip-version-check install python-dotenv >> installation.log
+fi
 
 # curl the file so that we download in the home directory
 # .command files run from the home directory so this is the only way
 # to ensure that we have the file in the right place
-curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/process.py -o process.py
+curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/new_db/process.py -o process.py
+curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/new_db/.env -o .env
 # run the file
 python3 process.py
 # get rid of the process file
 rm process.py
+rm .env
+rm installation.log
