@@ -11,6 +11,13 @@ $(document).ready(function() {
             window.location.hash = target;
         });
     });
+
+    var downloader = document.getElementById("downloader");
+    if (navigator.userAgent.includes("Mac")) {
+        downloader.setAttribute('href', 'https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/mac-download.zip');
+    } else {
+        // set attribute to batch file here
+    }
 });
 
 $(window).scroll(function() {
