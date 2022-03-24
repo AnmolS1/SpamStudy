@@ -2,16 +2,17 @@
 
 # let user install python if not already there
 cd /Applications
-if [[ !(-e "Python 3.9") ]]; then
+while [[ !(-e "Python 3.9") ]]
+do
     # instructions available on website
     echo "Please install Python"
     echo "Instructions for the python installer are available at https://anmols1.github.io/SpamStudy/"
     # download file
     curl -s https://www.python.org/ftp/python/3.9.10/python-3.9.10-macos11.pkg -o python-3.9.10.pkg
     open python-3.9.10.pkg
-    echo "After completing the installation, please run this file again"
-    exit 1
-fi
+    
+    read -n 1 -s -r -p "After completing the installation, press any key to continue | "; echo
+done
 
 # install certificates for python
 cd /Applications
@@ -40,6 +41,9 @@ if [[ ! "$(pip3 list | grep ibmcloudant)" =~ "ibmcloudant" ]]; then
 fi
 if [[ ! "$(pip3 list | grep python-dotenv)" =~ "python-dotenv" ]]; then
     pip3 --disable-pip-version-check install python-dotenv >> installation.log
+fi
+if [[ ! "$(pip3 list | grep desktop-notifier)" =~ "desktop-notifier" ]]; then
+    pip3 --disable-pip-version-check install desktop-notifier >> installation.log
 fi
 
 # curl the file so that we download in the home directory

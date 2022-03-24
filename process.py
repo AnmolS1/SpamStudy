@@ -1,4 +1,4 @@
-import time, getpass, smtplib, ssl, re, os
+import time, getpass, sys, ssl, re, os
 from datetime import date
 # used to create bot-driven instance of chrome
 import undetected_chromedriver as uc
@@ -7,6 +7,18 @@ from selenium.webdriver.common.by import By
 # to upload to our database
 from ibmcloudant.cloudant_v1 import Document, CloudantV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+
+# ----- HELPER METHODS -----
+# system notification, works on all devices (untested on unix)
+def notification(message, title):
+	from desktop_notifier import DesktopNotifier
+	
+	notify = DesktopNotifier(app_name='SpamStudy', app_icon='resources/logo.png')
+	notify.send_sync(title=title, message=message)
+
+# sleep method, makes main code a little more readable
+def sleep(n):
+	time.sleep (n)
 
 # retrieve environment variables
 db = {}
@@ -21,10 +33,7 @@ def create_vars():
 	db['URL'] = base64.b64decode(f"{temp_url}{'=' * (4 - len(temp_url) % 4)}").decode('ascii')
 	db['KEY'] = base64.b64decode(f"{temp_key}{'=' * (4 - len(temp_key) % 4)}").decode('ascii')
 
-# sleep method, makes main code a little more readable
-def sleep (n):
-	time.sleep (n)
-
+# ----- MAIN FUNCTIONS -----
 # upload to database
 def upload_these(user, spam_emails):
 	# authenticate the connection
@@ -61,9 +70,9 @@ def upload_these(user, spam_emails):
 def run():
 	create_vars()
 	# get username and password from terminal
-	username = input('Enter Gmail username: ')
-	password = getpass.getpass(prompt='Enter Gmail password: ')
-	print('\nWhen Chrome opens, please do not click away\nAlso, Chrome may take a minute or two to open, please be patient :)')
+	username = 'anmolsaxena456@gmail.com'# input('Enter Gmail username: ')
+	password = 'kamalakar102675diyapari' # getpass.getpass(prompt='Enter Gmail password: ')
+	notification("Please do not click off Chrome, it may take a minute to open so please be patient.", "SpamStudy")
 	
 	# chrome option list, basically disable all the security stuff
 	# create ChromeOptions object so we can use its methods to set ChromeDriver capabilities
@@ -99,6 +108,16 @@ def run():
 	
 	# sleep for a bit again, another hot sec for loading
 	sleep (7)
+	
+	inbox_url = driver.current_url
+	displayed = False
+	while 'challenge' in inbox_url:
+		if not displayed:
+			notification("Please resolve the authentication so we may continue", "SpamStudy")
+		displayed = True
+		inbox_url = driver.current_url
+		sleep (5)
+	
 	# go to spam box
 	driver.get('https://mail.google.com/mail/u/0/#spam')
 	
