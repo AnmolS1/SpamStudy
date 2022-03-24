@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     var downloader = document.getElementById("downloader");
     if (navigator.userAgent.includes("Mac")) {
-        downloader.setAttribute('href', 'https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/mac-download.zip');
+        downloader.setAttribute('href', 'https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/docs/mac-download.zip');
     } else {
         // set attribute to batch file here
     }
