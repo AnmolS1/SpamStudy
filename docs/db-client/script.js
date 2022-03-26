@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     $.getJSON('data.json', function(data) {
         $.each(data, function (obj) {
             var div = document.createElement('div');
@@ -6,4 +6,9 @@ $(document).ready(function() {
             document.body.appendChild(div);
         });
     });
-});
+});*/
+
+ReactDOM.render(
+    <h1>Weeee</h1>,
+    document.body
+)
