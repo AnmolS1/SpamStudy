@@ -9,6 +9,6 @@
 });*/
 
 ReactDOM.render(
-    <h1>Weeee</h1>,
-    document.body
-)
+    <h1>Hello, world!</h1>,
+    document.getElementById('root')
+);  
