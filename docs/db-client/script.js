@@ -7,9 +7,12 @@ const getData = () => {
     }).then(function (response) {
         return response.json();
     }).then(function (resJSON) {
+        console.log (resJSON);
         // maybe build up using other mappings to create the final list
         const items = resJSON.map((element) => 
-            React.createElement( 'h1', { key: element._id }, element._id )
+            React.createElement('div', { key: element._id },
+                React.createElement('h1', null, element._id)
+            )
         );
 
         ReactDOM.render(
