@@ -15,7 +15,7 @@ const getData = () => {
             const element = resJSON[i];
             const key = element._id;
             const emails = element.spam;
-            
+
             items.push (React.createElement(
                 'h1', { key: key + 'a' },
                 element._id
@@ -28,12 +28,20 @@ const getData = () => {
                 'div', { key: key + 'c' },
                 'user-filtered: ' + element.user_filtered
             ));
+
+            items.push (React.createElement('br', { key: key + 'br' }));
             
             for (var j = 0; j < emails.length; j++) {
                 items.push (React.createElement(
-                    'div', { key: key + (j + 1) },
+                    'div', { key: key + (j + 1) + 'from' },
                     'from: ' + emails[j].from
                 ));
+                items.push (React.createElement(
+                    'div', { key: key + (j + 1) + 'category' },
+                    'category: ' + emails[j].category
+                ));
+
+                items.push (React.createElement('br', { key: key + 'br' + (j + 1) }));
             }
         }
 
