@@ -11,10 +11,18 @@
 const getData = () => {
     fetch('data.json', {
         headers: {
-            'Content-Type': 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
         }
-    })
+    }).then(function (response) {
+        console.log (response);
+        return response.json();
+    }).then(function (resJSON) {
+        console.log(resJSON);
+    });
 }
+
+getData();
 
 ReactDOM.render(
     React.createElement('h1', null, 'Hello world!'),
