@@ -43,7 +43,6 @@ const getData = () => {
             }
         }
 
-
         ReactDOM.render(
             React.createElement('div', null, items),
             document.getElementById('content')
