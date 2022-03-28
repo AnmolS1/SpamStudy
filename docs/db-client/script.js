@@ -5,12 +5,13 @@ const getData = () => {
             'Accept': 'application/json'
         }
     }).then(function (response) {
-        return response.json();
-    }).then(function (resJSON) {
         var content = '';
-        for (var i = 0; i < resJSON.length; i++) {
-            content += JSON.stringify(resJSON[i]);
+        var resJ = response.json();
+        for (var i = 0; i < resJ.length; i++) {
+            content += JSON.stringify(resJ[i]);
         }
+        return content;
+    }).then(function (content) {
         ReactDOM.render(
             React.createElement('div', null, content),
             document.getElementById('content')
