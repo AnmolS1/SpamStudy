@@ -8,12 +8,6 @@ const getData = () => {
         return response.json();
     }).then(function (resJSON) {
         console.log (resJSON);
-        // maybe build up using other mappings to create the final list
-        /*const items = resJSON.map((element) => 
-            React.createElement('div', { key: element._id },
-                React.createElement('h1', null, element._id)
-            )
-        );*/
 
         var items = [];
 
@@ -21,7 +15,7 @@ const getData = () => {
             const element = resJSON[i];
             const key = element._id;
             const emails = element.spam;
-
+            
             items.push (React.createElement(
                 'h1', { key: key + 'a' },
                 element._id
