@@ -18,9 +18,10 @@ const getData = () => {
         var items = [];
 
         for (var i = 0; i < resJSON.length; i++) {
-            items.append (
-                React.createElement('div', null, resJSON[i]._id)
-            );
+            const element = resJSON[i];
+            items.push ( React.createElement('h1', { key: element._id }, element._id) );
+            items.push ( React.createElement('div', null, element.gmail_filtered) );
+            items.push ( React.createElement('div', null, element.user_filtered) );
         }
 
         ReactDOM.render(
