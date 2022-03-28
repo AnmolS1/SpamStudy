@@ -21,15 +21,13 @@ const getData = () => {
                 element._id
             ));
             items.push (React.createElement(
-                'div', { key: key + 'b' },
+                'h2', { key: key + 'b' },
                 'gmail-filtered: ' + element.gmail_filtered
             ));
             items.push (React.createElement(
-                'div', { key: key + 'c' },
+                'h2', { key: key + 'c' },
                 'user-filtered: ' + element.user_filtered
             ));
-
-            items.push (React.createElement('br', { key: key + 'br' }));
             
             for (var j = 0; j < emails.length; j++) {
                 items.push (React.createElement(
@@ -40,8 +38,13 @@ const getData = () => {
                     'div', { key: key + (j + 1) + 'category' },
                     'category: ' + emails[j].category
                 ));
-
-                items.push (React.createElement('br', { key: key + 'br' + (j + 1) }));
+                items.push (React.createElement(
+                    'div', { key: key + (j + 1) + 'time_stamp' },
+                    'time stamp: ' + emails[j].time_stamp
+                ));
+                
+                if (j != emails.length - 1)
+                    items.push (React.createElement('br', { key: key + 'br' + (j + 1) }));
             }
         }
 
