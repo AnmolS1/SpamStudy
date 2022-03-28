@@ -22,20 +22,24 @@ const getData = () => {
             const key = element._id;
             const emails = element.spam;
 
-            items.push ( React.createElement(
-                'h1',
-                { key: key + 'a' },
+            items.push (React.createElement(
+                'h1', { key: key + 'a' },
                 element._id
-            ) );
-            items.push (
-                React.createElement('div', { key: key + 'b' }, 'gmail-filtered: ' + element.gmail_filtered)
-            );
-            items.push (
-                React.createElement('div', { key: key + 'c' }, 'user-filtered: ' + element.user_filtered)
-            );
+            ));
+            items.push (React.createElement(
+                'div', { key: key + 'b' },
+                'gmail-filtered: ' + element.gmail_filtered
+            ));
+            items.push (React.createElement(
+                'div', { key: key + 'c' },
+                'user-filtered: ' + element.user_filtered
+            ));
 
             for (var j = 0; j < emails.length; j++) {
-
+                items.push (React.createElement(
+                    'div', { key: key + (j + 1) },
+                    'from: ' + emails[j].from
+                ));
             }
         }
 
