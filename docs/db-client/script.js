@@ -8,6 +8,14 @@
     });
 });*/
 
+const getData = () => {
+    fetch('data.json', {
+        headers: {
+            'Content-Type': 
+        }
+    })
+}
+
 ReactDOM.render(
     React.createElement('h1', null, 'Hello world!'),
     document.getElementById('content')
