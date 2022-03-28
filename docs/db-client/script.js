@@ -1,13 +1,3 @@
-/*$(document).ready(function() {
-    $.getJSON('data.json', function(data) {
-        $.each(data, function (obj) {
-            var div = document.createElement('div');
-            div.textContent = JSON.stringify(data[obj]);
-            document.body.appendChild(div);
-        });
-    });
-});*/
-
 const getData = () => {
     fetch('data.json', {
         headers: {
@@ -17,13 +7,15 @@ const getData = () => {
     }).then(function (response) {
         return response.json();
     }).then(function (resJSON) {
-        console.log(resJSON);
+        var content = '';
+        for (var i = 0; i < resJSON.length; i++) {
+            content += JSON.stringify(resJSON[i]);
+        }
+        ReactDOM.render(
+            React.createElement('div', null, content),
+            document.getElementById('content')
+        );
     });
 }
 
 getData();
-
-ReactDOM.render(
-    React.createElement('h1', null, 'Hello world!'),
-    document.getElementById('content')
-);
