@@ -19,9 +19,24 @@ const getData = () => {
 
         for (var i = 0; i < resJSON.length; i++) {
             const element = resJSON[i];
-            items.push ( React.createElement('h1', { key: element._id }, element._id) );
-            items.push ( React.createElement('div', null, element.gmail_filtered) );
-            items.push ( React.createElement('div', null, element.user_filtered) );
+            const key = element._id;
+            const emails = element.spam;
+
+            items.push ( React.createElement(
+                'h1',
+                { key: key + 'a' },
+                element._id
+            ) );
+            items.push (
+                React.createElement('div', { key: key + 'b' }, 'gmail-filtered: ' + element.gmail_filtered)
+            );
+            items.push (
+                React.createElement('div', { key: key + 'c' }, 'user-filtered: ' + element.user_filtered)
+            );
+
+            for (var j = 0; j < emails.length; j++) {
+
+            }
         }
 
         ReactDOM.render(
