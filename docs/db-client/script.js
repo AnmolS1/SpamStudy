@@ -15,7 +15,6 @@ const getData = () => {
             'Accept': 'application/json'
         }
     }).then(function (response) {
-        console.log (response);
         return response.json();
     }).then(function (resJSON) {
         console.log(resJSON);
