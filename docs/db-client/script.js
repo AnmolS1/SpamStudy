@@ -34,7 +34,7 @@ const getData = () => {
                 'div', { key: key + 'c' },
                 'user-filtered: ' + element.user_filtered
             ));
-
+            
             for (var j = 0; j < emails.length; j++) {
                 items.push (React.createElement(
                     'div', { key: key + (j + 1) },
@@ -42,6 +42,7 @@ const getData = () => {
                 ));
             }
         }
+
 
         ReactDOM.render(
             React.createElement('div', null, items),
