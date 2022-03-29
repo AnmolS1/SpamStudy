@@ -1,3 +1,7 @@
+function smallify (str) {
+    return str.substring(0, 10) + '...';
+}
+
 const getData = () => {
     fetch('data.json', {
         headers: {
@@ -7,52 +11,60 @@ const getData = () => {
     }).then(function (response) {
         return response.json();
     }).then(function (resJSON) {
-        console.log (resJSON);
-
-        var items = [];
-
+        var all = [];
         for (var i = 0; i < resJSON.length; i++) {
+            var items = [];
             const element = resJSON[i];
             const key = element._id;
             const emails = element.spam;
 
-            items.push (React.createElement(
-                'h1', { key: key + 'a' },
-                element._id
-            ));
-            items.push (React.createElement(
-                'h2', { key: key + 'b' },
-                'gmail-filtered: ' + element.gmail_filtered
-            ));
-            items.push (React.createElement(
-                'h2', { key: key + 'c' },
-                'user-filtered: ' + element.user_filtered
-            ));
+            items.push (React.createElement('div', {
+                key: key + '-id_small',
+                className: "id-small"
+            }, smallify(element._id)));
+            items.push (React.createElement('div', {
+                key: key + '-id_big',
+                className: "id-big hidden"
+            }, element._id));
+            
+            items.push (React.createElement('div', {
+                key: key + '-gfilter',
+                className: "filter-count"
+            }, element.gmail_filtered));
+            
+            items.push (React.createElement('div', {
+                key: key + '-ufilter',
+                className: "filter-count"
+            }, element.user_filtered));
             
             for (var j = 0; j < emails.length; j++) {
-                items.push (React.createElement(
-                    'div', { key: key + (j + 1) + 'from' },
-                    'from: ' + emails[j].from
-                ));
-                items.push (React.createElement(
-                    'div', { key: key + (j + 1) + 'category' },
-                    'category: ' + emails[j].category
-                ));
-                items.push (React.createElement(
-                    'div', { key: key + (j + 1) + 'time_stamp' },
-                    'time stamp: ' + emails[j].time_stamp
-                ));
-                
-                if (j != emails.length - 1)
-                    items.push (React.createElement('br', { key: key + 'br' + (j + 1) }));
+                items.push (React.createElement('div', {
+                    key: key + "-email" + (j + 1),
+                    className: "email hidden"
+                }, [
+                    React.createElement('div', {
+                        key: key + (j + 1) + '-from',
+                        className: "userfrom"
+                    }, emails[j].from),
+                    React.createElement('div', {
+                        key: key + (j + 1) + '-category',
+                        className: "category"
+                    }, emails[j].category),
+                    React.createElement('div', {
+                        key: key + (j + 1) + '-time_stamp',
+                        className: "timestamp"
+                    }, emails[j].time_stamp)
+                ]));
             }
+
+            all.push (React.createElement('div', {
+                key: key,
+                className: 'user',
+                id: key,
+            }, items));
         }
 
-        ReactDOM.render(
-            React.createElement('div', null, items),
-            document.getElementById('content')
-        );
-
+        ReactDOM.render( all, document.getElementById('content') );
     });
 }
 
