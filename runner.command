@@ -17,8 +17,8 @@ clearSpace() {
 # let user install python if not already there
 cd /Applications
 while [[ !(-e "Python 3.9") ]]; do
-    # user needs to clear 110 MB of space
-    clearSpace "-m" 110
+    # user needs to clear 115 MB of space
+    clearSpace "-m" 115
     # instructions available on website
     echo "Please install Python"
     echo "Instructions for the python installer are available at https://anmols1.github.io/SpamStudy/"
