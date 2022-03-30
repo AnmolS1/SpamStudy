@@ -5,7 +5,7 @@ clearSpace() {
     UNIT=$1                 # unit of space we're looking at ("-m", "-k", "-g")
     REQUIRED=$2             # amount of space that needs to be free in the unit given
     READABLE="${UNIT:1:1}B" # take the unit and force human readable format
-    # get amount of clear space in the disk where python gets installed
+    # get amount of clear space in the disk
     SPACE=`df $UNIT | sed -n '2 p' | awk '{print $4}'`
     # loop until the user has cleared enough space to install whatever we're installing
     while [[ $REQUIRED -ge $SPACE ]]; do
