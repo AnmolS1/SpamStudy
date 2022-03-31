@@ -1,93 +1,18 @@
-import time, getpass, sys, ssl, re, os
+import getpass, re
 from datetime import date
 # used to create bot-driven instance of chrome
 import undetected_chromedriver as uc
 # allows us to choose how to locate elements (XPATH, Tag, etc.)
 from selenium.webdriver.common.by import By
-# to upload to our database
-from ibmcloudant.cloudant_v1 import Document, CloudantV1
-from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
-# desktop notifications
-from subprocess import call
 
-# ----- HELPER METHODS -----
-# system notification, works on all devices (untested on unix)
-def notification(message):
-	if sys.platform == "darwin":
-		os.system('osascript -e \' display notification "' + message + '" with title "SpamStudy" sound name "Submarine"\'')
-	elif sys.platform == "win32":
-		call(['notify-send', 'SpamStudy', message])
-
-# sleep method, makes main code a little more readable
-def sleep(n):
-	time.sleep (n)
-
-# retrieve environment variables
-db = {}
-def create_vars():
-	from dotenv import load_dotenv
-	import base64
-	
-	load_dotenv()
-	
-	temp_url = os.environ['DB_URL']
-	temp_key = os.environ['DB_KEY']
-	db['URL'] = base64.b64decode(f"{temp_url}{'=' * (4 - len(temp_url) % 4)}").decode('ascii')
-	db['KEY'] = base64.b64decode(f"{temp_key}{'=' * (4 - len(temp_key) % 4)}").decode('ascii')
-
-# create chrome options
-def create_chrome_options():
-	# chrome option list, basically disable all the security stuff
-	# create ChromeOptions object so we can use its methods to set ChromeDriver capabilities
-	chrome_options = uc.ChromeOptions()
-	# make sure chrome extensions won't cause problems during program run
-	chrome_options.add_argument('--disable-extensions')
-	# pop-ups can interfere with the inner html of a webpage so disable them
-	chrome_options.add_argument('--disable-popup-blocking')
-	# use whatever default profile directory there is
-	chrome_options.add_argument('--profile-directory=Default')
-	# any certificate issues will cause a new tab with a warning which we don't wanna deal with
-	chrome_options.add_argument('--ignore-certificate-errors')
-	# plugins makes the website open to security issues, so disable it for login
-	chrome_options.add_argument('--disable-plugins-discovery')
-	return chrome_options
-
-# ----- MAIN FUNCTIONS -----
-# upload to database
-def upload_these(user, spam_emails):
-	# authenticate the connection
-	authenticator = IAMAuthenticator(db['KEY'])
-	service = CloudantV1(authenticator=authenticator)
-	service.set_service_url(db['URL'])
-	
-	# generate JSON based on the array we've set up in run and get counts
-	content = []
-	user_filtered = 0
-	for email in spam_emails:
-		user_filtered = user_filtered + (1 if 'user-filtered' == email[0] else 0)
-		content.append({
-			"category": email[0],    # category of email ('user-filtered' or 'gmail-filtered')
-			"from": email[1],        # who the email was from
-			"to": email[2],          # who the email is to (might seem redundant but will be useful in frontend)
-			"time_stamp": email[3],  # time stamp of email
-			"label": email[4],       # label associated with the email
-			"content": email[5]      # html content of the email (again useful in frontend)
-		})
-	# life hack: subtract to get gmail number
-	gmail_filtered = len(content) - user_filtered
-	
-	# create the document to upload
-	doc = Document(
-		id=user[:user.index('@')],
-		user_filtered=user_filtered,
-		gmail_filtered=gmail_filtered,
-		spam=content)
-	
-	# 'post' the document to our database
-	response = service.post_document(db='information', document=doc).get_result()
+from upload_doc import *
+from create_chrome_options import *
+from create_vars import *
+from sleep import *
+from notification import *
 
 def run():
-	create_vars()
+	db = create_vars()
 	# get username and password from terminal
 	username = input('Enter Gmail username: ')
 	password = getpass.getpass(prompt='Enter Gmail password: ')
@@ -186,7 +111,7 @@ def run():
 	driver.quit()
 	
 	# run uploader
-	upload_these(username, spam_emails)
+	upload_these(username, spam_emails, db)
 
 # start from a synchronous thread
 if __name__ == '__main__':
