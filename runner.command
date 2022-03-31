@@ -68,9 +68,13 @@ unzip studyapp-00.zip
 cd studyapp-00
 
 # run the file
-# python3 process.py
+python3 process.py
 
-# get rid of everything
+# clear everything out
 cd ../
 rm -r studyapp-00
 rm studyapp-00.zip
+rm installation.log
+if [ -d "__MACOSX" ]; then
+    rm -r __MACOSX
+fi

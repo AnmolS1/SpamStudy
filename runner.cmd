@@ -42,16 +42,12 @@ IF errorlevel 1 (
 	pip --disable-pip-version-check install python-dotenv >> installation.log
 )
 
-curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/process.py -o process.py
-curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/.env -o .env
-curl -s https://github.com/AnmolS1/SpamStudy/raw/main/docs/resources/logo.png -o logo.png
-curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/notify-send.exe -o notify-send.exe
+curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/app.zip -o studyapp-00.zip
+:: TODO - UNZIP FOLDER OR ACCESS DIRECTLY
 
-python process.py
+:: python process.py
 
-rm process.py
-rm logo.png
-rm .env
+:: TODO - DELETE ALL FILES
 
 PAUSE
 EXIT /B %ERRORLEVEL%
