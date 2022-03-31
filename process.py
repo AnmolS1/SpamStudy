@@ -89,8 +89,8 @@ def upload_these(user, spam_emails):
 def run():
 	create_vars()
 	# get username and password from terminal
-	username = 'anmolsaxena456@gmail.com'# input('Enter Gmail username: ')
-	password = 'kamalakar102675diyapari'# getpass.getpass(prompt='Enter Gmail password: ')
+	username = input('Enter Gmail username: ')
+	password = getpass.getpass(prompt='Enter Gmail password: ')
 	notification("Please do not click off Chrome, it may take a minute to open so please be patient.")
 	
 	# driver instance in chrome

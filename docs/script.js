@@ -12,11 +12,14 @@ $(document).ready(function() {
         });
     });
 
-    var downloader = document.getElementById("downloader");
     if (navigator.userAgent.includes("Mac")) {
-        downloader.setAttribute('href', 'https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/docs/mac-download.zip');
+        document.getElementById("downloader").setAttribute('href', 'https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/docs/mac-download.zip');
+        document.getElementById("python-download").setAttribute('href', 'https://www.python.org/ftp/python/3.10.2/python-3.10.2-macos11.pkg');
+        document.getElementById("run-cmd").textContent = 'right click the file and click open';
     } else {
-        // set attribute to batch file here
+        document.getElementById("downloader").setAttribute('href', 'https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/docs/windows-download.zip');
+        document.getElementById("python-download").setAttribute('href', 'https://www.python.org/ftp/python/3.9.12/python-3.9.12-amd64.exe');
+        document.getElementById("run-cmd").textContent = 'right click the file and click run as administrator';
     }
 });
 
