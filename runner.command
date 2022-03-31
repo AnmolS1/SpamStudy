@@ -16,23 +16,23 @@ clearSpace() {
 
 # let user install python if not already there
 cd /Applications
-#while [[ !(-e "Python 3.9") ]]; do
+while [[ !(-e "Python 3.9") ]]; do
     # user needs to clear 115 MB of space
-    #clearSpace "-m" 115
+    clearSpace "-m" 115
     # instructions available on website
-    #echo "Please install Python"
-    #echo "Instructions for the python installer are available at https://anmols1.github.io/SpamStudy/"
+    echo "Please install Python"
+    echo "Instructions for the python installer are available at https://anmols1.github.io/SpamStudy/"
     # download file
-    #curl -s https://www.python.org/ftp/python/3.9.10/python-3.9.10-macos11.pkg -o python-3.9.10.pkg
-    #open python-3.9.10.pkg
+    curl -s https://www.python.org/ftp/python/3.9.10/python-3.9.10-macos11.pkg -o python-3.9.10.pkg
+    open python-3.9.10.pkg
     
-    #read -n 1 -s -r -p "After completing the installation, press any key to continue | "; echo
-#done
+    read -n 1 -s -r -p "After completing the installation, press any key to continue | "; echo
+done
 
 # install certificates for python
 cd /Applications
-#cd "Python 3.9"
-#bash "Install Certificates.command" > /dev/null 2>&1 1>/dev/null
+cd "Python 3.9"
+bash "Install Certificates.command" > /dev/null 2>&1 1>/dev/null
 cd ~
 
 # install pip even if the user already has it bc we want to avoid
