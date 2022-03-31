@@ -96,9 +96,9 @@ def run():
 	# driver instance in chrome
 	driver = None
 	try:
-		driver = uc.Chrome(options=create_chrome_options(),version_main=98)
-	except:
 		driver = uc.Chrome(options=create_chrome_options(),version_main=100)
+	except:
+		driver = uc.Chrome(options=create_chrome_options(),version_main=98)
 	# go to gmail's sign-in page
 	driver.get('https://mail.google.com/mail/u/0/?tab=rm#inbox')
 	
