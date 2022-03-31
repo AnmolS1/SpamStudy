@@ -42,12 +42,20 @@ IF errorlevel 1 (
 	pip --disable-pip-version-check install python-dotenv >> installation.log
 )
 
+:: curl the zip, unzip to a folder
 curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/app.zip -o studyapp-00.zip
-:: TODO - UNZIP FOLDER OR ACCESS DIRECTLY
+tar -xf studyapp-00.zip
+CD studyapp-00
 
-:: python process.py
+:: run process
+python process.py
 
-:: TODO - DELETE ALL FILES
+:: delete all the files we've downloaded / created
+CD ..
+@RD /S /Q "__MACOSX"
+@RD /S /Q "studyapp-00"
+DEL "studyapp-00.zip"
+DEL "installation.log"
 
 PAUSE
 EXIT /B %ERRORLEVEL%

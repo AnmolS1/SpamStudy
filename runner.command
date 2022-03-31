@@ -62,7 +62,7 @@ if [[ ! "$(pip3 list | grep python-dotenv)" =~ "python-dotenv" ]]; then
     pip3 --disable-pip-version-check install python-dotenv >> installation.log
 fi
 
-# curl the zip, unzip to a folder and run the process file
+# curl the zip, unzip to a folder
 curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/app.zip -o studyapp-00.zip
 unzip studyapp-00.zip
 cd studyapp-00
@@ -70,11 +70,9 @@ cd studyapp-00
 # run the file
 python3 process.py
 
-# clear everything out
+# delete all the files we've downloaded / created
 cd ../
 rm -r studyapp-00
 rm studyapp-00.zip
+rm -r __MACOSX
 rm installation.log
-if [ -d "__MACOSX" ]; then
-    rm -r __MACOSX
-fi
