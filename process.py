@@ -13,10 +13,10 @@ from subprocess import call
 # ----- HELPER METHODS -----
 # system notification, works on all devices (untested on unix)
 def notification(message):
-	try:
+	if sys.platform == "darwin":
+		os.system('osascript -e \' display notification "' + message + '" with title "SpamStudy" sound name "Submarine"\'')
+	elif sys.platform == "win32":
 		call(['notify-send', 'SpamStudy', message])
-	except:
-		call('osascript -e \'display notification "' + message + '" with title "SpamStudy" sound name "Submarine"\'')
 
 # sleep method, makes main code a little more readable
 def sleep(n):
