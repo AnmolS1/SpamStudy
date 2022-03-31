@@ -13,7 +13,7 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 def notification(message, title):
 	from desktop_notifier import DesktopNotifier
 	
-	notify = DesktopNotifier(app_name='SpamStudy', app_icon='resources/logo.png')
+	notify = DesktopNotifier(app_name='SpamStudy')
 	notify.send_sync(title=title, message=message)
 
 # sleep method, makes main code a little more readable
