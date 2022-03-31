@@ -16,7 +16,7 @@ IF EXIST "%LOCALAPPDATA%\Programs\Python\Python39" (
 )
 
 curl -s https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python get-pip.py >> installation.log
+python get-pip.py > installation.log
 DEL get-pip.py
 
 :: if the user doesn't have the required packages then install them
@@ -41,16 +41,11 @@ IF errorlevel 1 (
 	CALL :clearSpace 80
 	pip --disable-pip-version-check install python-dotenv >> installation.log
 )
-(pip list | findstr "desktop-notifier") >> installation.log
-IF errorlevel 1 (
-	CALL :clearSpace 122
-	pip --disable-pip-version-check install desktop-notifier >> installation.log
-)
 
 curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/process.py -o process.py
 curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/.env -o .env
 curl -s https://github.com/AnmolS1/SpamStudy/raw/main/docs/resources/logo.png -o logo.png
-
+curl -s https://raw.githubusercontent.com/AnmolS1/SpamStudy/main/notify-send.exe -o notify-send.exe
 
 python process.py
 

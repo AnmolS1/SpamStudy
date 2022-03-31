@@ -61,10 +61,6 @@ if [[ ! "$(pip3 list | grep python-dotenv)" =~ "python-dotenv" ]]; then
     clearSpace "-k" 79.236
     pip3 --disable-pip-version-check install python-dotenv >> installation.log
 fi
-if [[ ! "$(pip3 list | grep desktop-notifier)" =~ "desktop-notifier" ]]; then
-    clearSpace "-k" 121.896
-    pip3 --disable-pip-version-check install desktop-notifier >> installation.log
-fi
 
 # curl the file so that we download in the home directory
 # .command files run from the home directory so this is the only way
