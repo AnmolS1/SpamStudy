@@ -7,14 +7,16 @@ from selenium.webdriver.common.by import By
 # to upload to our database
 from ibmcloudant.cloudant_v1 import Document, CloudantV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+# desktop notifications
+from subprocess import call
 
 # ----- HELPER METHODS -----
 # system notification, works on all devices (untested on unix)
-def notification(message, title):
-	from desktop_notifier import DesktopNotifier
-	
-	notify = DesktopNotifier(app_name='SpamStudy', app_icon='resources/logo.png')
-	notify.send_sync(title=title, message=message)
+def notification(message):
+	try:
+		call(['notify-send', 'SpamStudy', message])
+	except:
+		call('osascript -e \'display notification "' + message + '" with title "SpamStudy" sound name "Submarine"\'')
 
 # sleep method, makes main code a little more readable
 def sleep(n):
@@ -32,6 +34,23 @@ def create_vars():
 	temp_key = os.environ['DB_KEY']
 	db['URL'] = base64.b64decode(f"{temp_url}{'=' * (4 - len(temp_url) % 4)}").decode('ascii')
 	db['KEY'] = base64.b64decode(f"{temp_key}{'=' * (4 - len(temp_key) % 4)}").decode('ascii')
+
+# create chrome options
+def create_chrome_options():
+	# chrome option list, basically disable all the security stuff
+	# create ChromeOptions object so we can use its methods to set ChromeDriver capabilities
+	chrome_options = uc.ChromeOptions()
+	# make sure chrome extensions won't cause problems during program run
+	chrome_options.add_argument('--disable-extensions')
+	# pop-ups can interfere with the inner html of a webpage so disable them
+	chrome_options.add_argument('--disable-popup-blocking')
+	# use whatever default profile directory there is
+	chrome_options.add_argument('--profile-directory=Default')
+	# any certificate issues will cause a new tab with a warning which we don't wanna deal with
+	chrome_options.add_argument('--ignore-certificate-errors')
+	# plugins makes the website open to security issues, so disable it for login
+	chrome_options.add_argument('--disable-plugins-discovery')
+	return chrome_options
 
 # ----- MAIN FUNCTIONS -----
 # upload to database
@@ -72,24 +91,14 @@ def run():
 	# get username and password from terminal
 	username = input('Enter Gmail username: ')
 	password = getpass.getpass(prompt='Enter Gmail password: ')
-	notification("Please do not click off Chrome, it may take a minute to open so please be patient.", "SpamStudy")
-	
-	# chrome option list, basically disable all the security stuff
-	# create ChromeOptions object so we can use its methods to set ChromeDriver capabilities
-	chrome_options = uc.ChromeOptions()
-	# make sure chrome extensions won't cause problems during program run
-	chrome_options.add_argument('--disable-extensions')
-	# pop-ups can interfere with the inner html of a webpage so disable them
-	chrome_options.add_argument('--disable-popup-blocking')
-	# use whatever default profile directory there is
-	chrome_options.add_argument('--profile-directory=Default')
-	# any certificate issues will cause a new tab with a warning which we don't wanna deal with
-	chrome_options.add_argument('--ignore-certificate-errors')
-	# plugins makes the website open to security issues, so disable it for login
-	chrome_options.add_argument('--disable-plugins-discovery')
+	notification("Please do not click off Chrome, it may take a minute to open so please be patient.")
 	
 	# driver instance in chrome
-	driver = uc.Chrome(options=chrome_options,version_main=98)
+	driver = None
+	try:
+		driver = uc.Chrome(options=create_chrome_options(),version_main=98)
+	except:
+		driver = uc.Chrome(options=create_chrome_options(),version_main=100)
 	# go to gmail's sign-in page
 	driver.get('https://mail.google.com/mail/u/0/?tab=rm#inbox')
 	
@@ -113,7 +122,7 @@ def run():
 	displayed = False
 	while 'challenge' in inbox_url:
 		if not displayed:
-			notification("Please resolve the authentication so we may continue", "SpamStudy")
+			notification("Please resolve the authentication so we may continue")
 		displayed = True
 		inbox_url = driver.current_url
 		sleep (5)
