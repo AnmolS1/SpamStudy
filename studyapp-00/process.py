@@ -5,6 +5,7 @@ import undetected_chromedriver as uc
 # allows us to choose how to locate elements (XPATH, Tag, etc.)
 from selenium.webdriver.common.by import By
 
+# other file imports
 from upload_doc import *
 from create_chrome_options import *
 from create_vars import *

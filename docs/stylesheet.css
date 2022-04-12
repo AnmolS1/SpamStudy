@@ -123,17 +123,155 @@ body .container-content > div h1 {
     margin: 0;
 }
 
+/* ---------- INSTRUCTION STYLING ---------- */
+
 #instructions {
     background: #A1BEC1;
-}
-
-#download {
-    background: #CED7E5;
 }
 
 #pyth-instructions {
     background: #D9CEA9;
 }
+
+/* ---------- END NSTRUCTION STYLING ---------- */
+
+/* ---------- BEGIN SECTION STYLING ---------- */
+
+#begin {
+    background: #CED7E5;
+}
+
+.begin-btn {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 1.75em;
+	letter-spacing: 2px;
+	padding: 20px 60px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: background 300ms;
+}
+
+.begin-btn.begin-btn-outline {
+	color: #666666;
+	overflow: hidden;
+	position: relative;
+}
+  
+.begin-btn.begin-btn-outline:before, .begin-btn.begin-btn-outline:after, .begin-btn.begin-btn-outline .lines:before, .begin-btn.begin-btn-outline .lines:after {
+	background-color: #666666;
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transition: transform 300ms;
+	width: 100%;
+}
+
+.begin-btn.begin-btn-outline:before {
+	bottom: 0;
+	top: auto;
+}
+
+.begin-btn.begin-btn-outline .lines {
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.begin-btn.begin-btn-outline .lines:before, .begin-btn.begin-btn-outline .lines:after {
+	height: 100%;
+	width: 2px;
+}
+
+.begin-btn.begin-btn-outline .lines:after {
+	left: auto;
+	right: 0;
+}
+
+.begin-btn:hover:before        { transform: translateX(-101%); }
+.begin-btn:hover:after         { transform: translateX( 101%); }
+.begin-btn:hover .lines:before { transform: translateY(-101%); }
+.begin-btn:hover .lines:after  { transform: translateY( 101%); }
+
+.begin-btn:active {
+	background-color: #EFEFEF;
+	transition: all 0.1s ease-in;
+}
+
+/* ---------- END BEGIN SECTION STYLING ---------- */
+
+/* ---------- FORM STYLING ---------- */
+
+.form-group {
+	position: relative;
+	margin-bottom: 45px;
+}
+
+input {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 300px;
+	border: none;
+	border-bottom: 1px solid #757575;
+	background: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+label {
+	font-size: 18px;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	transition: 0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label {
+	top: -20px;
+	font-size: 14px;
+	color: #5264AE
+}
+
+.bar {
+	position: relative;
+	display: block;
+	width: 315px;
+}
+
+.bar:before, .bar:after {
+	content: "";
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: #5264AE;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	transition: 0.2s ease all;
+}
+
+.bar:before { left: 50%; }
+.bar:after  { right: 50%; }
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+	width: 50%;
+}
+
+/* ---------- END FORM STYLING ---------- */
+
+/* ---------- MISCELLANEOUS STYLING ---------- */
 
 .centerer {
     display: flex;
@@ -151,3 +289,5 @@ body .container-content > div h1 {
     text-decoration: underline;
     font-weight: 500;
 }
+
+/* ---------- END MISCELLANEOUS STYLING ---------- */
