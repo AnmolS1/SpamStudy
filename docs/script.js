@@ -31,6 +31,7 @@ $(window).scroll(function () {
     }
 });
 
-$("#start").click(function (e) {
+$("#start").on('click', function (e) {
+	console.log ("woot");
 	return false;
 });
