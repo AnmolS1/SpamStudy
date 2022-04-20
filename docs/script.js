@@ -31,7 +31,25 @@ $(window).scroll(function () {
     }
 });
 
+function validateUsername(emailid) {
+	const regex = /^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$/gi
+	if (!regex.test(emailid)) {
+		return false;
+	}
+	return true;
+}
+
 $("#start").on('click', function (e) {
-	console.log ("woot");
-	return false;
+	var uname = document.getElementById("username").value;
+	var pword = document.getElementById("password").value;
+	
+	if (!validateUsername(uname)) {
+		alert('Please enter a valid gmail account');
+		return false;
+	}
+	
+	console.log (uname);
+	console.log (pword);
+
+	return true;
 });
