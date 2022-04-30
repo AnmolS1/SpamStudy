@@ -1,6 +1,3 @@
-var CLIENT_ID = '574343710831-ab0ip0m3rtbkm2fa6l0bsa4iskj3t01p.apps.googleusercontent.com';
-var REDIRECT_URI = 'https://spamstudy.firebaseapp.com/__/auth/handler';
-
 var config = {
 	apiKey: "AIzaSyCQGBtHBb19c5wtSbLiSMdkMASdi85rHYM",
 	authDomain: "spamstudy.firebaseapp.com",
