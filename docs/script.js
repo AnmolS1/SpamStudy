@@ -1,6 +1,6 @@
 var config = {
-	apiKey: "AIzaSyCQGBtHBb19c5wtSbLiSMdkMASdi85rHYM",
-	authDomain: "spamstudy.firebaseapp.com",
+	apiKey: atob(conf.api_key),
+	authDomain: atob(conf.domain),
 };
 firebase.initializeApp(config);
 
@@ -76,8 +76,18 @@ $("#start").on('click', function (e) {
 		// the signed-in user info.
 		var user = result.user;
 		
-		console.log(token);
-		console.log(user);
+		// console.log(token);
+		// console.log(user);
+		
+		// use token to access google api
+		$.ajax({
+			url: 'https://www.googleapis.com/oauth2/v2/userinfo',
+			beforeSend: function(xhr) {
+				xhr.setRequestHeader("Authorization", "Bearer " + token)
+			}, success: function(data) {
+				console.log(data);
+			}
+		});
 
 	}).catch(function(error) {
 		// handle errors
