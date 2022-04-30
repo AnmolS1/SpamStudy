@@ -208,7 +208,7 @@ body .container-content > div h1 {
 
 /* ---------- FORM STYLING ---------- */
 
-/*.form-group {
+.form-group {
 	position: relative;
 	margin-bottom: 45px;
 }
@@ -267,7 +267,7 @@ input:focus ~ label, input:valid ~ label {
 
 input:focus ~ .bar:before, input:focus ~ .bar:after {
 	width: 50%;
-}*/
+}
 
 /* ---------- END FORM STYLING ---------- */
 

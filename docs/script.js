@@ -1,21 +1,3 @@
-var CLIENT_ID = '574343710831-ab0ip0m3rtbkm2fa6l0bsa4iskj3t01p.apps.googleusercontent.com';
-var REDIRECT_URI = 'https://spamstudy.firebaseapp.com/__/auth/handler';
-
-var config = {
-	apiKey: "AIzaSyCQGBtHBb19c5wtSbLiSMdkMASdi85rHYM",
-	authDomain: "spamstudy.firebaseapp.com",
-};
-firebase.initializeApp(config);
-
-var provider = new firebase.auth.GoogleAuthProvider();
-provider.addScope('https://mail.google.com');
-firebase.auth().useDeviceLanguage();
-provider.setCustomParameters({
-	'login_hint': 'user@example.com'
-});
-
-
-
 $(document).ready(function () {
     $('a[href^="#"').on('click', function (e) {
         e.preventDefault();
@@ -30,13 +12,13 @@ $(document).ready(function () {
         });
     });
 
-    /*if (navigator.userAgent.includes("Mac")) {
+    if (navigator.userAgent.includes("Mac")) {
         document.getElementById("python-download").setAttribute('href', 'https://www.python.org/ftp/python/3.10.2/python-3.10.2-macos11.pkg');
         document.getElementById("run-cmd").textContent = 'right click the file and click open';
     } else {
         document.getElementById("python-download").setAttribute('href', 'https://www.python.org/ftp/python/3.9.12/python-3.9.12-amd64.exe');
         document.getElementById("run-cmd").textContent = 'right click the file and click run as administrator';
-    }*/
+    }
 });
 
 $(window).scroll(function () {
@@ -49,16 +31,16 @@ $(window).scroll(function () {
     }
 });
 
-/*function validateUsername(emailid) {
+function validateUsername(emailid) {
 	const regex = /^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$/gi
 	if (!regex.test(emailid)) {
 		return false;
 	}
 	return true;
-}*/
+}
 
 $("#start").on('click', function (e) {
-	/*var uname = document.getElementById("username").value;
+	var uname = document.getElementById("username").value;
 	var pword = document.getElementById("password").value;
 	
 	if (!validateUsername(uname)) {
@@ -69,31 +51,5 @@ $("#start").on('click', function (e) {
 	console.log (uname);
 	console.log (pword);
 
-	return true;*/
-
-	firebase.auth().signInWithPopup(provider).then(function(result) {
-		// this gives us a Google Access Token
-		// use it to access the google api
-		var token = result.credential.accessToken;
-		
-		// the signed-in user info.
-		var user = result.user;
-		
-		console.log(token);
-		console.log(user);
-
-	}).catch(function(error) {
-		// handle errors
-		var errorCode = error.code;
-		var errorMessage = error.message;
-		
-		var email = error.email;
-		
-		var credential = error.credential;
-		
-		console.log(errorCode);
-		console.log(errorMessage);
-		console.log(email);
-		console.log(credential);
-	});
+	return true;
 });
