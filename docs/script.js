@@ -1,106 +1,68 @@
-var config = {
-	apiKey: atob(conf.api_key),
-	authDomain: atob(conf.domain),
-};
-firebase.initializeApp(config);
-
-var provider = new firebase.auth.GoogleAuthProvider();
-provider.addScope('https://mail.google.com');
-firebase.auth().useDeviceLanguage();
-provider.setCustomParameters({
-	'login_hint': 'user@example.com'
-});
-
-
-
 $(document).ready(function () {
-    $('a[href^="#"').on('click', function (e) {
-        e.preventDefault();
-
-        var target = this.hash;
-        var $target = $(target);
+	$('a[href^="#"').on('click', function (e) {
+		e.preventDefault();
 		
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 900, 'swing', function() {
-            window.location.hash = target;
-        });
-    });
+		var target = this.hash;
+		var $target = $(target);
+		
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top
+		}, 900, 'swing', function() {
+			window.location.hash = target;
+		});
+	});
 });
 
 $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 100) {
-        $(".fixed-header").slideDown();
-    } else {
-        $(".fixed-header").slideUp();
-    }
+	var scroll = $(window).scrollTop();
+	if (scroll >= 100) {
+		$(".fixed-header").slideDown();
+	} else {
+		$(".fixed-header").slideUp();
+	}
 });
 
-$("#start").on('click', function (e) {
-	firebase.auth().signInWithPopup(provider).then(function(result) {
-		var token = result.credential.accessToken;
-		var user = result.user;
-		
-		/*$.ajax({
-			url: 'https://www.googleapis.com/oauth2/v2/userinfo',
-			beforeSend: function(xhr) {
-				xhr.setRequestHeader("Authorization", "Bearer " + token)
-			}, success: function(data) {
-				console.log(data);
-			}
-		});
+gapi.load("client:auth2", function() {
+	gapi.auth2.init({client_id: config.client_id});
+});
 
-		$.ajax({
-			url: 'https://www.googleapis.com/oauth2/v2/gmail.readonly',
-			beforeSend: function(xhr) {
-				xhr.setRequestHeader("Authorization", "Bearer " + token)
-			}, success: function(data) {
-				console.log(data);
-			}
-		});*/
-
-		(async () => {
-			const userinf = await fetch('https://serene-temple-29423.herokuapp.com/https://www.googleapis.com/auth/userinfo.email', {
-				method: 'GET',
-				headers: {
-					'Authentication': 'Bearer ' + token
-				}
-			});
-
-			const allmail = await fetch('https://serene-temple-29423.herokuapp.com/https://mail.google.com', {
-				method: 'GET',
-				headers: {
-					'Authentication': 'Bearer' + token
-				}
-			});
-			
-			const mailread = await fetch('https://serene-temple-29423.herokuapp.com/https://www.googleapis.com/auth/gmail.readonly', {
-				method: 'GET',
-				headers: {
-					'Authentication': 'Bearer' + token
-				}
-			});
-
-			console.log(user);
-			console.log(userinf);
-			console.log(allmail);
-			console.log(mailread);
-		})();
-
-	}).catch(function(error) {
-		// handle errors
-		var errorCode = error.code;
-		var errorMessage = error.message;
-		
-		var email = error.email;
-		
-		var credential = error.credential;
-		
-		console.log(errorCode);
-		console.log(errorMessage);
-		console.log(email);
-		console.log(credential);
+function authenticate() {
+	var scopes = [
+		'https://mail.google.com/',
+		'https://www.googleapis.com/auth/gmail.modify',
+		'https://www.googleapis.com/auth/gmail.readonly'
+	];
+	
+	return gapi.auth2.getAuthInstance().signIn({
+		scope: scopes.join(' ')
+	}).then(function() {
+		console.log("Sign-in successful");
+	}, function(err) {
+		console.error("Error signing in", err);
 	});
+}
+
+function loadClient() {
+	gapi.client.setApiKey(config.apiKey);
+	return gapi.client.load("https://gmail.googleapis.com/$discovery/rest?version=v1")
+		.then(function() {
+			console.log("GAPI client loaded for API");
+		}, function(err) {
+			console.error("Error loading GAPI client for API", err);
+		});
+}
+
+function execute() {
+	return gapi.client.gmail.users.messages.list({
+		'userId': 'me'
+	}).then(function(response) {
+		// handle the results here (response.result has the parsed body).
+		console.log("Response", response);
+	}, function(err) {
+		console.error("Execute error", err);
+	});
+}
+
+$("#start").on('click', function (e) {
+	authenticate().then(loadClient).then(execute);
 });
