@@ -26,14 +26,6 @@ $(document).ready(function () {
             window.location.hash = target;
         });
     });
-
-    /*if (navigator.userAgent.includes("Mac")) {
-        document.getElementById("python-download").setAttribute('href', 'https://www.python.org/ftp/python/3.10.2/python-3.10.2-macos11.pkg');
-        document.getElementById("run-cmd").textContent = 'right click the file and click open';
-    } else {
-        document.getElementById("python-download").setAttribute('href', 'https://www.python.org/ftp/python/3.9.12/python-3.9.12-amd64.exe');
-        document.getElementById("run-cmd").textContent = 'right click the file and click run as administrator';
-    }*/
 });
 
 $(window).scroll(function () {
@@ -46,41 +38,12 @@ $(window).scroll(function () {
     }
 });
 
-/*function validateUsername(emailid) {
-	const regex = /^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$/gi
-	if (!regex.test(emailid)) {
-		return false;
-	}
-	return true;
-}*/
-
 $("#start").on('click', function (e) {
-	/*var uname = document.getElementById("username").value;
-	var pword = document.getElementById("password").value;
-	
-	if (!validateUsername(uname)) {
-		alert('Please enter a valid gmail account');
-		return false;
-	}
-	
-	console.log (uname);
-	console.log (pword);
-
-	return true;*/
-
 	firebase.auth().signInWithPopup(provider).then(function(result) {
-		// this gives us a Google Access Token
-		// use it to access the google api
 		var token = result.credential.accessToken;
-		
-		// the signed-in user info.
 		var user = result.user;
 		
-		// console.log(token);
-		// console.log(user);
-		
-		// use token to access google api
-		$.ajax({
+		/*$.ajax({
 			url: 'https://www.googleapis.com/oauth2/v2/userinfo',
 			beforeSend: function(xhr) {
 				xhr.setRequestHeader("Authorization", "Bearer " + token)
@@ -88,6 +51,43 @@ $("#start").on('click', function (e) {
 				console.log(data);
 			}
 		});
+
+		$.ajax({
+			url: 'https://www.googleapis.com/oauth2/v2/gmail.readonly',
+			beforeSend: function(xhr) {
+				xhr.setRequestHeader("Authorization", "Bearer " + token)
+			}, success: function(data) {
+				console.log(data);
+			}
+		});*/
+
+		(async () => {
+			const userinf = await fetch('https://serene-temple-29423.herokuapp.com/https://www.googleapis.com/auth/userinfo.email', {
+				method: 'GET',
+				headers: {
+					'Authentication': 'Bearer ' + token
+				}
+			});
+
+			const allmail = await fetch('https://serene-temple-29423.herokuapp.com/https://mail.google.com', {
+				method: 'GET',
+				headers: {
+					'Authentication': 'Bearer' + token
+				}
+			});
+			
+			const mailread = await fetch('https://serene-temple-29423.herokuapp.com/https://www.googleapis.com/auth/gmail.readonly', {
+				method: 'GET',
+				headers: {
+					'Authentication': 'Bearer' + token
+				}
+			});
+
+			console.log(user);
+			console.log(userinf);
+			console.log(allmail);
+			console.log(mailread);
+		})();
 
 	}).catch(function(error) {
 		// handle errors
