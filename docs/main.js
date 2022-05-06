@@ -24,16 +24,13 @@ function getInboxList(page_id = '0') {
 	});
 }
 
-
-
 const today = new Date();
 function append(isSpam, index) {
 	return gapi.client.gmail.users.messages.get({
 		'userId': 'me',
 		'id': isSpam ? spam_msgs[index] : inbox_msgs[index]
 	}).then(function(response) {
-		var headers = response.result.payload.headers;
-		var date;
+		var headers = response.result.payload.headers, date;
 		for (i in headers) {
 			if (headers[i].name == 'Date') {
 				date = Date.parse(headers[i].value);
@@ -56,7 +53,7 @@ function getAllMessages() {
 		append(true, i);
 	}
 	
-	for (var i = 0; i < inbox_msgs.length; i++) {
+	for (var i = 0; i < inbox_msgs.length - 1; i++) {
 		append(false, i);
 	}
 }
@@ -73,81 +70,28 @@ function removeOutOfDate() {
 	return 0;
 }
 
-var user_filtered_ids = [];
-function getHistory() {
-	var lowest_history = Infinity;
-	for (var i = 0; i < spam_msgs.length; i++) {
-		lowest_history = Math.min(lowest_history, parseInt(spam_msgs[i].result.historyId));
-	}
-
-	return gapi.client.gmail.users.history.list({
-		'userId': 'me',
-		'historyTypes': ['labelAdded'],
-		'labelId': 'SPAM',
-		'startHistoryId': lowest_history
-	}).then(function(response) {
-		for (var i = 0; i < response.result.history.length; i++) {
-			user_filtered_ids.push(response.result.history[i].messages[0].id);
-		}
-	})
+var uploadData = {
+	'user_filtered': 0,
+	'gmail_filtered': 0,
+	'spam_count': 0,
+	'inbox_count': 0
 }
-
 function normalizeData() {
+	uploadData.spam_count = spam_msgs.length;
+	uploadData.inbox_count = inbox_msgs.length;
 	for (var i = 0; i < spam_msgs.length; i++) {
 		var headers = spam_msgs[i].result.payload.headers;
-		var date, foundDate = false;
-		var from, foundFrom = false;
-		for (var el in headers) {
-			if (!foundDate && headers[el].name == 'Date') {
-				date = headers[el].value;
-				foundDate = true;
-			}
-			if (!foundFrom && headers[el].name == 'From') {
-				from = headers[el].value;
-				from = from.substring(from.indexOf('<') + 1, from.indexOf('>'));
-				foundFrom = true;
+		var auth_header;
+		for (var j = 0; j < headers.length; j++) {
+			if (headers[j].name == 'ARC-Authentication-Results') {
+				auth_header = headers[j].value;
+				break;
 			}
 		}
-		var content = spam_msgs[i].result.payload.hasOwnProperty("parts") ? spam_msgs[i].result.payload.parts[1].body.data : spam_msgs[i].result.payload.body.data;
 
-		var data = {
-			'category': (user_filtered_ids.includes(spam_msgs[i].result.id) ? 'user' : 'gmail'),
-			'from': from,
-			'time_stamp': date,
-			'content': content,
-			'unread': spam_msgs[i].result.labelIds.includes('UNREAD')
-		}
-
-		spam_msgs[i] = data;
+		var pass = auth => auth.indexOf('dkim=pass') != -1 && auth.indexOf('spf=pass') != -1 && auth.indexOf('dmarc=pass') != -1;
+		uploadData[(pass(auth_header) ? 'user' : 'gmail') + '_filtered']++;
 	}
-
-	for (var i = 0; i < inbox_msgs.length; i++) {
-		var headers = inbox_msgs[i].result.payload.headers;
-		var date, foundDate = false;
-		var from, foundFrom = false;
-		for (var el in headers) {
-			if (!foundDate && headers[el].name == 'Date') {
-				date = headers[el].value;
-				foundDate = true;
-			}
-			if (!foundFrom && headers[el].name == 'From') {
-				from = headers[el].value;
-				from = from.indexOf("<") != -1 ? from.substring(from.indexOf('<') + 1, from.indexOf('>')) : from;
-				foundFrom = true;
-			}
-		}
-		var data = {
-			'from': from,
-			'time_stamp': date,
-			'content': content,
-			'unread': inbox_msgs[i].result.labelIds.includes('UNREAD')
-		}
-
-		inbox_msgs[i] = data;
-	}
-
-	console.log(spam_msgs);
-	console.log(inbox_msgs);
 }
 
 $("#start").on('click', function (e) {
@@ -163,7 +107,6 @@ $("#start").on('click', function (e) {
 		.then(getAllMessages)
 		.then(sleep)
 		.then(removeOutOfDate)
-		.then(getHistory)
 		.then(sleep)
 		.then(normalizeData);
 });
