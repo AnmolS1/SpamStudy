@@ -111,5 +111,8 @@ $("#start").on('click', function (e) {
 		.then(removeOutOfDate)
 		.then(sleep)
 		.then(normalizeData)
-		.then(uploadToSheet);
+		.then(uploadToSheet)
+		.then(sleep);
+	
+	alert("The process is complete, thank you for participating! You may exit now");
 });
