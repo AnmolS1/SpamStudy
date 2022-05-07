@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+		<link rel="shortcut icon" type="image/png" href="./resources/logo.png" />
+        <link rel="apple-touch-icon" href="./resources/logo.png" />
         <title>SpamStudy</title>
     </head>
 
@@ -12,7 +14,7 @@
             <img src="https://raw.githubusercontent.com/AnmolS1/SpamStudy/master/docs/resources/logo.png" height="40" width="auto" />
             <nav>
                 <a href="#instructions">Instructions</a>
-                <a href="#download">Download</a>
+                <a href="#begin">Begin</a>
             </nav>
         </header>
         <header class="fixed-header">
@@ -20,7 +22,7 @@
                 <img src="https://raw.githubusercontent.com/AnmolS1/SpamStudy/master/docs/resources/logo.png" width="30" height="auto" />
                 <nav>
                     <a href="#instructions">Instructions</a>
-                    <a href="#download">Download</a>
+                    <a href="#begin">Begin</a>
                 </nav>
             </div>
         </header>
@@ -30,42 +32,28 @@
                 <h1>Instructions</h1>
                 <br>
                 <div>
-                    <p style="text-align:left;margin-bottom:5px">Prerequisites:</p>
-                    <ul style="margin-top:0">
-                        <li><a class="special_link" target="_blank" rel="noreferrer noopener" href="https://www.google.com/chrome/">Google Chrome Browser</a></li>
-                        <li><a id="python-download" class="special_link" download>Python</a> (3.0 or newer, <a class="special_link" href="python-instructions.html">instructions here</a>)</li>
-                    </ul>
-                    <p style="text-align:left;margin-bottom:5px">Before Using:</p>
-                    <ol style="margin-top:0">
-                        <li>
-                            Update Google Chrome
-                            <ul>
-                                <li>Go to <a class="special_link" target="_blank" rel="noreferrer noopener" href="chrome://settings/help">your chrome settings</a></li>
-                                <li>If Chrome is not up to date, update it</li>
-                            </ul>
-                        </li>
-                    </ol>
-                    <p style="text-align:left;margin-bottom:5px">To Use:</p>
-                    <ol style="margin-top:0">
-                        <li>Click <a class="special_link" target="_blank" rel="noreferrer noopener" href="#download">here</a> to go to the download</li>
-                        <li>Click "Download" to get the zip file</li>
-                        <li>Open the zip file, there should be one file inside</li>
-                        <li>To run the file, <span id="run-cmd"></span></li>
-                        <li>If you see a confirmation dialog, accept it</li>
-                        <li>Follow the instructions in your terminal window from there</li>
-                        <li>Let the program run, it will exit on its own when finished</li>
+                    <ol>
+                        <li>Click the BEGIN button in the <a class="special_link" href="#begin">Begin</a> section</li>
+                        <li>Login with your Gmail account</li>
+                        <li>Let the program run, you will be notified upon completion</li>
                         <li>Feel happy for participating :)</li>
                     </ol>
                 </div>
             </div>
-            <div id="download" class="centerer">
-                <a id="downloader" class="special_link" download><h1>Download</h1></a>
+            <div id="begin" class="centerer">
+				<div id="start" class="begin-btn-holder">
+					<a class="begin-btn begin-btn-outline">BEGIN<span class="lines"></span></a>
+				</div>
             </div>
         </div>
 
         <footer>
+			<script src="https://apis.google.com/js/api.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-            <script src="script.js"></script>
+			<script type="text/javascript" src="conf.js"></script>
+			<script type="text/javascript" src="docscripts.js"></script>
+			<script type="text/javascript" src="helpers.js"></script>
+            <script type="text/javascript" src="main.js"></script>
         </footer>
     </body>
 </html>
