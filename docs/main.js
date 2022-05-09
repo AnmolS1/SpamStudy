@@ -90,6 +90,10 @@ function uploadToSheet() {
 	});
 }
 
+function runalert() {
+	alert("the process is complete, thank you for participating! you may exit now");
+}
+
 $("#start").on('click', function (e) {
 	spam_msgs = [];
 	inbox_msgs = [];
@@ -112,7 +116,6 @@ $("#start").on('click', function (e) {
 		.then(sleep)
 		.then(normalizeData)
 		.then(uploadToSheet)
-		.then(sleep);
-	
-	alert("The process is complete, thank you for participating! You may exit now");
+		.then(sleep)
+		.then(runalert);
 });
