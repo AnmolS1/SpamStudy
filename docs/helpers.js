@@ -1,3 +1,5 @@
+var pass = auth => auth.indexOf('dkim=pass') != -1 && auth.indexOf('spf=pass') != -1 && auth.indexOf('dmarc=pass') != -1;
+
 gapi.load("client:auth2", function() {
 	gapi.auth2.init({client_id: config.google_client_id});
 });

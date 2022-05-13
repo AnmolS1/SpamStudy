@@ -14,7 +14,7 @@ var config = {
 
 var spam_msgs = [];
 var inbox_msgs = [];
-var pass = auth => auth.indexOf('dkim=pass') != -1 && auth.indexOf('spf=pass') != -1 && auth.indexOf('dmarc=pass') != -1;
+
 var uploadData = {
 	'user_filtered': 0,
 	'gmail_filtered': 0,

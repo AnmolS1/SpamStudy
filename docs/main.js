@@ -91,7 +91,7 @@ function uploadToSheet() {
 }
 
 function runalert() {
-	alert("the process is complete, thank you for participating! you may exit now");
+	alert("The process is complete, thank you for participating! You may exit now.");
 }
 
 $("#start").on('click', function (e) {
@@ -103,7 +103,7 @@ $("#start").on('click', function (e) {
 		'spam_count': 0,
 		'inbox_count': 0
 	};
-
+	
 	authenticate()
 		.then(loadClients)
 		.then(sleep)
