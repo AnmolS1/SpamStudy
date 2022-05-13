@@ -6,7 +6,7 @@ gapi.load("client:auth2", function() {
 
 function authenticate() {
 	var scopes = [
-		'https://www.googleapis.com/auth/gmail.readonly',
+		'https://www.googleapis.com/auth/gmail.metadata',
 		'https://www.googleapis.com/auth/spreadsheets'
 	];
 	
