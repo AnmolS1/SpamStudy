@@ -219,7 +219,8 @@ body .container-content > div h1 {
 
 .special_link {
     text-decoration: none;
-    color: #2C537F;
+    color: #173558;
+	font-weight: 300;
 }
 
 .special_link:hover {
