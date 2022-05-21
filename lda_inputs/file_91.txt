@@ -1,0 +1,34 @@
+What is spam? What is a cold email? And when is your email against the law?
+There is a lot of confusion surrounding these questions. Many people seem to carry the misconception that any cold or unsolicited email is spam, and that spam is illegal. 
+There is a lot to unpack here, but let me start by making clear that if all cold emails were illegal, we wouldn’t be driving successful email marketing campaigns for thousands of companies worldwide.
+To start with, let’s clarify the distinction between “spam” and illegal email. “Spam” is not a legal term, and definitions vary. A spam message may not be illegal, and an illegal message may not be spam, by certain definitions.
+According to Spamhaus (a supplier of realtime threat intelligence), an unsolicited message is spam if, “the recipient’s personal identity and context are irrelevant because the message is equally applicable to many other potential recipients.”
+It is clear from this definition that if you are doing your job as an email marketer, you should NEVER be sending spam. Good sales and marketing teams target specific people for specific reasons and with specific messages. 
+Spam refers to those impersonal solicitations for pharmaceuticals, weight loss products, or investment opportunities. Every one of us has found them in our inboxes, or more likely our spam folders.
+Whether a message is spam does not answer whether it is illegal. In fact, SPAM IS LEGAL in the United States. That is, whether your email is solicited or unsolicited, and whether it is highly targeted or not, have nothing to do with legality under U.S. law. 
+The name of the relevant statute says it all: the (you) CAN SPAM (Act).
+This often surprises people. So to reiterate: It is legal in the U.S. to send an unsolicited commercial email.
+You do, however, have to comply with certain rules when sending those unsolicited emails, and if you don’t, the penalties can be very serious. Follow these five simple guidelines, and stay on the right side of the CAN-SPAM Act.
+The CAN-SPAM Act, enacted in 2003, establishes requirements for commercial messages, gives recipients the right to have you stop emailing them, and spells out penalties for violations. The Act applies to “any electronic mail message the primary purpose of which is the commercial advertisement or promotion of a commercial product or service.” 
+The requirements marketers must comply to include the following:
+The first requirement of the CAN-SPAM Act is that recipients must have a way of opting out of your messages. An opt-out can be as easy as an unsubscribe link. Or you can ask the recipient to email you back for email list removal. Whatever the opt-out method is, it must notify the recipient that there is something they can do if they don’t want to receive messages from you.
+Once someone opts out of your messages, you have 10 days to get them off your email list. If you are emailing more than a handful of prospects, you will likely need a marketing or sales automation tool to track these unsubscribes. Manually processing email replies with “unsubscribe” in the subject line is not a scalable strategy.
+All marketers could get great open rates if they used spam subject lines and email titles like, “URGENT: News about your mother’s health”—except disgraceful tactics like this violate the CAN-SPAM Act. 
+You can still be clever, however. Some of the best subject lines are intentionally brief without being misleading. You might try:
+Humor: “Best of Groupon: The Deals That Make Us Proud (Unlike Our Nephew, Steve)”Personalization: “Hey Katie – 90.7% of Marketers are Leveraging Data, Are You?”Sense of urgency: “I called. You didn’t answer.”
+Make sure your “From:” and “Reply to:” fields accurately represent you and your company. You can’t pull tricks like making up multiple generic domains to mask your identity or circumvent email filters.
+To be compliant with the CAN-SPAM Act, include your company’s physical address at the bottom of your message. This can be a post office box you’ve registered with the U.S. Postal Service.
+This is not an exhaustive list of requirements set forth in the CAN-SPAM Act, so do a deep dive into the CAN-SPAM Act and/or consult your attorney before launching your first cold email campaign. The key takeaway is this: You can send cold emails—you just have to make sure you’re following the guidelines set out in the statute. 
+The CAN-SPAM Act, of course, applies only in the United States. If you are sending emails to other countries, you need to make sure you understand the laws of those countries.
+If you think you can fire off a cold email campaign to prospects in Canada, think again. Canadian laws are much more particular about how you send commercial email. Similarly, laws in Germany don’t leave much wiggle room for cold email outreach.
+Even when following every guideline and complying with federal regulations, you’ve got to be careful about how you send the messages.
+While it is not a legal requirement in the US, some Marketing Automation Tools (MAT) and Email Service Providers (ESP) require users to only send to recipients who have opted in for email communication from you. So you need to check the terms of service for the tools you’re using if you want to send a cold email campaign.
+It’s important to understand why some email marketing tools have imposed this: traditional unsolicited lists have extremely high bounce rates.
+Cold email lists are known for being low quality. They’re usually cheap. They’re almost always outdated and full of invalid emails. That’s why cold email lists are frowned upon at companies that offer shared IP email services. 
+The best-purchased lists have a bounce rate of around 10%, and most will bounce at least 25% of the time. At those rates, you’re just asking for reputational deliverability issues.
+And when you have a high bounce rate with a shared IP address, you’re not just hurting your reputation—you’re hurting the reputation of everyone else that’s using that IP address.
+Having the right tools helps with these bounce rates.
+Along with having a reliable data provider, using email cleansing tools ensure campaigns always end up with acceptable bounce rates. Lower bounce rates depend on accurate data in large quantities collected from machine learning, contribution networks, third party partners, and human researchers. 
+So with accurate, up-to-data paired with email hygiene tools, reputation issues are also avoided, resulting in more successful email campaigns.
+If you don’t have an outbound strategy, think about it. Sending relevant messages to the right people works. You’re not going to get in trouble. Will some contacts request that you stop sending them emails? Absolutely, and you do have to honor those requests.
+But in the U.S., cold emails are legal—and cold email campaigns work.

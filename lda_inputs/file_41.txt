@@ -1,0 +1,1 @@
+We have implemented EmaiService for Email - To - case to automatically create cases from incoming emails. Is there any identifier in email header to identify spam emails. In email header  "Received-spf" is there but its not suffient for identifying the spam email. can you suggest any solution!

@@ -1,0 +1,30 @@
+If you’re getting emails you don’t want in your Gmail inbox, you can block or unsubscribe from the sender, or report the message to Gmail.  
+Note: If someone uses Gmail to harass, intimidate, or threaten you, they're violating Gmail's Program Policies. If you feel that you're in danger, contact your local authorities right away, and ask whether any cyber harassment laws apply to your situation.
+When you block a sender, messages they send you will go to your Spam folder.
+On your Android phone or tablet, open the Gmail app .
+Open the message.
+In the top right of the message, tap More .
+Tap Block [sender].
+If you blocked someone by mistake, you can unblock them using the same steps.
+If you signed up on a site that sends lots of emails, like promotions or newsletters, you can use the unsubscribe link to stop getting these emails. When you’ve received a lot of email from a sender that you haven’t opened for awhile , Gmail may suggest that you unsubscribe from that list.
+On your Android phone or tablet, open the Gmail app .
+Open an email from the sender you want to unsubscribe from.
+At the bottom of the message, tap Unsubscribe or Change preferences. If you don't see these options, the sender didn't give information required for unsubscribing. Instead, you can follow the steps above to block the sender or mark the message as spam.
+Note: It may take a few days for the mailing list to stop sending you messages after you unsubscribe.
+To stop seeing the Unsubscribe recommendations:
+In the top left, tap Menu     Settings the name of the account you want to change.
+Under "inbox Tips," tap Inbox Tips settings.
+Next to "Unsubscribe tips," uncheck the box. 
+Remove spam from my inbox 
+Gmail tries to keep spam out of your inbox, but sometimes messages get through. If you see a spam message in your inbox:
+On your Android phone or tablet, open the Gmail app .
+Tap the letter or photo to the left of the message, or open the message.
+In the top right, tap More .
+Tap Report Spam.
+Tip: When you tap Report spam or manually move an email into your Spam folder, Google will receive a copy of the email and may analyze it to help protect our users from spam and abuse.
+A suspicious email asked for personal information
+If you see a suspicious email asking for personal information, you can report the email for phishing.
+On your computer, open Gmail.
+Open an email from the sender you want to unsubscribe from.
+In the top right, click the Down arrow .
+Click Report phishing.

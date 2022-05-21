@@ -1,0 +1,7 @@
+If your Inbox is getting cluttered with spam and junk mail, use these helpful tips to help get your Inbox back under control. While most spam should be caught by our filters, occasionally some can slip through. If that does happen it's important to mark the email as spam. It lets our system learn that messages from a specific sender are not good and helps us make Yahoo Mail even better at recognizing future spam emails.
+Spam is irrelevant, inappropriate, or malicious email. Our filters try to keep spam out of your Inbox, but they don't catch everything. Flag an email as spam to help train the filter.
+Tap an email to open it or select multiple emails.Tap the More icon Tap Mark as spam.
+When you enter your email address on someone's website, you may unknowingly subscribe to their mailing list. You can often unsubscribe from their mailings within the email.
+Tap an email to open it.Tap the More icon  (iOS) or  (Android).Tap Unsubscribe.
+If there's no unsubscribe option, flag the message as spam or try the subscriptions tab.
+From your inbox view, tap the More icon  (iOS) or  (Android).Tap Subscriptions.Under the mailing list you want to unsubscribe from, tap Unsubscribe.

@@ -1,0 +1,24 @@
+No matter how hard you try, you'll never avoid junk or spam emails. You can hide most spam emails in a spam folder using filters, but some unwanted emails will slip through the cracks. There's no guaranteed way to eliminate all spam from your inboxes, but here are a few ways to reduce the amount of spam you're receiving.
+To understand how to reduce junk email, you have to consider the source of these emails, usually spammers, and the methods they use to flood you with spam emails.
+One of the most common forms of spam you've probably experienced is marketing emails from legitimate retailers and other companies. While signing up for a service or account with one of these companies, you may have also signed up for their weekly newsletters/circulars/or emailed coupons. Spam caused by you providing your email address to a legitimate company may be annoying, but it's usually harmless.
+However, malicious spam emails do exist. They're usually sent by spammers and not by reputable companies. There are several ways spammers can get your email address, including purchasing (illegal) lists of email addresses stolen from internet service providers.
+If you can't avoid publishing your email address where spammers can grab it, you can try to mask your email address by posting it as an image instead of text or use a disposable email address service.
+As we mentioned earlier, commercial ad spam from reputable retailers or other companies is generally harmless. If you're already receiving commercial ad spam from a reputable company and you want it to stop, here's how to unsubscribe from them.
+To avoid getting more of these in the future, look out for an opt-out option for that company's marketing emails or newsletter when signing up for a website or service. It's usually a checkbox you can select to either opt-in or out of promotional emails.
+Log in to your email account.
+Open one of the marketing emails you'd no longer like to receive.
+Scroll to the bottom of the message, and look for an unsubscribe link. Click it only if you're sure you subscribed to the list.
+If you didn't subscribe to this promotional email, delete the message instead. Clicking the link won't unsubscribe you, and could let a spammer know your email address is valid and ripe for receiving spam emails. 
+Some email providers, like Gmail, may have their own unsubscribe button you can select. In Gmail, it's usually located to the right of the sender's name.
+Your email provider's in-house spam filter is the most effective defense against these more malicious junk emails when it comes to harmful spam. Sometimes, those filters need a little help because some spam emails can pass through the filters.
+You can teach those filters to be more discerning by blocking their senders and making sure to mark or report junk emails as spam when you notice them trickling into your inbox.
+Here's how to report such messages as spam and block specific senders, so your email provider knows to filter out those messages.
+Log in to your email account.
+Open the message you want to report as spam, and optionally, block the sender.
+Right-click the message from your inbox or select the three dots icon within the email.
+This step will vary based on your email provider. For example, in Outlook, you can right-click the email; in Gmail and Hotmail, select the three dots icon.
+To mark a message as spam, select Report spam, Mark as spam, or even Mark as junk. The names for these options may vary among email providers.
+To block a sender of spam (or any other person who sends unwanted emails), you select Block sender. The name may vary among email providers.
+Harmful spam can threaten the security of your personal data and your computer's health, as they're usually used to either steal personal information from you, infect your computer with malware, or both.
+The most common types of harmful spam are:
+Money scams: Spam emails meant to swindle unsuspecting email users into either sending money to the spammer or sharing personal financial information in hopes of receiving a payment from the spammer.Sweepstakes winner spam: Emails that "notify" you about winning a contest you likely never entered. To "claim" your prize, you'll usually have to click a sketchy link or provide personal information.Email spoofing/phishing scams: Emails created to look like official emails from companies you trust. These emails imitate things like company logos to trick unsuspecting recipients into sending sensitive, personal information.Antivirus warning spam: Spam emails that "warn" you about malware infections and conveniently offer to scan your computer (or some other antivirus assistance) to help "fix" your computer. When users try to access the support via a sketchy link, malware infects their machines, or worse, the scammer gains access to the recipients' system.

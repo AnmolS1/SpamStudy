@@ -1,0 +1,71 @@
+No one likes getting spam emails.
+Not only do they account for 45.1% of email traffic generated, but they also pose a cybersecurity threat.
+According to Trend Micro’s fourth annual Cloud App Security Trend Report, high-risk emails rose by 32% in 2020 compared to the previous year. And it has no intentions of slowing down anytime soon.
+But here’s the good news — spam emails can be avoidable, and there are a few things you can do to stop spam emails from cluttering your inbox.
+What Spam Emails Are
+Also known as junk email, spam emails are unsolicited and unwanted emails sent in bulk to an indiscriminate email list for commercial or promotional purposes.
+While many spam messages are harmless, many of them can be harmful. Some spammers send email messages soliciting money or information, and hackers send phishing emails with viruses and malware.
+How To Detect Unwanted Email
+To stop spam emails, you must first know how to distinguish them from promotional emails. Panda Security provides a good overview of what you should watch out for in the image above.
+However, there are other signs you may have received unsolicited messages:
+Irregular email address: Look at the sender’s email address. If an email claims it comes from your bank or credit card company, check first whether it has a suspicious domain name or if it has odd characters. If it does, it’s spam.
+Unknown sender: These often are fake emails pretending to be from a high-ranking government official or legitimate company.
+Weird subject line: Anything that sounds aggressive or threatening, talks about medications that the FDA doesn’t approve or promises celebrity adult content is spam.
+Requests personal information: Most trusted companies that send you a legitimate message address you personally. If the email addresses you with something vague such as ‘Dear Valued Customer” and asks you for personal or financial information, it’s likely a phishing email.
+Multiple typos: Many unwanted messages contain basic errors like poor grammar and misspelled words.
+Too good to be true: If it offers you something in exchange for nothing and you didn’t sign up for it, then it belongs in your junk folder.
+Why You Are Receiving Spam Emails
+Many websites claim that “email is dead,” but that couldn’t be further from the truth.
+Email is still one of the best channels to reach consumers. By the end of 2023, there will be an estimated 4.4 billion active email users. Hackers and scammers know most users open their email accounts, which is why they choose to reach victims through this channel.
+A common misconception is that if you’re careful with your online activity, you won’t receive junk email — but that is false. We can’t control what happens to our email addresses after giving them out.
+There are several ways our email addresses fall into the hands of spammers. The most common reasons include:
+You accidentally subscribed to a newsletter.
+You could have posted your email address in a public forum or website.
+A company that has your details was a victim of a data breach.
+You previously clicked on a malicious email.
+But even if you didn’t do any of the above actions, junk mail will continue to come.
+Why Learn To Stop Spam Emails
+Besides spam emails being annoying, learning to stop spam emails is also a matter of security.
+Spam emails are often cyberattacks in disguise. For example, they can be phishing scams, which aim to steal your information or deliver malware to your computer.
+According to data from the ClearTech Group, 94% of malware is delivered via email.
+Beware of malware. Hackers can use them to control your device remotely. Thousands of these hacked devices can make up a botnet that hackers use to send spam emails.
+You can report spam emails to:
+Your email provider. Popular email services such as Gmail, Yahoo or Hotmail have features that prevent you from receiving spam in future messages.
+The sender’s email service provider. Most email providers want to cut off spammers who abuse their systems.
+The Federal Trade Commission (FTC).
+How To Stop Getting Spam Emails
+Keep your email private.
+Use a third-party spam filter.
+Don’t subscribe to mailing lists.
+Don’t interact with spam emails.
+Block spam emails.
+Use a throwaway email account.
+These practices will help you improve the safety of your inbox. Let’s see what they are about.
+1. Keep Your Email Private.
+The first thing to master to stop spam emails is to keep your email address private.
+To achieve that, we suggest doing the following:
+Change your email privacy settings.
+Do not post them on websites, blogs or social media. Bots and hackers are always looking for emails that they can send spam emails to or use as spambots.
+Consider who you’re sharing your information with because websites have different data privacy policies. Some will use your information for their declared purpose, while others will share or sell it to other websites.  Check a website’s privacy policy to see how they’ll use your contact information.
+2. Use a Third-Party Spam Filter.
+Your email provider already has built-in features that block spam emails. Gmail blocked as many as 100 million spam emails daily in 2019. Still, the built-in email filter isn’t enough to block emails from reaching your inbox.
+Do not delete spam emails when you find them in your regular inbox. Use the Junk Mail feature to report the email as spam, so the email service learns not to let it into your inbox the next time.
+If that’s not enough, use additional anti-spam software so the emails travel through two different filters before they reach your inbox.
+You’ll be happy to know that Bluehost’s web hosting email services come with a free spam blocking tool called SpamAssassin. If you need more advanced spam-blocking features, you can also purchase the SpamExperts tool.
+3. Don’t Subscribe to Mailing Lists.
+Another way to stop spam emails is to not sign up for mailing lists in the first place.
+Marketers often get email addresses from online forms, social media or purchase information from other companies. The fewer websites and mailing lists you subscribe to, the fewer chances these spammers find your email address.
+The FTC requires companies that send bulk emails to comply with the CAN-SPAM Act. The law requires companies to give consumers a chance to opt out of their emails.
+4. Don’t Interact With Spam Emails.
+One way to stop spam emails is to stop interacting with them. When you receive spam emails, do not open or reply to them. Send them immediately to the Spam folder. Simply opening the email may alert the sender that the email account is active.
+We have all seen emails that say you can opt out of the mailing list by simply clicking on the unsubscribe link or replying with “unsubscribe” in the subject line, but beware. By clicking these links and unsubscribing to messages you didn’t subscribe to in the first place, you may only be verifying your email to scammers.
+5. Block Spam Emails.
+To keep suspicious emails from reaching your inbox, simply block them. You can block specific email addresses and even topics depending on your email provider.
+Check this guide for blocking senders on Gmail, Yahoo Mail and popular email clients such as Microsoft Outlook and the iPhone Mail app.
+6. Use a Throwaway Email Account.
+If you can’t help but sign up for subscriptions and marketing emails, create a throwaway email account specifically for that purpose.
+The throwaway email should be a new email that isn’t connected to your personal accounts. That way, if it gets compromised, you can quickly abandon it.
+Many people choose to have multiple email accounts. According to the Radicati Group, in 2019, the average user had 1.75 email accounts, and the number is expected to go up to 1.86 in 2022.
+Final Thoughts — How To Stop Spam Emails: 6 Easy Fixes for Unwanted Email
+As much as we wish we could send unsolicited emails away, it’s currently not possible. Until then, we have to take care of unwanted emails ourselves.
+Don’t wait until you receive a deluge of unwanted mail before learning how to stop spam emails; learning to do so is crucial for our sanity and safety. The tools and tips discussed in this article make the job easier.

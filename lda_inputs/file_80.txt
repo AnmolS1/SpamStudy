@@ -1,0 +1,47 @@
+No one likes receiving unsolicited email spam. The increase in spam is causing legitimate internet users and internet service providers, such as Cox Communications, to spend a great deal of time and money addressing the problem. In addition, several state legislatures and Congress are trying to stop spamming through legislation.
+Cox does not provide its customers’ email addresses to spammers and does not permit its customers to send unsolicited mass emails. The Cox Acceptable Use Policy (AUP) expressly prohibits the use of Cox Internet to generate spam. The accounts of customers who violate Cox's anti-spam policy may be suspended or terminated.
+Cox has a variety of measures in place to help protect our customers and our network from spam, and we continue to look for ways to improve our services through the control and elimination of spam. Learn more about controlling spam using the information below.
+Protection From Spam
+Cox provides anti-spam service to further combat unwanted junk email. This service is called Spam Blocker and is provided at no charge to Cox Internet customers. Refer to the Cox Email Settings Spam section for more steps on how to block large amounts of spam.
+Spam Blocker is a network-based, anti-spam solution that scans incoming email. It is compatible with any email client connected to your Cox Email account and both Windows and macOS operating systems because it scans email before you see it. Spam Blocker is more than 90 percent effective in eliminating spam. By default, Spam Blocker is set to delete incoming junk email.
+Cox takes the following steps to address the spam issue and help prevent it.
+Privacy Protection — Cox does not sell any of our customer's email addresses. We value you as a customer and your privacy is important to us. View Cox's Privacy Policy.
+Blocking Spammers — Known spam abusers are blocked from sending spam over the Cox network. Staff members and special software are dedicated to searching outgoing and incoming email. Senders tagged as spammers are blocked from sending large-batch emails.
+How Spammers Get Email Addresses
+Spammers use a variety of methods to gather email addresses, send messages, and cover their tracks. Sometimes they use computers set up as email servers specifically configured to send spam. They also use computer viruses designed to access others' computers to send spam.
+Spammers generally get email address lists from several places. Searching public bulletin boards, websites, and newsgroups for valid email addresses is one common method. Preparing a list of common names such as Jim, Joe, or Jane, and then adding the @cox.net domain name is another.
+How to Reduce the Amount of Spam Received
+Use the following tips to help reduce the amount of spam you're experiencing.
+Do Not Use Your Primary Email Address to Sign Up for Anything — Consider creating separate addresses that can be used for online purchases, chat rooms, and other public postings. Many customers create a secondary email address for ecommerce, signing on to websites, and entering sweepstakes.
+Use a Unique Email Address — Select an email address that is difficult for spammers to guess. Consider using a long email address that includes more than one word, numbers, and an underscore. Also, if chatting online, use a unique screen name that is not associated with your email address.
+Do Not Unsubscribe From a Spammer's List — Some spam messages will include links for you to click on, such as an unsubscribe link. However, once you click on the link, it validates your email address and ensures that additional spam messages are sent. You should not use an unsubscribe link in an email, unless the email is from a company you trust.
+Watch Out for Those Checkboxes — Do not opt in for email you don't want, and watch out for checkboxes when you submit any form on a website. Always be familiar with a website's privacy policy before submitting any information.
+Remove your name from major online directories.
+Assume Mail from Unknown Senders is Spam — Friends and family do not typically spam you. If you receive an unsolicited commercial email or spam, you may report it to the sender’s Internet Service Provider (ISP). In order to do this, you must first view the complete message header for the spam message to identify the source network and send a report to the network administrator.
+Cox identifies addresses of known spammers to add them to our black lists. This is one step in our investigation of network-based anti-spam solutions that integrate with our email system. It allows us to recognize and block spam from known spammers using both rules-based methods and white or black lists.
+Controlling Outgoing Spam
+To reduce unsolicited bulk email sent on our network, Cox uses outbound SMTP traffic filtering, which is also known as port 25 filtering. Cox also filters all inbound SMTP traffic to help protect unsecured computers from being used as spam mail relays.
+When a customer sends an email, it is routed to a cox.net mail server, such as smtp.cox.net, and the Cox server relays it to the recipient’s server. Spammers and modern mass mailer viruses commonly bypass the cox.net mail servers. They send mail directly from their computer to others’ mail servers without routing it through a cox.net mail server. The filter of port 25 prevents spammers from bypassing cox.net mail servers and delivering spam directly to internet users. Also, this filter prevents viruses from propagating at all.
+Outbound SMTP traffic blocking protects internet users and the Cox Internet network.
+The vast majority of customers are not affected by this security measure. However, a small number of customers using email addresses outside of the @cox.net domain and do not have their SMTP servers set for Cox mail servers need to change their settings. The requirement that Cox servers be used for all outgoing mail is so that Cox can locate and control spammers by removing them from the network.
+An indication of this problem may be a message similar to this in the customer’s mail client.
+"A time-out occurred while communicating with the server. Account: ‘otheraccount.othersisp.com’, Server: ‘othersmtp.com’, Protocol: SMTP, Port 25, Secure (SSL): No, error Number: 0x800CCC19."
+For more information on setting up email, refer to Email Server Settings.
+Customers may continue to use Cox Email or services like Gmail and Yahoo! Mail as they always have.
+Outbound SMTP traffic blocking is an industry standard. Other ISPs blocking port 25 include Charter, Comcast, MSN, and Verizon. You can search the internet for a complete list of ISPs blocking port 25.
+Since implementing port 25 blocking, Cox has seen significant reductions of residential internet abuse reports. Reports for port scanning decreased by 36%, viruses by 41%, spam by 52%, and open proxy by more than 78%.
+CAN-Spam Act
+The CAN-Spam Act, was effective beginning on January 1, 2004. It preempts all state spam statutes and places a series of requirements on commercial email, “the primary purpose of which is the commercial advertisement or promotion of a commercial product or service.” This act requires companies that send or initiate commercial email to do the following.
+Refrain from using a misleading subject heading
+Provide in each message a valid return email or internet-based reply address
+Provide in each message a physical postal address in the text
+Provide a conspicuous notice that it is an advertisement or solicitation
+Include a notice explaining how recipients can prevent the transmission of future messages by using the sender’s return email address or internet-based reply address and honoring such requests within 10 days
+Refrain from selling or exchanging the email address of any recipient who has made an opt-out request
+Businesses are permitted to send “transactional or relationship messages to facilitate, complete, or confirm a commercial transaction that the recipient has previously agreed to enter into.” This is intended to be a very narrow exception and would include warranty, recall, safety, or security information regarding a product previously purchased, periodic account statements and the like. “Transactional or relationship” messages may also contain content promoting a product or service unrelated to a previous transaction if ancillary to the primary purpose of the communication.
+A safe harbor exists for companies that have reasonable compliance practices and make good faith compliance efforts. The Act also requires the FTC to study the creation of a nationwide Do Not Email registry similar to its Do Not Call list.
+It is widely recognized that government efforts to prevent spam will be difficult.
+Early legislation on this issue by various states and nations has been criticized as being difficult to enforce and police.
+Many spammers are very crafty in their techniques which make them difficult to trace. Nevertheless, Cox supports federal efforts to establish laws such as the CAN-Spam Act, which includes penalties for spammers.
+Cox also looks forward to the advent of policing methods and technologies that will reduce unwanted email that is a nuisance to customers and costly to their productivity.
+Cox Internet customers are already prohibited from sending spam in the Cox Acceptable Use Policy.

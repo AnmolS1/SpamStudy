@@ -1,0 +1,160 @@
+Spam has been a nuisance from the moment businesses and consumers started using email accounts. Employees can end up spending a lot of time scanning through inboxes full of unwanted sales promotions and accidentally deleting important business emails that are surrounded by spam entries in the list of unread messages.. Anti-spam software has become one of the best weapons against malicious email communications.
+Without an anti-spam filter, just one wrong click can place your device and network in danger. Inbound emails are one of the most common entry points for malicious software in enterprise environments.
+Here is our list of the best anti-spam software:
+Trustifi Inbound Shield EDITOR’S CHOICE This cloud-based email security system scans incoming mails and roots out malware and spam. You can access a free demo.
+N-able Mail Assure (FREE TRIAL) A cloud-based email protection package that is designed for use by MSPs and corporate IT departments. This edge service blocks spam, viruses, and malware and uses a threat intelligence feed that is derived from events on the mail systems of all N-able customers. Start a 30-day free trial.
+SpamTitan A web-based email spam filter that covers Microsoft Office 365.
+Mailwasher A spam blocker for Windows Live Mail, Outlook, Outlook Express, Incredimail, Thunderbird, Gmail, Hotmail, Yahoo, EM Client.
+ZEROSPAM Cloud-based spam, ransomware, and phishing blocker.
+SpamSieve The best email spam filter for Macs with adaptive spam identification over time.
+Comodo Dome Antispam An edge email spam blocking service.
+MX Guarddog A spam filter that also blocks DDOS attacks, phishing attacks, malware, and viruses.
+SPAMfighter A spam filter for Outlook, Outlook Express, Windows Live Mail, Windows Mail, and Thunderbird.
+ORF Fusion A spam filter with a 23-layered testing system.
+We reviewed the market for anti-spam software and analyzed the options based on the following criteria:
+An anti-spam system that integrates into email services
+Automatic spam blocking
+Customizable filtering rules
+Malware blocking
+An event log
+A free assessment period or money-back guarantee
+Value for money with a suitable set of tools for a good price
+Trustifi Inbound Shield is a cloud-based email protection system that you implement in your own mail server through an API. Adding on this plug-in sets up a call to the remote process to scan each incoming mail. The service is also available as a plug-in for Microsoft 365 and Google Workspace.
+Key Features:
+Cloud-based
+Doesn’t require architectural changes to install
+Admins can review quarantined items – minimizez end user disruption
+The Trustifi system is able to spot spam, phishing emails, and bulk emails that are termed “graymail.” The system uses a combination of AI-based threat detection and email address and IP address blacklists. It looks at source email addresses and correlates them to known identifies of employees to block impersonation attempts. It can also detect malicious links to impersonating or infected websites.
+A plug-in for email servers
+Integrations with Microsoft 365 and Google Workspace
+Pre-filtering
+Would prefer a free trial
+As well as scanning the email header and body, Trustifi Inbound Shield checks through attachments. What the system does with suspicious emails is up to you. The system presents a range of options that can be configured to coordinate with your security policy. When suspicious emails are detected, they can be quarantined for manual inspection. The system will notify the administrator when malicious mails are detected and compile reports on detection rates and outcomes. In order to discover the price for Trustifi Inbound Shield, you need to request a quote. You can access a free demo.
+EDITOR’S CHOICE
+Trustifi Inbound Shield is our top pick for an anti-spam software tool because it slots into your Google Workspaces and Microsoft 365 accounts to offer protection for your email system that expands beyond spam filtering. This security service uses AI to identify phishing attempts and will also look for mismatches in source domains and IP addresses to identify masquerading. This system will also scan emails and attachments for viruses.
+Access a demo: https://urldefense.proofpoint.com/v2/url?u=https-3A__trustifi.com_demo_&d=DwIFaQ&c=-35OiAkTchMrZOngvJPOeA&r=64X7R03vuzk0z0RgbVhtrA&m=c55qPZi0xay5ufJcy7FkyiMwY2hSPFDvx--eiO9Tfgm7LRY7zdgs4Op-N0OgQyGL&s=lSXrr7ttft_xfwib7c9GpAhvXMk1y2nXh7pcKHXZXAI&e= 
+Operating system: Cloud-based
+N-able Mail Assure is a cloud-based business email protection service that is suitable for use by enterprise IT departments or managed service providers. The multi-tenant option in the platform allows MSPs to provide spam and malware protection to the email systems of their clients without the danger of data leaks between client accounts. The program is supplied information from over 1.8 million domains to provide the user with better insights into current threats. When using the software, the user can view problematic email messages in quarantine and blacklist suspicious senders from contacting them.
+Key Features
+A constantly updated blacklist
+Quarantining
+Integration with Office 365
+Option for MSPs
+Phishing protection
+N-able’s Mail Assure is a cloud-based solution, making it easy to configure and deploy. To start monitoring you just need to add a new domain. Once installed you benefit from SSL/TLS traffic encryption.
+The tool is ideal for enterprise users because it offers integration for Office 365. If the Office 365 email service goes down then the user can send emails from N-able’s Mail Assure web-based dashboard instead. In the event of an outage, the dashboard allows you to keep your service up and running.
+Built to scale, can support large multi-tenant environments or enterprise networks with multiple domains, locations, and mail servers
+Utilizes a backend database of threat intelligence to find and stop new and emerging threats
+Operates in the cloud, making it flexible than most on-premise solutions
+Supports integrations into mail platforms such as Office 365
+Helps detect and stop phishing attacks
+Dashboard is highly customizable and gives administrators a detailed view of mail performance and security metrics
+Built for larger organizations, not ideal for home users
+The N-able Mail Assure edge service is easy to set up and doesn’t require you to host the software on your business’s servers. This system can be applied very quickly and provides upsell opportunities for MSPs looking to add extra services to their price lists. You can examine the N-able Mail Assure system with a 30-day free trial.
+SpamTitan is a web-based anti-spam solution intended for Microsoft Office 365 accounts. The tool is designed to discover phishing email attacks, spear-phishing attacks, and zero-day attacks. To recognize the latest threats SpamTitan uses a mixture of machine learning and Bayesian analysis to identify new attacks. The powerful email protection against zero-day threats is excellent for minimizing exposure towards emerging email threats.
+Key Features
+Compliments Microsoft 365
+AI-processes for spam detection
+Blacklisting and whitelisting
+Manually identify major targets
+IP address whitelisting and blacklisting controls whether mail reaches your inbox or gets blocked from future communication. For wider security, you can apply different degrees of Spam Confidence Levels to users, user groups, and domains. By segmenting your email environment in this fashion you can manage potential entry points much more effectively.
+Built specifically for Office 365 users, making it an attractive option for 365 mail systems
+Uses AI and behavioral analytics to detect and stop threats
+Allows for manual prioritization of threats
+Interface feels outdated and can be difficult to navigate
+Outlook plugin may cause Outlook to open slowly or crash
+Logs could be easier to manage and parse
+Prices are levied as a subscription with a rate per user per month. There is a minimum order of 25 user licenses. The price per user per month lowers if you choose a longer payment cycle. The options range from a monthly payment to a 3-year payment plan. The lowest price comes with the 3-year plan, which works out at $1.49 (£1.12) per user per month. However, you have to pay for the whole payment period in advance, so that 3-year option for 25 users works out at an upfront payment of $1,336,50 (£1008.95).
+Mailwasher is a program that is used to block spam before it reaches your inbox. The tool is compatible with all email providers on desktop and mobile devices. Email providers supported by Mailwasher include Outlook, Outlook Express, Incredimail, Thunderbird, Windows Live Mail, Gmail, Hotmail, Yahoo, EM Client, and more. The diverse range of email accounts supported by Mailwasher makes the software versatile in enterprise environments.
+Key Features
+Pre-filters mail offsite
+Integrates with major email clients
+Content filtering
+To stop viruses from entering your inbox, the program allows you to preview and delete emails before they are downloaded to your computer. By blocking emails like this you can view information within the email without opening it and leaving your computer at risk of transmitting a virus.
+Filtering is another way that Mailwasher monitors incoming emails for suspicious signs. The filter can spot spam content and offensive words so that the sender can be automatically blacklisted from future correspondence. To stop false alerts you can add colleagues and clients to your ‘friends’ list.
+Available for all major mail applications such as Gmail, Hotmail, and Yahoo, making it a flexible option for home users using a third-party mail service
+Can scan and delete malicious attachments before they reach the inbox
+Can filter for offensive content, good option for protecting children with email addresses
+Comes free with paid version
+Interface is outdated and difficult to navigate with large amounts of events
+Not the best fit for enterprise networks or large businesses
+Expensive when compared to similar tools
+There are two versions of Mailwasher available to download: Mailwasher Free and Mailwasher Pro. Mailwasher Free is available free of charge and supports one email address. MailWasher Pro starts from $49.95 (£37.71) and supports multiple email addresses with support seven days a week.
+ZEROSPAM is a cloud-based anti-spam solution that protects against spam, ransomware, and email phishing. If someone sends you an email with a bad link or a malicious attachment, ZEROSPAM will block it. For further protection, the program uses TLS encryption to keep your interactions safe from snooping. In the event the client-server goes down, the tool will use automatic mail queuing to help you return to normal operations ASAP.
+Key Features
+Edge service
+Ransomware protection
+Phishing detection
+The low false-positive rate of ZEROSPAM is one of the main reasons to use the product. It strikes a balance between screening out harmful messages without blocking communications from legitimate email users. From an enterprise perspective, this is an anti-spam platform that doesn’t get in the way of day-to-day operations.
+Runs in the cloud, no need for onboarding or complex installation
+Operates across 20 different sites, giving it increased reliability
+Anti-spam has a low false-positive rate, helping avoid lost business-related emails to the spam filter
+Could use better management features for multiple inboxes
+Hosted in Canada, maybe slower if located elsewhere in the world
+The solution is also resistant to going down. ZEROSPAM is powered by a network of over 20 filtering nodes hosted across three Canadian data to make sure the service stays online. This means that even if something goes down, your service stays available when you need it.
+The spam filter in Mail on Macs isn’t very good. If you use a different email client, you are stuck with whatever Junk main identification that system provides. However, if you want a better spam filtering service, you can try SpamSieve instead.
+Key Features
+Runs on Macs
+AI-based spam detection
+Blacklistingt and whitelisting
+This spam filtering solution includes whitelisting and blacklisting and it uses machine learning to improve spam identification in your Inbox over time. You can set up your own block list and also customize other features of the interface, such as its color and layout. SpamSieve also allows you to create your own mailbox management scripts that perform different actions depending on factors such as the sender or subject line.
+SpamSieve works as a plug-in so you can access its functions from within your email client instead of needing to go to a different application. It will work with a long list of email systems on Macs, including Apple Mail (Mail.app), Airmail, Entourage, MailMate, Mailsmith, Postbox 5, PowerMail, and Outlook.
+Operates within your existing email client
+Applies machine learning to improve and tailor spam identification
+Allows customization through settings and scripts
+Includes whitelisting as well as blacklisting
+A single-user license costs $30 (£22.65) per year and you can also get a two user license, called the Family plan, for $48 ($36.24). A site-wide plan is priced on consultation. SpamSieve is available for a 30-day free trial.
+Comodo Dome Antispam is a spam prevention tool designed for enterprise users. Comodo Dome Antispam scans and filters emails to keep your inbox safe from cyber attackers. When downloading files from the inbox, Comodo Dome Antispam uses its Valkyrie file verdict platform to analyze files as they are being downloaded. You can open and interact with a file without any risk of infection even from the latest malware attacks.
+Key Features
+Choice of self-hosted, private cloud, or SaaS service
+Sandboxing for attachments
+Pre-filters spam before the mail server
+Email filtering controls the type of messages you see when you open up your email account. Emails with viruses are blocked so you don’t get put offline to make sure you have complete transparency over emails sent to your inbox. Through the management console, you can view archived and quarantined emails.
+Analyzes files as they are downloaded for threats, and before they arrive in the inbox
+Advanced filtering can junk or sort emails based on keywords, sender, or size
+Available as an on-premise or cloud-based solution
+Interface feels like it hasn’t been updated since its launch in the 90s
+Emails can be delayed if misconfigured
+There are three installations of Comodo Dome Antispam available: Shared Server, Hosted Cloud, and On-Site. To view the pricing, you need to contact the company directly. If you’re looking for an anti-spam solution with flexible deployment options, Comodo Dome Antispam is highly recommended.
+MX Guarddog is a spam blocker that uses TLS encryption to protect your email inbox. Phishing attacks, malware, DDoS attacks, and viruses are just some of the things that MX Guarddog defends against. Once any communication is blocked, you can view a quarantine report which will show the message content that was blocked.
+Key Features
+Blocks spam and malware
+SaaS package hosted in the cloud
+Integrates with access rights managers
+Legitimate mail is forwarded straight to your email server. MX Guarddog automatically syncs email addresses from Windows AD, LDAP, and cPanel systems for convenience. In the event that your server goes down, your mail will be stored and automatically delivered to you the next time you’re online.
+Better interface than similar solutions
+Can easily remove false positives from quarantine
+Can integrate and sync with LDAP and Active Directory services, good for Windows-based email systems
+Protects against phishing as well as file-based malware
+Interface feels like it hasn’t been updated since its launch in the 90s
+Emails can be delayed if misconfigured
+Charges per email, which makes budgeting unpredictable
+MX Guarddog is a great low-cost alternative for stopping spam in its tracks. The tool operates as a SaaS package and starts at a price of $0.25 (£0.20) per email address, per month. There is no charge for user or domain aliases.
+SPAMfighter is a spam filter compatible with Outlook, Outlook Express, Thunderbird, Windows Mail, and Windows Live Mail. SPAMfighter’sfiltering works in multiple languages and can block spam in English, Spanish, German, French, Italian, Polish, Danish, and more. Once a suspicious email has been flagged the software will add the sender to the blacklist and block future emails from reaching your inbox.
+Key Features
+Plug-in for major email clients
+Free version available
+Maintains local blacklist
+The user interface is simple to navigate and you can view live statistics on blocked messages. In addition, you also have Spam Abuse Reporting at the click of a button if you need to gather information. Being able to organize all of this security information helps to make sure that you know about everything that is trying to reach out to your account.
+Supports multiple languages, good for international use
+Can view live statistics on emails such as volume, spam ratio, and number of blocked spam attempts
+Can forward spam that gets through so the system can learn to identify it in the future
+Dated interface is hard to navigate and learn
+There are two versions of SPAMfighter to download: SPAMfighter Standard and SPAMfighter Pro. SPAMfighter Standard is available for free with commercials and restricted features such as a limit on blacklist/whitelist entries. SPAMfighter Pro starts at $29 (£21.89) for one year. There are also 2 and 3-year payment options. The Pro account offers unlimited blacklist/whitelist entries, language filtering, and more.
+ORF Fusion is a piece of spam filter software designed specifically for business use cases. The tool eliminates false positives and ensures that legitimate email makes its way to your inbox. One of the unique selling points of ORF Fusion is that it has 23 layered tests to check the status of mail. These tests are a mixture of blacklist and whitelist tests that stop malicious mail without affecting genuine mail.
+Key Features
+Integrates with mail servers
+Administrator controls over spam handling
+Blacklisting and whitelisting
+You can create your own whitelists to make sure that your trusted email senders aren’t put through spam filtering. The user also has control over what happens to those emails that are caught by the spam filter. For instance, you can bounce them to reject the transmission, keep the mail, or redirect it to a different mailbox.
+Very advanced, built for email administrations
+Offers detailed blacklisting by IP address, IP range, country, and DNS
+Email passed through 23 different filters before being allows to the inbox
+Highly configurable
+Higher learning curve than similar software
+Designed for professionals, not built for the non-technical
+Misconfiguration could lead to delayed emails and false positives
+Overall, ORF Fusion’s low false-positive rate makes it ideal for enterprises looking for information security that doesn’t impede their ability to communicate. ORF Fusion integrates with Microsoft Exchange and the IIS SMTP Service. The price of the product starts at $55 (£43.75) per year for 10 users.
+There is so much variety amongst anti-spam software providers that it can be difficult to choose. If you’re unsure you can’t go wrong with a tool like N-able Mail Assure or SpamTitan. Both tools are easy to use with whitelisting and blacklisting to control what mail reaches your inbox.
+There are two important reasons to scan outgoing email. The first is to prevent spam emails from being sent from addresses on your domain. This is a reputation management issue because a high volume of spam will get all of the emails sent from your domain name filtered out as spam. The second purpose is for data loss prevention.Some email systems include a read receipt notification option. However, the corresponding email clients of those systems also allow the recipient to block the sending of email opening confirmation while other systems, such as Gmail, only enable read receipt notifications between email addresses within its domain. A more common notification method is to include a tracking pixel in the email. When the recipient opens the email, the pixel loads from its home server, triggering a record that the email was opened. Recipients can prevent this notification process by setting a block on images loading in emails.Anti-spam systems usually work as a filter. They don’t store emails on their own servers and so won’t compromise your privacy. Secure sensitive emails with end-to-end encryption to be sure that no proxy service can read the contents.
+Image by AndyPandy from Pixabay

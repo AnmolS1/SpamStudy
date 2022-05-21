@@ -1,0 +1,44 @@
+This page explains how to block and unblock calls, messages, emails and domains on your mobile devices, and how to turn account services on or off.
+
+From the My Verizon Blocks page, you can prevent devices on your account from being able to purchase and/or use certain types of calling, messaging and purchasing services. 
+You can:
+Block calls & messages: Prevent a device from getting unwanted calls and texts from a specific number.
+Block emails & domains: Stop email addresses, domains and text names sent by the web.
+Block services: Turn on or off options to prevent in-app purchases, set preferences for blocking incoming and outgoing picture and video messages, and control Video Calling use on your device.
+Note: Only the Account Owner or Account Manager can block or unblock these services. Learn more about account access roles.
+For more information on setting service blocks, watch our How to Add Blocks video.
+Some services let you make purchases that will be charged to your account. Others use the data allowance included with your plan. If you want to prevent someone on your account from using these services, you can choose to block them to help avoid unexpected purchases or overage charges on your bill.
+You can block calls and messages from up to 5 specific phone numbers for free for up to 90 days in My Verizon. Account owners and account managers can choose to block numbers on all the lines on their account.
+You can permanently block up to 20 specific phone numbers, including restricted, unavailable and private numbers, for a low monthly fee with Verizon Smart Family™. Learn how to block contacts with Verizon Smart Family, or sign up for Verizon Smart Family if you don't already have it.
+To stop frequent spam and robocalls from unknown numbers, Call Filter is our most effective solution because you can automatically block unwanted spam calls from reaching you. Learn how to block contacts with Call Filter, or sign up if you haven't already
+You can block messaging and services on the Blocks page in My Verizon if you're on a standard monthly plan.
+Note: Only the Account Owner or Account Manager can block or unblock any of these services. Learn more about account access roles.
+You can also watch our How to Add Blocks video for instructions.
+Block up to 15 email addresses, websites or text names (e.g., nickname@vtext.com) for free through the Blocks page in My Verizon. You can also block all text messages sent from the web or by email.
+Note: Only the Account Owner or Account Manager can block or unblock any of these services. 
+No. Changing your number will only stop spam calls temporarily. Instead you can:
+Block calls and messages from up to 5 phone numbers for free for up to 90 days in My Verizon. Account owners and account managers can choose to block numbers on all lines.
+Block unwanted spam calls with Call Filter.
+Permanently block up to 20 phone numbers, including restricted, unavailable and private numbers with Verizon Smart Family.
+You can remove a calling or texting block on the Blocks page in My Verizon.
+Note: Account Owners and Account Managers can choose to block and unblock a phone number on all lines of their account.
+For additional information about blocking numbers, visit our Block Numbers page.
+You can unblock a service on the Blocks page in My Verizon.
+Note: Only the Account Owner or Account Manager can block or unblock any of these services. Learn more about account access roles.
+Your service block goes into effect immediately.
+You can set up pre-defined content filters using Verizon Smart Family. 
+Spam is an unsolicited commercial advertisement or any message that links to a virus or malicious software. Don't respond to the phone number or open any links in the message. Doing so may compromise your personal information and/or your mobile device.
+If the message is still on your device, follow the steps below to report the unwanted message:
+Be careful not to open any links and forward the suspected spam text message to short code 7726.
+Once received, we'll send you a text message asking for the "From" address.
+Reply to us with the "From" address of the unwanted message listed in the body of your text message.
+A free text message with a "Thank you" notification will be sent to you to verify receipt.
+The investigation will begin.
+If you are using Verizon Messages (Message+), follow the steps below to report spam:
+Touch and hold the message. Be careful not to click on any links.
+When the option menu appears, select Report Spam.
+The message will then be deleted from your device, and you'll be notified that the message was reported as spam.
+The investigation will begin.
+You've successfully reported an unwanted text message.
+You won't receive any further updates once you've received the final "Thank You" text message.
+There are no charges for messages sent to or received from 7726.

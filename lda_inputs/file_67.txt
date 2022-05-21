@@ -1,0 +1,17 @@
+Under no circumstances should you reply to any address(es) that appear to allow you to be removed from a spammer's list. Doing so usually means you incur more spam, as the spammer will sell your address to other spammers. The fact that you reply means that your address is valid, and worth more in the underground market where working email addresses are sold. This is one deceitful approach spammers will use to filter out 'good' addresses from the bad.
+Because spam is sent in a variety of ways, each message may need to be addressed individually.
+DreamHost offers several tools to help assist you in preventing incoming spam. The anti-spam filters provide a filter before the mail is delivered to the MX (mail) machines for final delivery. You can also add custom message filters in your panel to target specific keywords.
+There are also other third-party services that can be used to filter mail for you instead of using DreamHost’s filtering service.
+Visit the following articles for further information:
+Anti-spam overview
+Message Filters
+The first line of defense against junk is to enable spam filters for your domain. Visit the following article for further details:
+How do I configure my Anti-spam settings?
+If your nameservers are not hosted at DreamHost but you're hosting your email at DreamHost, you have previously set up MX records at your current hosting company. These MX records are responsible for routing email to your DreamHost mail server. Make sure that these MX records are pointing to your filter records. View the following article for further details:
+MX Records
+Anti-spam filters cannot be enabled with a domain using a legacy catch-all address. These addresses generate a lot of incoming spam anyway, so it’s a good idea to disable them.
+Your second line of defense against incoming junk are the custom message filters you can create on your DreamHost panel.
+Message Filters
+These are filters you can create yourself to add your own custom rules. Sometimes, experienced spammers are able to send mail that bypasses the anti-spam filter scoring process or find ways to get their messages scored very low. In such cases, you’d need to create custom filters for spam that the anti-spam filter did not catch.
+These filters are useful for various reasons, such as organizing your mailbox by having the filters move mail to other folders. These filters can also be set to delete mail that matches your rules or move them elsewhere.
+After you have filtered Spam emails, they will be contained in a single folder. You can then delete them all at once in your email client. View the following article for instructions on how to do this using Webmail.

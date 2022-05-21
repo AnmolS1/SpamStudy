@@ -1,0 +1,12 @@
+Please refer to the information below about several options to help reduce the amount of junk e-mail you receive. Junk email could be any unwanted, unsolicited, or illicit e-mail or other electronic messages, including spam.
+Microsoft recommends that you follow these guidelines to help reduce junk email:
+Don't reply to junk e-mail, even to ask to be removed from the sender's mailing list. The sender may simply use that response to confirm that your e-mail address is valid, and continue to send you junk e-mail. To report the message as junk e-mail, select the message, click Junk.
+To report the e-mail message as a suspected phishing scam (Falsely claiming to be a legitimate business to send you to a fake website or scam you into giving out private information.), click Mark as – Phishing scam.
+Remove your e-mail address from any web page, newsgroup, or bulletin board available on the Internet.
+To remove your e-mail address from newsletters or mailing lists that are on your safe senders list, you can click Unsubscribe. Microsoft notifies the people who created the newsletter to stop sending it to you.
+You also minimize spam emails that you have been receiving by configuring your junk mail filter to Exclusive.
+I suggest you to set your Junk email filter to Exclusive. If the Exclusive level was set, messages from senders not on your Contacts or Safe Senders lists will be sent to the Junk folder. By default, the Junk folder will automatically delete messages after 10 days. This is more convenient as we don't have any control if senders are randomly changing their address. Follow the steps below on how to set to Exclusive and check if this helps:
+Sign in to your Outlook.com account.
+Click cog or gear icon then select Options.
+Under preventing junk email, click Filters and reporting.
+Under Choose a junk email filter, select Exclusive.

@@ -1,0 +1,12 @@
+Email addresses entered into the Email field on a HubSpot form are immediately validated by HubSpot. If the email address is not valid (does not exist, is misspelled, etc.), the form cannot be submitted.
+You can provide additional protection against spam form submissions by enabling CAPTCHA and blocking specific email domains or free email providers.
+CAPTCHA adds a step to your form verifying that a visitor is not a robot before they can submit the form. To enable CAPTCHA on a form:
+In your HubSpot account, navigate to Marketing > Lead Capture > Forms.
+Click the name of a form.
+In the left pane, locate the Other Form Elements section and click to toggle the Captcha (SPAM Prevention) switch on.
+In the top right, click Publish.
+If you enable CAPTCHA, Google's invisible reCAPTCHA will appear on your form when you add the form to a page. If Google determines that a visitor is suspicious, they must solve a CAPTCHA challenge before they can submit the form.
+Please note:
+if your regular form or pop-up form includes a follow-up email, a CAPTCHA will automatically be added to the form. To remove the CAPTCHA from the form, delete the follow-up emails in the Follow-up tab of the form editor.
+If CAPTCHA has been enabled on the form, form submissions from the Submit data for a form API or other form integrations will not be accepted. 
+You can block specific email domains or free email providers on your form to encourage your visitors to provide high-quality business email addresses.

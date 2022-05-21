@@ -1,0 +1,44 @@
+While there is no way to completely stop spam, there is definitely ways to cut back on it substantially. Regardless whether you are using a hosting provider like us, or a large company like MICROSOFT / GOOGLE / YAHOO, OUTLOOK365.COM, etc. for your email hosting, the challenge is still the same – how do you cut back on the amount of spam emails you are receiving, without it flagging too many legitimate emails as spam?
+The larger email hosting companies like google for gmail.com, have some pretty extensive spam filters on your account, and they give you some options for controlling how these filters operate. However a very common misconception is that if you use a company like that for email hosting, that you will get much less spam. That is true but what they don’t tell you is that the trade off is since their filters are so extensive and set so high, you will get a lot more legitimate emails caught in their filters, which many will be deleted. I have personally experienced this with my personal gmail.com account. Using those companies to host your email is an option, as is plugging your email accounts into gmail.com, outlook.com, etc. but still with the same challenges. Smaller email hosting companies like ourselves, don’t have as many filters, but the filters we do have give you more control.
+There are a few ways that you can decrease the amount of spam that you are receiving to your email account. These options include:
+A. Computer options: Using various settings on your computer email software:
+ADVANTAGE: This will give you more control over what is flagged as spam, what isn’t and allows you to actually view spam via a folder just in case a legitimate email gets caught, so you can easily flag it as “not spam” for next time. There are several options for this.
+DISADVANTAGE: You will have to check your spam / bulk folder more often.
+B. Hosting options: Using various filter settings from your hosting account:
+ADVANTAGE: This will be more hands off approach using our hosting server spam filter settings. This feature offers various options and settings.
+DISADVANTAGE: If you set the filtering too high, it will also flag some legitimate emails as spam and you cannot easily retrieve those.
+C. 3rd party email providers: This option would allow you to either plug your email account from us into a provider like gmail.com to use their filter system, or pay extra to have them host your email accounts and use their filters.
+ADVANTAGE: This will be more hands off approach using our hosting server spam filter settings. This feature offers various options and settings.
+DISADVANTAGE: If you set the filtering too high, it will also flag some legitimate emails as spam and you cannot easily retrieve those.
+Advanced users can also use a combination of these options. General instructions for each are listed below.
+This option will give you the most control, only requiring that you can go through your spam locally every once in a while and delete, or add a user to your safe senders list. 
+If using software on your computer for accessing email, like MS OUTLOOK, try these steps to help filter more spam emails.
+1. Find instructions specific to your version of software by googling your software name, version, and add the words “junk email options” to the end of it. In example you could try:
+outlook 2013 junk email options
+someothersoftwarename spam email options
+In this sample case, we were using OUTLOOK 2013, so we clicked on a page from MICROSOFT that gave great instructions and explanations of their software filters.
+https://support.office.com/en-nz/article/Change-the-level-of-protection-in-the-Junk-Email-Filter-ef21aec7-6eb5-4457-8b94-93f13fc275cb?ui=en-US&rs=en-NZ&ad=NZ
+2. Follow instructions to get to the JUNK EMAIL OPTIONS or equivelant for your software.
+* please note: some computer email software will not have junk or spam email options.
+3. Select the level of junk email filtering you desire. It is set by default at NO AUTOMATIC FILTERING and you can change it to LOW, HIGH, or SAFE SENDERS LIST ONLY. We suggest you set it to LOW or if you are really gettings tons of spam set it to HIGH. The “SAFE SENDERS LIST ONLY option is only for advanced users.
+4. Done!
+This option will allow you to stop spam at the server level before it even gets to your inbox. How much spam is stopped / filtered depends upon what settings you use. 
+1. Login to your hosting control panel, i.e. www.yoursite.com/cpanel/
+2. Scroll down to the EMAIL section and click on “Apache SpamAssassin”.
+3. Click “Enable Apache SpamAssassin” button, then configure this as you desire:
+a. SCORE: There is various criteria that gives each email “points”. The score determines what score it must have to be cleared as legitimate email. A guide to this includes:
+– 0: everything incoming will be marked as spam.
+– 5: the default middle setting (most common for typical users)
+– 10: the lowest setting, which will barely filter out any spam.
+We recommend you leave this at 5, or maybe 4 at lowest.
+b. AUTO-DELETE SPAM: This function automatically will delete any emails that are flagged as spam by the filters. We recommend to ONLY enable this option if you set your score to 4 or above, else you run a high risk of legitimate emails getting deleted.
+c. SPAM BOX: This option allows you to have all spam emails pushed to a spam folder it will create for each email address you host with us. To access this spam folder:
+– if using one of the CPANEL webmail programs, create a new folder called “spam” all lowercase.
+– if using computer software like MS OUTLOOK with IMAP setup, search for how to “subscribe to folders”.
+For additional information on SpamAssassin, click here.
+This gives you two options:
+A. Plugin your email accounts to third party:
+For this option you could keep your email hosted with your website, while plugging your email accounts into a third party provider like gmail.com so that you can use their spam filters. This would require you to login to that provider to check email on regular basis. Please see instructions from a provider where your personal email account is for full instructions.
+B. Host emails with different provider:
+For this option you would keep your website hosting as is and signup for email hosting with another provider. You would have to follow instructions given by that provider to do so. After setup is complete there, that provider will give you DNS records to give back to us so that we can update your website hosting to tell our server your email is now being hosted elsewhere. In this case you will have to open a ticket to us with that information, or contact your project manager.
+* please note: If you choose this option, it will not lower the cost of your monthly hosting with us.

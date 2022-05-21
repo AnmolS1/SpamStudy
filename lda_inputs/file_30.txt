@@ -1,0 +1,110 @@
+Here is the thing — only a few of them deserve your attention, while the rest take your focus away from more important tasks. 
+You’ve definitely had this thought: “If I could only get rid of all that spam!”
+The good news is that stopping spam emails is doable, and even the messiest inbox can transform into a spam-free oasis. It’s only a matter of a good strategy and effective execution.
+So, let’s find out how to stop spam emails and free your inbox from unnecessary trash. As well as what email client and other tools you can use to fight the clutter.
+What Is Spam? How It Destroys Healthy Relations with Your Mailbox
+Spam emails are the ones you haven’t given your consent to receive, according to the classical definition. 
+Nowadays, the term is most often used in reference to emails you agreed to receive but that come to your inbox too often or have become irrelevant to you.
+Apart from the obvious commercial purpose of promotion, spam can also be used to achieve other goals, which might not always be legal. Some of those emails may contain links that can infect your computer, while others may be used as money scams.
+To summarize, spam emails can be seen as messages or communication you don’t want to receive, no matter whether you have given consent to get them or not.
+Why Is Spam Still So Popular?
+You undoubtedly receive a lot of marketing and cold outreach emails you never open. The thing is that a lot of busy people like you don’t react to such emails very well. 
+If fewer people than ever before interact with emails and buy the products advertised within them, how can email still be practiced by advertisers on such a grand scale?
+It’s because email marketing and cold email outreach are still an effective revenue-generating channel — for some companies, it generates $42 for each dollar spent.  
+So, yeah, it works, even though it may seem annoying to many recipients.
+Fighting email spam is somewhat similar to losing weight. 
+You have two choices. The first one is going on a restrictive diet, while the other is losing weight step-by-step by establishing a healthy relationship with food. 
+Guess what! The latter scenario would help you maintain a healthy weight longer.
+Fighting spam emails is similar — it’s not only about archiving unnecessary emails or unsubscribing from newsletters, but also building new habits.
+Let’s dig a little deeper into some tried-and-proven strategies on how to permanently stop spam emails.
+Some company newsletters can quickly become irrelevant, so you’ll want to unsubscribe from them before they take up any more of your time.
+Usually, there should be an unsubscribe button at the bottom of an email, but some companies choose to hide or remove it. 
+To opt out from a newsletter you no longer want to receive, click the “Unsubscribe” link at the bottom or — if you’re using Mailbird — click this easily accessible button on the top.
+What if you don’t want to unsubscribe from all types of newsletters a certain company sends you? 
+Some emails you receive — for example, special discounts — may be important, while other information is irrelevant.
+In this case, you may adjust your email preferences in the newsletter’s subscription settings and choose which lists to opt out from.
+A corresponding link can usually be found at the bottom of an email. 
+Spam filters are set up by default in most email providers. They assess each email to later identify spam and send it to the Junk or Spam folder without you even knowing about it. 
+However, the functioning of in-built spam filters is not always perfect, and they don’t capture 100% of the spam every time. That’s why it’s worth adding your own filter lists to improve the process.
+By using filters, you will make your email provider automatically move messages that fulfill the criteria you define into a spam folder. 
+Let’s briefly look at how you can do that in the most popular email services — Gmail, Outlook, and Yahoo.
+How to stop spam emails in Gmail
+Let’s go through these four simple steps to create spam filters in your Gmail inbox.
+Log into your Gmail account.
+Click the Show search options icon located in the search bar of your Gmail inbox. Then, a window for defining criteria should appear. Define your filter criteria.
+Define what Gmail should do with the emails that meet the criteria (e.g., skip the inbox, mark as read, or star it).
+Click Create Filter. 
+How to stop spam emails in Outlook
+Here’s how it works in Outlook.
+Proceed to Settings in Outlook and click View all Outlook settings.
+Find the Mail tab and select Rules.
+Add your rules.
+Save changes.
+How to stop spam emails in Yahoo
+Trying to understand how to permanently stop spam emails in your Yahoo inbox? Just follow these five steps.
+Click Settings and proceed to More Settings.
+Click Filters.
+Click Add new filter.
+Add your filter name, define the rules, and create a folder for your filtered emails.
+Save your changes.
+Now imagine you have different email accounts. Some of them are on Gmail, while others are on Yahoo or other email providers. 
+Should you go through all these steps again and again? You shouldn’t! 
+You can spend much less time on this tedious task by using the Mailbird email client.
+After importing your accounts into Mailbird, which can be done in seconds, you can set up one universal filter. This filter will manage your preferences for all of your email accounts at once.
+By marking an unwanted email as spam, you help email services detect spam better. The more spam reports they get from users, the more chances that the next malicious email you get will eventually be sent to a spam folder, not your inbox. 
+Marking spam differs depending on the email service you use. Here are some tips on how to stop getting spam emails in Gmail, Yahoo, and Outlook.
+How to mark spam emails in Gmail
+Select one or more emails in your Gmail inbox, and then click Report spam.
+How to mark spam emails in Yahoo
+To mark spam emails in your Yahoo inbox, select the message and click More, then Report Spam.
+How to mark spam emails in Outlook
+To mark spam emails in Outlook, choose the messages you think are spam. Then, at the top of the screen, select Spam. Now your chosen messages have ended up in a spam folder.
+Eliminating spam from your inbox would take quite a lot of time if you decided to do it all on your own. Thankfully, there are many great tools to support you in this process. Here is what we suggest using. 
+Mailbird is an email client created to comfortably manage multiple email accounts from different email providers, all from one easily accessible place.
+Here are some ideas for how to stop getting spam emails with Mailbird. 
+You can organize multiple inboxes that serve different goals (e.g., a newsletter inbox, one for transactional emails, and another specific to your core business) and manage them in a single interface. 
+With Mailbird’s Unsubscribe button, you can easily get rid of unwanted emails, even if you can’t locate an “unsubscribe” hyperlink in the email’s body.
+You can set up filters for unified accounts. Normally, you would have to set up filters and conditions for every inbox separately. With Mailbird, you can do it for all your accounts together at once. This way, you save lots of time and reduce manual work on spam management. Mailbird integrates with Unroll.me, another helpful tool for spam management you should consider using.
+Unroll.me helps you unsubscribe from multiple newsletters at once. This service also combines emails you prefer to keep receiving into one newsletter digest — a Rollup. 
+This service is free of charge, but keep in mind that, to keep it free for its users, NielsenIQ (which owns Unroll.me) scrapes data in your commercial emails. Later, the collected information is most likely sold to advertisers.
+After you sign up for Unroll.me, the tool looks for all email subscriptions you have signed up for. Next, a list of those subscriptions will be displayed, and you will have options to unsubscribe, keep the emails in your inbox, or add them to your Rollup. 
+This tool’s strong side is organizing your marketing emails. However, it doesn’t offer an easy way to set up email filters, as Mailbird does.
+With SpamTitan, you can eliminate viruses, malware, phishing, spoofing, ransomware, and links to malicious websites. 
+This tool allows you to block the majority of the spam emails you receive. You can install this software for both Mac and Windows.  This is a preventative tool that is a better option than having to remove a virus from a Mac or Windows computer.
+So, what tool should you choose in the end? Consider using Mailbird together with Unroll.me, as they complement each other in their functions. They will help you eliminate most useless marketing emails. To get rid of spoofing, scam emails, or messages containing malicious links, use SpamTitan.
+So, you have read and applied all the tips on how to stop getting spam emails and think you can do even more to secure your inbox? Here you go! We have prepared some additional tips that will help you secure your inbox from spam even more.
+Reputable companies must stick to legal requirements regarding privacy, as this aspect is highly regulated. That’s why a legit business always carries a higher risk of getting in trouble with the law by sending emails to people who haven’t given consent to be contacted. 
+Whenever you leave your email details with a company, always examine its website first. Ask yourself whether it seems reputable and legit.
+If you have any doubts, look for the terms and conditions or privacy page to check how a given provider or service uses information about you. 
+Couldn’t spot it? 
+It’s time to leave the website before your email address gets sold to other companies and becomes a target in a massive spam attack.
+Have you thought about how spammers get your email address if you haven’t shared it with them directly? 
+There is only one answer — your email has leaked online and is still there. You have probably shared it on some websites, forums, chats, or social media networks. 
+Once you left it there, spammers were able to fetch it using web-scraping tools. 
+No matter how hard you try to eliminate spam emails from your mailbox, there is a chance you will continue receiving spam if your email address can be found openly online.
+To close the door on spammers attacking you this way, check the places on the Internet where you have left your email address and delete it from there. 
+Once you have done so much work to make your inbox clean, imagine how disappointing it would be to see it getting messy again. 
+If you decide to use one email account for all purposes — personal, business, and newsletters — this bad scenario is almost unavoidable. One new newsletter sign-up is enough to see dozens of emails appear in your mailbox again every month, even if you only subscribe to the important ones.
+It’s always better to separate your most important messages from educational or promotional ones by creating different email addresses for different purposes.
+For example, you can call a new email address newsletters@yourdomain.com, either by setting up an alias on your account or using a free email service like Gmail or Yahoo. 
+If you were to take just one strategy on how to stop receiving spam emails out of this article, let it be this one — stay consistent in your actions when working on eliminating spam. 
+Remember that your strategy should include not only one-off activities, like unsubscribing from marketing emails, but also establishing healthy email management habits. They will help prevent future spam from getting into your mailbox.
+You can lead productive conversations without too many emails, rid yourself of the fear of missing out on those conversations, and avoid checking your inbox again and again.
+Getting rid of spam is just the first step to achieving a Zen state with your inbox, but remember that a journey of a thousand miles begins with a single step.
+Hopefully, with the tips we have shared on spam management, this first step will be much easier to make. Using Mailbird as a professional tool will take you there quicker.
+Get Mailbird, the best email client for business that supports all email providers and helps manage multiple email accounts
+Try Mailbird for Free
+Why do I suddenly receive a lot of spam emails?
+Spammers usually buy huge email lists, and yours could have ended up on one. As they often acquire email lists from a single source, you are likely being bombarded by multiple spammers at the same time.
+If you receive too much spam, you have probably fallen victim to an email harvester — you could have entered your email in a field that looked safe but was actually collecting email addresses to sell to spammers.
+How do I spot spam emails?
+You have to apply different techniques to spot spam messages, depending on the email type. Here are the main three:
+Marketing subscriptions. Spot marketing emails that don’t bring any value for you anymore. Ask yourself this question — would you be willing to click the unsubscribe button?
+Outreach emails. Spot emails that ask you to buy something and are not relevant to your business. 
+Phishing and scams. Look for the indicators, such as urgency to take action, asking you to click some links, or suspicious attachments.
+Will spam emails eventually stop?
+Yes, you can put a stop to spam emails. However, ceasing spam doesn’t end at cleaning your inbox by unsubscribing from unwanted messages. To get rid of spam once and forever, you have to be more proactive and establish the right habits related to email subscriptions. 
+Don’t subscribe to too many email subscriptions; choose only the most important ones. Use different inboxes to process newsletters, transactional emails, and business communication.
+Why am I still getting emails from blocked senders?
+There are a few fundamental reasons for receiving emails from blocked senders. Perhaps a sender has changed their email address to a similar one and is now attacking you from a different outbox. 
+Alternatively, a sender can hide their real email address in a message’s header. In this case, if after checking a header you notice you are targeted from a different address than the one you blocked before, it’s worth blocking the new sender as well.

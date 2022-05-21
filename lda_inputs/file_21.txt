@@ -1,0 +1,40 @@
+Stop spam emails, spam comments, spam registration, and spam bots and spammers in general. Run diagnostic tests, view activity, and much more with this well-maintained, mature plugin.
+Stop Spammers adds security that should kill off many of your spam worries straight out-of-the-box. Because every website is different (especially if you have integrated a payment gateway), we offer dozens of features you can leverage to meet your website’s specific needs. Our 50+ configuration options make personalization easy.
+Extremely granular control, so that any variety of website can create a special custom cocktail just for their particular spam issues:
+Block suspicious behavior
+Block spam words, disposable emails, URL shortener links, TLDs and more
+Connect third-party spam defense services
+Block countries
+Block/allow IPs, emails, and usernames manually
+Hide admin notices permanently
+Allow users to request access and send email when allow list request is approved
+Members-only mode
+Core forms CAPTCHA
+Server-level firewall protection (Premium Only)
+Themed registration/login pages and menu links (Premium Only)
+Brute force login protection (Premium Only)
+Notification control (Premium Only)
+Import/export settings (Premium Only)
+Export log to Excel (Premium Only)
+Restore default settings (Premium Only)
+Contact Form 7 protection (Premium Only)
+Built-in contact form (Premium Only)
+We sincerely thank everyone who has contributed to the project through donations, feedback, and bug reporting. Every little bit goes a long way.
+The most powerful spam prevention for WordPress: 50+ spam-blocking settings, dianostic testing, log reports, and much more.
+Go to Plugins > Add New from your WP admin menu, search for Stop Spammers, install, and activate.
+OR
+Download the plugin and unzip it.
+Upload the plugin folder to your wp-content/plugins folder.
+Activate the plugin from the plugins page in the admin.
+you may need to restore visitor IPs: https://urldefense.proofpoint.com/v2/url?u=https-3A__support.cloudflare.com_hc_sections_200805497-2DRestoring-2DVisitor-2DIPs&d=DwIFaQ&c=-35OiAkTchMrZOngvJPOeA&r=64X7R03vuzk0z0RgbVhtrA&m=c55qPZi0xay5ufJcy7FkyiMwY2hSPFDvx--eiO9Tfgm7LRY7zdgs4Op-N0OgQyGL&s=pqo4C7EfGnSHsELnnttW61SrKGkmOZedRBWZUi1QRBE&e= .
+in some configurations, you may need to go to Stop Spammers > Protection Options > Toggle on the option for “Only Use the Plugin for Standard WordPress Forms” > Save if you’re running into any issues.
+Stop Spammers can even check Akismet for an extra layer of protection.
+You can use all Jetpack features except for Jetpack Protect, as it conflicts with Stop Spammers.
+The two can compliment each other. However, if you have only a small amount of hosting resources (mainly memory) or aren’t even allowing registration on your website, using both might be overkill.
+Toggle off the “Check Credentials on All Login Attempts” option and try again.
+Stop Spammers does not collect any data for any other purpose (like marketing or tracking). It is purely for legitimate security purposes only. Additionally, if any of your users ever requested it, all data can be deleted.
+it seems to block a lot of legit form submissions.
+When it does block a form submission, I often get the message saying it was blocked but still get the form submission as well.
+No way to actually accept the form submission that was blocked... just to add the person's IP address to an allow list or block them.
+This is only useful for blocking spammers, but completely pointless for dealing with false positive as if you didn't get the submission, that person isn't going to come back and re-submit the form.
+It comes with predefined settings for general uses. And customizable options are also great if advanced users want to prevent spam further.

@@ -1,0 +1,8 @@
+Email spam filters can be unpredictable. Sometimes they get it right, sometimes they don’t. A simple trick to prevent Jotform emails from landing in your spam folder is to add noreply@jotform.com to your Contacts. But sometimes that’s not enough, especially when your inbox is constantly flooded with new email alerts.
+You can make sure you don’t miss important messages in Gmail by adding email filters. Email Filters will ensure specific emails land in your inbox based on a certain email address or keyword of your choice.
+Log into your Gmail account and click the gear icon at the top right. Click the See all settings button.
+Go to the Filters and Blocked Addresses tab. Click the Create a new filter link.
+Set From to noreply@jotform.com. Click the Create filter button.
+Select Never send it to Spam and Also apply filter to matching conversations. Click the Create filter button to complete the setup.
+This filter should send all emails coming from noreply@jotform.com to your Inbox and never to your Spam folder. It may help to add noreply@formresponse.com in your filter too.
+Now that you’ve created a filter, you can set it to automatically apply a specific label so you can view all your filtered emails together.

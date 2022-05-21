@@ -1,0 +1,54 @@
+If your inbox is flooded with junk emails, you are not alone. Spam messages made up nearly 50 percent of email traffic in September 2020, according to data from Statista. What’s more, out of the 293.6 billion emails sent daily in 2019, the majority were promotional emails from marketers. But not every email in your inbox is a harmless ad. Some could put your device and security at risk, experts say.
+“Over the years, spam emails from legitimate businesses have reduced somewhat, and spam emails coming from scammers and thieves has become the norm,” says Adam Kujawa, a security expert at Malwarebytes. Cybercriminals often hide malicious links or software inside emails, or trick their victims into sharing personal or financial information in a practice called phishing.
+Think twice before you click “unsubscribe” on that suspicious email, though. Believe it or not, using the “unsubscribe” button could actually backfire, so it is safer to block the sender through your email provider instead. Experts explain how to block emails using your mail server, what to do if you receive a suspicious email, and why you get these annoying emails in the first place. Learn how to block websites on Chrome, how to stop spam texts and how to stop getting junk mail for good, too.
+It is common to get phishing and junk emails when you give your email address to shady websites, like filling out forms for ads promising “free stuff.” But these days, even the most careful email users can end up with a flood of spam, according to Kujawa.
+Hackers can steal your email address by breaching legitimate services and organizations you shared it with and then selling that information to cybercriminals hoping to scam you. (That’s not the only scary thing hackers can do with your email address.) Businesses and advertisers also share public contact lists to send out mass marketing emails.
+Fortunately, most email providers—including Gmail, iPhone, Outlook, Yahoo, Hotmail, and AOL—allow users to block spam and junk emails on their platforms. “Blocking spam is often as simple as notifying your provider by marking something as spam,” according to Theresa Payton, CEO of Fortalice Solutions, a cybersecurity firm. Follow this step-by-step guide to block emails with each mail server.
+Web browser
+Open an email from the sender that you want to block
+Click the three-dot “More” icon in the top right corner
+Click “Block”
+App
+Open an email from the sender that you want to block
+Tap the three-dot “More” icon in the top right corner
+Select “Block Sender”
+Open the Mail app
+Open an email from the sender that you want to block
+Tap the sender’s name
+Tap the address listed next to “From” in the header
+Choose “Block This Contact”
+Confirm you want to block the contact
+FYI, phishing emails are just one of 2021’s top security threats to smartphones.
+Web browser
+Open an email from the sender that you want to block
+Click on the three horizontal dots in the top right corner
+Select “Block”
+App
+Open an email from the sender that you want to block
+Tap on the three-dot icon in the top right corner
+Select “Move to Spam”
+Desktop
+Right-click on an email from the sender that you want to block
+Click “Junk” > “Block Sender”
+Web browser
+Open an email from the sender that you want to block
+Click the three-dot icon at the top of the email
+Click “Block Sender”
+App
+Tap the menu in the top left corner
+Choose “Tools” > “Filters”
+Tap the “+” icon in the top right corner
+Choose a name for the new filter
+Type the email address you want to block in the “Sender” field
+Click “Home” > “Parameter” > “View All Outlook Settings”
+Click “Email” > “Junk Email” > “Filters”
+Type the sender’s name under “Blocked Senders”
+Under your username, click “Options/Mail Settings”
+Click the “Block Senders” tab
+Enter the email address you want to block
+Click the “+” icon
+Select “Save Settings”
+Ignoring suspicious emails is the most surefire way to protect yourself against hackers and thieves. “As long as you don’t click any unknown or unsolicited links, attachments, or download files, you will have done just about everything you can do to avoid any attacks on your computer or your data,” says James E. Lee, the chief operative officer at Identity Theft Resource Center.
+If you receive an email from someone you trust but feel unsure about the link or attachment, Payton recommends contacting the sender or running the link or attachment through VirusTotal, a free online service that analyzes suspicious files and URLs to detect malware. And before responding to the email, watch out for the serious signs you’re about to fall for a phishing scam.
+Don’t waste your time clicking “unsubscribe” on every spam email you get. Not only could you accidentally click on a malicious link, but it is also “a tiny band-aid on a much larger wound,” Kujawa says. If you receive a lot of spam, experts suggest starting fresh with two new email accounts: One for marketing deals and another for private emails with friends and family. Payton recommends using an email service that has a more rigorous spam filter, such as Proton Mail.
+Once you have a new email address, make sure to limit when and with whom you share it. “You should only share personal information with trusted organizations and only when it is required,” Lee says. He also suggests protecting your accounts with privacy tools like multi-factor authentication (MFA), if possible. Stay ahead of the hackers by stealing the secrets of people who never get hacked.

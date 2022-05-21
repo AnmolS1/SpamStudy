@@ -1,0 +1,2 @@
+To prevent spam email messages in Site Tools, you can use Spam Protection. Go to Email > Spam Protection> Login next to the desired domain. You can find detailed instructions about all Spam Protection functionalities and options here.
+In cPanel, the same tool was located in cPanel’s home page > Mail > Spam Protection. Refer to this article for detailed instructions about all Spam Protection functionalities and options.

@@ -1,0 +1,20 @@
+Learn how iCloud filters out unwanted bulk email messages, also known as junk mail or spam, and how to delete and minimize junk mail.
+iCloud uses trend analysis, dynamic lists, and other technology to automatically detect and block junk mail before it reaches your inbox. While there isn’t a way to completely stop junk mail from reaching your inbox, these tips can help reduce the amount of junk mail you receive.
+Delete any messages that look like junk mail before you open them. Learn how to delete emails on your iPhone, iPad, or iPod touch and how to delete emails on your Mac. You can also manage junk mail on iCloud.com.
+When you open an email that looks like junk mail, it can alert spammers that their message was received and opened from an active email account. 
+Spammers use the email image-loading feature to determine whether your email account is active. Here's how to keep images from loading automatically:
+On your iPhone, iPad, or iPod touch, go to Settings > Mail, then turn off Load Remote Images. 
+In Mail on your Mac, choose Mail > Preferences. In the Viewing tab, turn off "Load remote content in messages."
+In iCloud Mail, click the gear icon  in the sidebar, then choose Preferences. Click General, then turn off "Load remote content in messages." Then click Done.
+You can use an iCloud email alias to prevent junk mail from being sent to your primary iCloud email address. For example, you can use your primary iCloud email address for emailing friends and family, but use an email alias for online registrations, purchasing products, and joining mailing lists. This makes it easier for you to monitor the sources of unwanted messages.  
+To make sure future messages from the same sender are marked as junk, you can report messages as junk in the Mail app. 
+On your iPhone, iPad, or iPod touch, swipe left on the message, tap More, then tap Move to Junk. 
+On your Mac, select the message and click the Junk button in the Mail toolbar. Or you can drag the message to the Junk folder in the sidebar.
+On iCloud.com, select the message, then click the Flag button and choose Move to Junk. Or you can drag the message to the Junk folder in the sidebar.
+Filtering out junk mail can block a legitimate email from reaching your inbox.
+If you feel that a legitimate email message was accidentally filtered, you can mark it as not junk so that any future messages from the same sender go to your inbox:
+On your iPhone, iPad, or iPod touch, open the message in the Junk folder, tap the Move to Folder button  at the bottom of the screen, then tap Inbox to move the message.
+On your Mac, select the message in the Junk folder and click the Junk button in the Mail toolbar. Or just drag the message to the Inbox in the sidebar.
+On iCloud.com, click the Junk folder in the sidebar. Select the message, then click Not Junk at the top of the message window. Or just drag the message to the Inbox in the sidebar.
+For other mail clients, move the message from the Junk folder to the inbox.
+If you notice that multiple email messages are being delayed, bounced, or not delivered, contact iCloud Support. Email messages in the Junk folder are automatically deleted after 30 days.

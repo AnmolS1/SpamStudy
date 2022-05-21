@@ -1,0 +1,73 @@
+Email deliverability is not an exact science, which can be frustrating for senders of all types. You can accidentally end up in the email spam folder for any number of reasons, from your email list health to your authentication status, but there are a few tried-and-true tricks that can help you land back in the inbox in no time. 
+Even the most seasoned email marketers experience email delivery issues—it happens all the time. That’s where we come in! We’re here to help you get back into the inbox and avoid the spam folder altogether. 
+In this post, we’ll cover some of our best advice to ensure your messages avoid spam filters and get delivered to your recipients. Look for tips regarding the following:
+Build your own email list
+Provide a double opt-in
+Authenticate your email with SPF, DKIM, DMARC, and BIMI
+Clean up your email list regularly
+Avoid deny lists and monitor your reputation
+Be compliant
+Provide a preference center
+Monitor your email engagement metrics
+Send relevant content
+Utilize spam checkers
+Email content is vital for communicating important information to stakeholders, providing shipping confirmations or security alerts, etc., but it can’t help your recipients if the emails never make it to their inboxes or go to an unengaged audience. Always avoid:
+Renting, purchasing, or co-registering an email from a third party
+Sharing or using a shared list with a partner
+Scraping emails or using a robot to collect emails—known as email harvesting—puts you squarely into the spam folder, so don’t ever do it.
+You want to have an email list consisting of folks interested in receiving your emails, that way you ensure engagement. Organically building your email list is in your best interest long term. It may not be the easiest or fastest way to grow your list and audience, but it is by far the most effective. For more on how to grow your email list organically and spammy email, check out our article, Grow Your Email List Like You Make New Friends.
+Verifying recipient registration and opt-in is crucial to building a healthy, sustainable email list. Using a double opt-in ensures that subscribers are consenting to receive your emails by sending them a confirmation or welcome email that requires action, usually in the form of a check box or link agreeing to terms. Once they’ve completed this action, they are on your mailing list.
+Here’s an example of a double opt-in in action from the SendGrid Blog:
+Utilizing double opt-in confirms a recipient’s genuine interest in your emails, keeping your engagement and delivery rates high while lowering your risk for spam traps. For more on best practices with sender-recipient relationships, check out our guide, Email Manners: A Tale of Two Senders.
+Email authentication can be tricky but is key to verifying that you are who you say you are and that you’re sending legitimate emails. Inbox providers trust authenticated mail more than unauthenticated mail, and are more likely to deliver those messages straight into the inbox.
+The following four methods authenticate your email and help prove to providers that your email is worthy of the inbox and not the spam folder:
+Sender Policy Framework (SPF) confirms your identity by comparing the sender’s IP (found in the domain’s DNS record) with a list of IPs authorized to send from that domain. For an in-depth explanation of SPF, check out Sender Policy Framework: A Layer of Protection in Email Infrastructure.
+Domain Keys Identified Mail (DKIM) ensures that email is not tampered with during the transmission/sending process. For a crash course on all things DKIM, read How to Use DKIM to Prevent Domain Spoofing.
+Domain-Based Message Authentication, Reporting & Conformance (DMARC) leverages the power of DKIM and SPF by requiring both in order to send and deliver mail. What is DMARC? outlines everything you need to know.
+Brand Indicators for Message Identification (BIMI) attaches your business’ logo to your emails, making them more recognizable to recipients. For everything BIMI, check out What is BIMI? (Brand Indicators for Message Identification).
+These authentication methods are the responsibility of the individual sender, but SendGrid can help you get started with each. Learn more about how our Expert Services can help you to mitigate deliverability issues and set your email program up for success.
+Email lists and subscribers naturally ebb and flow as recipients drop off of your list. Some folks just don’t want to receive your emails, and that’s okay! The quality of your list is much more important and valuable than the number of contacts on your list. 
+While some individuals may unsubscribe, others will ignore your emails or mark them as spam. This is detrimental to your sending reputation, making your emails less likely to reach recipients’ inboxes, including those that actively engage with your messages. A leaner, more engaged email list is always more effective than a large list of unengaged users.
+Regular list maintenance helps stave off low engagement and its impact on your sender reputation. Removing unengaged users, bounced emails, and other spam traps are some of the most effective ways to clean your list.
+Remember that email list turnover is normal—don’t take it personally! Be proactive, clean up your list, and you’ll start to experience improved delivery rates to the inbox. 
+Your email domain has an associated sending reputation, and if it begins to slip, you may find yourself on an email deny list. Even the most cautious and well-intentioned senders can end up on an email deny list occasionally. Reduce the risk of ending up on a deny list by implementing the following sending practices:
+Use confirmed opt-in or double opt-in to ensure engaged recipients.
+Implement a sunset policy to remove confirmed unengaged subscribers.
+Use real-time address validation to reduce the risk of false emails or typos ending up in your email list. Twilio SendGrid’s Email Validation API works in real time to support senders and detect errors in email addresses with machine learning. 
+Keeping watch over your delivery rates will notify you of any signals that you may be on a deny list.
+While compliance does not guarantee email delivery, it can help you bypass some ISP roadblocks. Over the past 20 years, internet privacy laws have boomed around the world. The most important pieces of legislation for marketers and senders are Controlling the Assault of Non-Solicited Pornography and Marketing (CAN-SPAM), the Canada Anti-Spam Law (CASL), the General Data Protection Regulation (GDPR), and the California Consumer Protection Act (CCPA). These laws govern all commercial email, so let’s review what each asks of senders.
+The Controlling the Assault of Non-Solicited Pornography and Marketing Act of 2003, or CAN-SPAM Act protects the privacy of recipients by requiring senders to abide by a set of sending requirements and standards aiming to weed out bad actors. 
+Under CAN-SPAM, commercial communications must avoid deception by clearly stating the purpose of emails, respecting recipients’ preferences, and being transparent throughout the sending process. For more information on CAN-SPAM, check out 5 CAN-SPAM Myths & Best Practices: From a Lawyer’s POV.
+The Canada Anti-Spam Law (CASL) serves a similar function to CAN-SPAM, aiming to create a more transparent relationship between senders and recipients. CASL applies specifically to commercial electronic messages (CEMs), defined as “any electronic message that encourages participation in a commercial activity, regardless of whether there is an expectation of profit.”
+For an in-depth look at how CASL affects your sending practices, check out Canadian Anti-Spam Law: What You Need to Know.
+Perhaps one of the most talked about pieces of privacy legislation in recent years, the General Data Protection Regulation (GDPR) has been top of mind for many since its inception in 2016. Its regulations cover the entirety of the EU, meaning that anyone sending email to the region must be compliant. 
+The GDPR aims to grant those in the EU more control over their personal data by requiring companies to be transparent with how they use it. Businesses working within the EU must be compliant with the regulation’s strict data processing requirements, covering where and how personal data is stored and used, as well as ensuring the security of that data.
+For more information on the GDPR, read General Data Protection Regulation (GDPR): What Senders Need To Know.
+The California Consumer Protection Act (CCPA) feels like the natural descendent of the above privacy legislation, granting consumers more control over the use of their data. However, it only applies to businesses falling within specific categories. For businesses to be subject to the CCPA’s requirements, only one of the following must apply:
+The business’ annual revenue exceeds $25 million
+The business “buys, receives, or sells the personal information of 50,000 or more consumers, households, or devices”
+The business can claim that 50% or more of its annual revenue comes from the sale of consumers’ personal information
+Check out What is the California Consumer Privacy Act? for more information on how the CCPA affects sending practices.
+Remember, compliance with these pieces of legislation is obligatory and that meeting the requirements of one does not guarantee compliance with another. Err on the side of caution—you don’t want to be an email spammer!
+Preference centers provide new and existing subscribers with the freedom to adjust how often they receive your emails. By providing a preference center that puts recipients in control of how and when you contact them, you reduce the risk of having subscribers mark your emails as spam. 
+Reduce friction by making the preference center prominent and easy to access. Removing obstacles like this can actually help to increase your engagement rates and keep your messages in the inboxes of engaged recipients. Learn how to perfect your preference center.
+Metrics and email performance are the tried-and-true way to know how your email program progresses and improves. Before you can utilize these key performance indicators, it’s important to understand your baseline metrics—we all have to start somewhere, right?
+Start with the following basic metrics:
+Spam complaints
+Open rates
+Click through rates
+Delivery rates
+When you start tracking these metrics, don’t panic if you notice negative trends. The most important thing you can do is act quickly and calmly to remedy the problem. For example, in the case of dropping open rates, review your subject lines and email frequency. These two variables often have the most impact on this metric. 
+When testing emails, use real content and recipients. Some practices, like seed testing, allow senders to test emails sent to small batches of recipients to understand how an internet service provider (ISP) will respond but don’t provide a perfect analysis. Every ISP weighs seed testing differently, so try not to put all of your eggs in one basket here. In most cases, seed testing provides a false sense of security to senders—send tests to real recipients to get a more accurate idea of how they’ll respond.
+The core of any successful email program is a commitment to sending relevant, interesting content to your recipients. This means being intentional about your sending practices and not sending for the sake of sending. Aimless sending can cause your engagement to suffer, and that’s the last thing we want. The emails you send should resonate with your recipients. Otherwise, you risk getting ignored—or worse, sent to spam. 
+The next time you draft an email, consider the following before hitting send:
+Am I sharing new, urgent, or relevant information with my recipients?
+Have I shared an update about this topic recently? Is it too soon to send another update?
+Do all of my subscribers need to know this information? Should I update a specific segment of my list instead?
+Would I find this email valuable as a recipient?
+Finding what email content works best for your brand often involves trial and error, so feel free to try new things and experiment with new styles of copy as you get to know your recipients.
+Spam checkers are online tools that allow you to test your emails and indicate how likely recipients will mark them as spam. Although ISPs have the final say in how messages are filtered, spam checkers can often provide senders with peace of mind as they prepare new campaigns.
+Twilio SendGrid’s Email Testing provides a spam checking tool that shows how your emails may perform against some of the most powerful spam filters in the industry, as well as inbox rendering previews and URL checkers. Understanding how your emails may perform against these filters can help you to troubleshoot in advance and improve your likelihood of landing in the inbox the first time you send.
+Email marketing provides a unique challenge in that every audience is different and prefers different types of content. The more you understand your audience and their email preferences, the better. 
+The strategies above can help you meet your audience where they are and give you a place to start. The rest is up to you. The higher your email engagement, the more likely you are to avoid email spam filters and land in the inbox—but it’s up to you to stay there.
+Email is constantly evolving, which means best practices are too. Stay up to date by checking out our Top 10 Tips & Tricks to Stay Out of the Spam Folder Guide. For in-depth tips on landing in the inbox, check out the 2022 Email Deliverability Guide. Our Expert Services are also here to help you through specific obstacles within your email program.

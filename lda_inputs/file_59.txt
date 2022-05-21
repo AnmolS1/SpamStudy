@@ -1,0 +1,122 @@
+How can I stop phishing attacks? This is the question every IT admin in organizations all over the world are frequently having to ask themselves. Phishing is one of the most common, most effective, and most damaging types of attacks that hackers can utilize to break into accounts, steal data and scam your company. 
+Phishing attacks have been on the rise in the last few years. But with Covid-19 causing many organizations to move to remote working, phishing attacks have increased massively.
+Research from email security firm Barracuda has found that email phishing attacks have risen by a staggering 667%. We’ve seen attackers impersonating the US Government, the World Health Organization and even hand sanitizer manufacturers to attempt to trick users. 
+But stopping phishing attacks can be made easy for your
+organization – and it doesn’t have to be expensive. There are a range of tools
+you can utilize to protect your users and data from phishing, which will
+improve your security, save IT admins time, and save your business money in the
+long run. 
+Here’s the top ways for organizations to protect their data and users against phishing attacks. 
+Before we jump into how you can fix the problem, let’s take a step back and cover what phishing is and why it’s so difficult to combat. Phishing is a broad term, and actually encompasses a range of different strategies that hackers use to try and trick your employees. 
+Phishing Emails
+The most well-known kind of phishing attack is the phishing email. Pretty much everyone will have received one of these at some point. They look like this: 
+They’re likely to have a ‘call-to-action.’ This could be asking you to click a link or open a file, which will install a virus or some ransomware. Or, it could be asking you to fill out an invoice, make a fraudulent payment, or login to an account. Most of the time a savvy user will disregard these emails, as they don’t come from contacts your users trust. But, they can be convincing and cause real harm. 
+Phishing attacks will often use domains like ‘apple.iphone.com,’ which looks like it could be legitimate, but is actually a spoof domain. Unfortunately, this will be enough to fool some users into putting in their password or making a payment to an attacker.
+Phishing attacks can go beyond just email. It’s getting more and more common for users to be targeted by SMShing and Vishing; phishing attacks using phone calls and text messages.  These types of attacks are often very successful because we don’t approach a text message with the same caution that we would an email. 98% of people will open every text they receive, whereas only around 25% of emails sent are ever actually opened (superoffice.com). 
+Spear-Phishing and Business Email Compromise
+An advanced kind of phishing attack is spear-phishing. Spear-phishing is defined as hackers actually impersonating a trusted sender, like a business contact. They will then go to users, impersonating someone they know, and ask them for account information, or ask them to make a payment.
+ This can be hugely effective, as you often won’t suspect a trusted contact or a company you’ve worked with before to be an attacker in disguise. For this reason, these types of attack are often successful for attackers.
+An even more sophisticated kind of phishing attack is Business Email Compromise. This involves attackers using spear-phishing to gain access to high level executive and CEO accounts, which they can then use to request multiple fraudlent invoices from other employees. 
+Phishing Websites
+There is also the issue of phishing websites to consider. When surfing the web, users may come across pages that look legitimate, but are really phishing pages, that are designed to look genuine, but will actually be scraping your user data. Around 1.5 million new phishing sites are created every single month, according to Webroot. 
+Often users will come onto these pages from the links within phishing emails, but they can be found by usual web browsing if an attacker has been skilled enough to create a phishing page and hidden it within a genuine site. 
+This exact situation occurred recently, when a hacking group
+inserted just 22 lines of code onto the website of British Airways, directing a
+subset of their users to a phishing website which asked them to login and input
+credit card details. 
+The group were able to obtain information on half a million of the airline’s customers, and BA were recently fined more than £183 million for failing to properly protect this data under GDPR. 
+From the example of BA alone you can start to see how
+damaging phishing attacks can really be. Phishing accounts for 90% of all data breaches according to
+IBM, and the average cost of a breach is $3.86 million dollars.  76% of businesses reported to be a victim of
+phishing last year, and that figure is likely to rise this year. 
+The main reason for phishing attacks being so successful is
+that they slip through the gaps in email and web security technologies.
+Businesses commonly use email clients like Exchange, Office 365 or G-Suite for
+their email communications. These platforms will filter out some malicious
+email, like email that contains overtly malicious links or appear to be spam. 
+However, many phishing attacks don’t contain anything overtly malicious. Instead they use social engineering, deceiving users into divulging confidential or personal information. Even emails that do contain links to URLs can slip through the gaps, as URLs can be scanned by email filters and categorized as safe, and then later be injected with malware. 
+This same principle applies to phishing websites. You may
+have a desktop anti-virus or filter in place that will stop malicious downloads
+or users from prevent malicious webpages from loading, but sophisticated
+phishing websites will trick users into logging into accounts, or inputting
+credit card details, which the hacker can then use or sell elsewhere. 
+Because they are so hard for users and for security
+technologies to detect, phishing attacks. are often very successful. So how can
+you stop them?
+Email Filtering
+Your first line of defence against phishing is a Secure Email Gateway. 
+Email gateways are used to filter out harmful and malicious
+emails, and quarantine them automatically away from user inboxes. A good email
+gateway will block 99.99% of spam emails, and will remove any email that
+contains any malicious links or attachments. This means they are crucial in
+stopping users from receiving fraudulent phishing emails.
+Email gateways such as Proofpoint also expose when accounts have been compromised, and so can prevent business email compromise attempts within your organization, and stop your accounts being used to send out spam or phishing emails to companies that you work with. 
+Having an email gateway in place is important for
+organizations of any size. There are a number of different vendors providing
+cost-effective, easy-to-use and highly secure email gateways that will help you
+to stop phishing attacks.
+Phishing Protection Inside the Email Inbox
+One of the challenges surrounding phishing is that once a phishing email is within an inbox, or an account has been compromised and is sending out internal phishing emails, it can be very difficult for admins to reach into user inboxes and remove the threat. Cloud-based email security solutions that integrate with email networks via API provide a comprehensive solution to this problem, with advanced phishing protection capabilities. 
+Cloud email security solutions protect users from threats within the email inbox. Typically, they use algorithms powered by machine learning and artificial intelligence (AI) which are fed typical attributes of phishing emails. They then apply these attributes to the emails your users send and receive, along with analysis from anti-virus engines, to detect suspicious emails. The best cloud email security services will then display warning banners on these emails, alerting users they may be harmful, or according to admin policies, they will remove the emails from your network entirely. 
+Having cloud email security in place is especially important for organizations who deal with high value or sensitive data and need strong protection in place from all forms of phishing attacks.  
+These platforms work alongside the secure email gateway. Using them together, you have a multilayered security approach that allow you to stop most phishing attacks before they can enter your email network, and have the tools to remove any sophisticated attacks that can bypass the spam filter.
+Website Filtering
+Web filtering is one of the most important ways to prevent
+your users from accessing phishing websites. There are a few different ways
+that web filtering works, such as a web proxy or filtering using DNS. Without
+going too deep into the technical specifics, these filters sort web pages into
+different categories and use anti-virus systems to scan pages for threats. 
+Organizations can then block certain categories and enable polices that will block users from accessing any phishing pages. This is crucial to stopping users going onto fake phishing websites that look legitimate and downloading malware, or inputting their account or financial details. 
+Sophisticated web filtering solutions will also use machine learning algorithms to scan webpages for signs that they are phishing, even if they do not contain anything outright malicious.
+Web and Email Isolation
+Isolation is a different approach to security from the
+phishing solutions we’ve looked at before. The very idea behind isolation is
+total protection from the threats themselves, by isolating online content away
+from the user desktop and into secure containers, without impacting the user
+experience. 
+The benefit of this is that any web based content is
+stripped of threats and delivered to users removing the risk of infection or compromise.
+If a user visits a phishing webpage, or opens a malicious attachment in an
+email, isolation will stop any threats they may encounter. 
+Isolation works by mirroring the webpage content with any malicious code removed. This also means that many Isolation vendors can protect users from credential theft. Jonathon Lee, from Menlo Security, explains that: 
+“With Isolation, not only is a phishing page fully isolated, it is put into read-only mode. So, the user can still view the page, they can scroll through and navigate it, but they can’t enter in any information.”
+This is important as it means that if a user visits a
+phishing page impersonating a bank for example, they would not be able to enter
+their account details. The same goes for documents such as invoices. 
+Isolation is a more advanced solution against phishing
+attacks, and is ideal for organizations looking for the closest way to totally
+eliminate phishing as a threat.  When
+paired with email security, Isolation represents one of the most comprehensive
+ways for organizations to stop phishing attacks. 
+Phishing Simulation
+An important way to stop phishing attacks is to see how effectively your employees can tell if an email is phishing or not. This helps admins to know how at risk their organization is from phishing, and helps to direct traning where it is needed. 
+This has become a popular approach, with many vendors offering a
+comprehensive platform to create simulated phishing email campaigns, and send
+them out to users. Many of these same vendors also offer security awareness training
+materials, which can be used after phishing simulation to train users who need
+more help with identifying phishing emails. 
+The best phishing simulation platforms provide a library of pre-built phishing simulation templates, that admins can customize to be more relevant to their business. They will be able to customize the text, call-to-action, and any images within the email. This allows them to make the email more difficult to identify as phishing, or more obvious if needed. Admins should also be able to customize landing pages, so they can tell users they have fallen for a simulated phishing email and that they should be alert for real threats.
+Admins should then be able to send out simulated phishing emails to
+individual users, groups or departments, with different levels of difficulty
+for each group. They should be able to easily track users that fail the tests regularly,
+and see trends across the organization. 
+The main benefit of phishing simulation isn’t to catch out people who struggle with identifying phishing – instead, it’s one of the best ways to help users who struggle with cybersecurity issues. Phishing targets people, and ensuring that everyone in the organization is familiar with phishing, with ways to receive training and help to spot it, is an important factor in stopping phishing attacks. 
+Security Awareness Training
+Phishing attacks exploit human error to be successful. They don’t try and bypass security technologies, instead, they rely on human mistakes, reusing passwords, being fooled by well-crafted webpages or emails, and being too busy to check each email for signs of being a scam. They also exploit the fact that most people don’t know much about cybersecurity best practices. Most people have no idea how sophisticated the phishing attacks that cyber professionals see on a daily basis can be. 
+An important step to combat this and increase awareness of threats and how to stop them is Security Awareness Training. Security Awareness Training vendors offer businesses a range of training materials, that often try to be very interactive so that user genuinely engage in learning more about security issues.
+They teach users about the best ways to improve their security,
+like using two-factor authentication, not reusing passwords, not clicking on
+external email links from contacts they haven’t seen before or don’t look right
+and checking the URL of websites. All of these are crucial for users to
+successfully stop phishing attacks. 
+This often comes in the form of gamified videos, quizzes presentations
+and posters, delivered in bite-sized chunks to users to make sure they are easily
+digestible. Many Security Awareness Training vendors also offer phishing simulation,
+which allows admins to offer training to users that struggle with identifying
+phishing attacks. 
+Your users are your biggest security risk, and also your first
+line of defence against security attacks. It’s crucial they are trained about
+security issues and know the best steps to take to prevent them, especially when
+it comes to stopping phishing. 
+The solutions in this article will help you to stop phishing attacks and reduce the likelihood your employees will inadvertently transfer money or reveal credentials to attackers. 
+Social engineering can be very damaging, but implementing security awareness training and combining it with strong technological defences is the best way to prevent phishing attacks against your users and your organization. 

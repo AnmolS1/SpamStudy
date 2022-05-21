@@ -1,0 +1,19 @@
+15 USC §§ 7701 et seq. CAN-SPAM Act
+Controlling the Assault of Non-Solicited Pornography and Marketing Act “establishes requirements for those who send commercial email, spells out penalties for spammers and companies whose products are advertised in spam if they violate the law, and gives consumers the right to ask emailers to stop spamming them."
+16 CFR 316 Federal Trade Commission, CAN-SPAM rule
+47 CFR 64.3100 Federal Communications Commission, Restrictions on unwanted mobile service commercial messages.
+Commonwealth v. Kuvayev, Suffolk Sup. Ct. 05-1856-H, September 26, 2005
+By sending numerous commercial emails to consumers, defendant violated the CAN-SPAM Act and the Massachusetts Consumer Protection Act and was ordered to pay $37 million in civil penalties.
+The CAN-SPAM act: a compliance guide for business, Federal Trade Commission
+Explains the requirements of the law and its penalties. Helpful question and answer section about complying with the Act. 
+Consumer guide to stopping junk mail,  Mass. Office of Consumer Affairs
+Suggests steps for reducing junk mail and ways to protect yourself against spam.
+How to get removed from mailing lists and email spam lists, NoloArticle about how to stop getting unwanted junk mail and how to block spam emails.
+How to recognize and report spam text messages, Federal Trade Commission Tips on how to identify spam text messages and ways to filter and report them.
+Opt-out resources for unwanted junk mail, Privacy Rights Clearinghouse
+Includes suggestions on how to cut down your junk mail.
+Spam, Federal Trade Commission
+Offers tips on how to reduce spam and report it.
+Stopping unsolicited mail, phone calls, and email, Federal Trade Commission
+Provides contact information for consumer reporting companies and other organizations that can help stop unsolicited mail and email.
+Data security and privacy in Massachusetts, 3rd ed., MCLE, sections 7.5.1 to 7.5.3 (emails and CAN-SPAM Act).

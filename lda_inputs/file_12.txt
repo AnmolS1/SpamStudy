@@ -1,0 +1,40 @@
+Use the Block or Allow settings to help control unwanted and unsolicited email messages by creating and managing lists of email addresses and domains that you trust and those that you don’t. 
+At the top of the screen, select Settings  > Mail.
+Under Options, select Block or allow.
+Below are the block or allow settings for managing email addresses and domains:
+Don’t move email to my Junk Email folder
+Select this option if you want to turn off junk email filtering. If you select this, you won’t be able to use any of the other options on this page. 
+Warning: If you select this option, email detected as spam by Exchange Online Protection will be delivered to your Inbox if the spam action set by your administrator is to move these messages to the Junk Email folder.
+Automatically filter junk email
+Select this option if you want to use junk email filtering. This filter is in addition to the junk email filter that’s been set by your administrator.
+Safe Senders and Recipients
+Safe senders and recipients are domains and people whose email you don’t want diverted to your Junk Email folder. Add senders you trust and recipients that you don't want to block to this list. For more details, see Safe senders and recipients.
+Trust email from my contacts
+If you select this check box, email from any address in your contacts folders will be treated as safe. For more details, see Safe senders and recipients.
+Blocked Senders
+Blocked senders are domains and people you don't want to receive email messages from. Messages received from any email address or domain in your blocked senders list are sent directly to your Junk Email folder. For more details, see Blocked senders.
+Don’t trust email unless it comes from someone in my Safe Senders and Recipients list or local senders
+In addition to Safe Senders and Recipients and Blocked Senders, you can use this setting to treat all email as junk unless it comes from someone included in your Safe Senders and Recipients list.
+Safe senders are people and domains you always want to receive email messages from. Safe recipients are recipients that you don't want to block, usually groups that you’re a member of. Messages received from any email address or domain in your safe senders and recipients list are never sent to your Junk Email folder. 
+IMPORTANT: The server that hosts your mailbox may have junk email filtering settings that block messages before they reach your mailbox.
+To add an entry to Safe senders and recipients, enter the email address or domain that you want to mark as safe in the Enter a sender or domain here text box, and then press Enter or select the Add icon next to the text box.
+For example, to mark all email from addresses that end in contoso.com as safe, enter contoso.com in the text box.
+To mark a specific person as safe, enter that person's full email address. For example, to mark all messages from KatieJ@contoso.com as safe, enter KatieJ@contoso.com in the text box.
+(Optional) Select the Trust email from my contacts check box to treat email from any address in your contacts folders as safe.
+Select Save to save your changes.
+To remove an entry from Safe senders and recipients, select the entry and select Remove.
+Select Save to save your changes.
+To change an entry in Safe senders and recipients, select the entry and select Edit .
+Make any changes you want, and select Save to save your changes.
+Blocked senders are people and domains you don't want to receive email messages from. Messages received from any email address or domain listed in your blocked senders list are sent directly to your Junk Email folder.
+At the top of the page, select Settings  > Mail.
+Under Accounts, select Block or allow.
+To add an entry to Blocked senders, enter the email address or domain that you want to block in the Enter a sender or domain here box, and then press Enter or select the Add icon next to the text box.
+For example, to block all email from addresses that end in contoso.com, enter contoso.com in the box.
+To block a specific person, enter that person's full email address. For example, to block all messages from KatieJ@contoso.com, enter KatieJ@contoso.com in the box.
+(Optional) Select the Don’t trust email unless it comes from someone in my Safe Senders and Recipients list or local senders check box to treat all email as junk unless it comes from someone included in your Safe Senders and Recipients list or local senders.
+Select Save to save your changes.
+To remove an entry from your Blocked senders list, select the entry and select Remove..
+Select Save to save your changes.
+To change an entry in Blocked senders, select the entry and select Edit.
+Make any changes you want, and select Save to save your change.

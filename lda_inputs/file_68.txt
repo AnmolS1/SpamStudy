@@ -1,0 +1,43 @@
+This article describes how to use the Spam Filters tool in cPanel to reduce the amount of unwanted e-mail (spam) in your e-mail accounts. Spam Filters (powered by Apache SpamAssassin™) is an automated filtering system that uses a variety of techniques to identify and filter spam messages.
+Spam Filters
+Spam can be a major annoyance, with messages filling up user inboxes. Additionally, spam messages can contain virus attachments or malicious links.
+When you enable Spam Filters, powered by Apache SpamAssassin™, it uses scores to rate the likelihood that a message is spam. You can manage messages that Spam Filters marks as spam in a number of ways. For example, you can route messages marked as spam to specific folders, or you can automatically delete them.
+Although you can configure Spam Filters to automatically delete messages marked as spam, A2 Hosting does not recommend enabling this feature. Instead, you should use a filtering rule that redirects suspected spam messages to a spam folder. For information about how to do this, please see this article.
+Enabling Spam Filters
+To enable Spam Filters in cPanel, follow these steps:
+Log in to cPanel.If you do not know how to log in to your cPanel account, please see this article.
+In the EMAIL section of the cPanel home screen, click Spam Filters:
+On the Spam Filters page, click Process New Emails and Mark them as Spam.To enable auto-deletion of spam messages, click Automatically Delete New Spam (Auto-Delete).To change the deletion trigger level, click Configure Auto-Delete Settings. In the Auto-Delete Threshold Score text box, type the score number, and then click Update Auto-Delete Score.
+A lower score is more restrictive. For example, an auto-deletion score of 1 is very aggressive and deletes many messages. An auto-deletion score of 10 is more permissive and allows more messages through without deleting them.
+Configuring Mail Spam Filters
+You can further customize the parameters to control how Spam Filters examines incoming messages. You can also define whitelists (trusted senders) and blacklists (known spammers).
+To customize Spam Filters in cPanel, follow these steps:
+Log in to cPanel.If you do not know how to log in to your cPanel account, please see this article.
+In the EMAIL section of the cPanel home screen, click Spam Filters:
+On the Spam Filters page, click Show Additional Configurations.To configure whitelists, click Edit Spam Whitelist Settings:Click Add A New “whitelist_from” item, and then in the whitelist_from text box, you can specify e-mail addresses that are trusted senders.
+Click Update Whitelist (whitelist_from).
+To configure blacklists, click Edit Spam Blacklist Settings:Click Add A New “blacklist_from” item, and then in the blacklist_from text box, you can specify e-mail addresses that are known spammers.
+Click Update Blacklist (blacklist_from).
+To configure spam score settings, click Configure Calculated Spam Score Settings:Click Add A New “scores” item.
+In the scores list box, select the test name, and then type the score value.
+A2 Hosting recommends using the following test scores:
+URIBL_DBL_SPAM 10.0 10.0 10.0 10.0
+URIBL_WS_SURBL 10.0 10.0 10.0 10.0
+URIBL_BLACK 10.0 10.0 10.0 10.0
+T_DKIM_INVALID 2.0 2.0 2.0 2.0
+RDNS_NONE 1.8 1.8 1.8 1.8
+ The URIBL_* tests check blacklists such as Spamhaus. The RDNS_NONE test checks to see if the sending IP address has a reverse DNS entry, while the DCC_CHECK test checks the DCC checksum database to detect bulk mail. If you later want to reset these scores to their default values, use the following test scores:
+URIBL_DBL_SPAM 0 1.7 0 1.7
+URIBL_WS_SURBL 0 1.659 0 1.608
+URIBL_BLACK 0 1.775 0 1.725
+T_DKIM_INVALID 0 0 0 0
+RDNS_NONE 0 1.1 0 0.7
+Click Update Scoring Options.
+Disabling Spam Filters
+You can disable Spam Filters whenever you want. For example, if you are unable to receive a non-spam e-mail message, you can disable Spam Filters and ask the sender to resend the message so it reaches your account.
+To disable Spam Filters in cPanel, follow these steps:
+Log in to cPanel.If you do not know how to log in to your cPanel account, please see this article.
+In the EMAIL section of the cPanel home screen, click Spam Filters:
+
+On the Spam Filters page, click Process New Emails and Mark them as Spam. cPanel disables Spam Filters.
+More InformationFor general information about SpamAssassin (which runs Spam Filters,) please visit http://spamassassin.apache.org.

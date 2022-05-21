@@ -1,0 +1,42 @@
+Blocking someone will stop their email coming to your Inbox. 
+To block someone in Outlook.com, select the messages or senders you want to block.
+From the top toolbar, select Junk > Block (or Spam > Block).
+Select OK. The messages you select will be deleted and all future messages will be blocked from your mailbox.
+To unblock someone, open your Blocked senders list and select the  next to their name.
+If you're still receiving email in your Inbox from a sender you blocked, see Receiving email from blocked senders in Outlook.com.
+Select the messages you want to mark as junk.
+At the top of the screen, select Junk > Junk (or Spam > Spam) to move the message to your Junk or Spam folder.
+If email is being sent to your Junk folder in error, read Mail goes to the Junk folder by mistake.
+Messages in your Junk folder are automatically deleted between 10 and 30 days after they arrive.
+Select the arrow to see more.
+This will block everyone except those in your Safe senders list. Remember to include everyone you want to hear from.
+Open your Safe senders and domains and select Add.
+Type the email addresses or domains of your contacts and other people you want to add, and press Enter.
+Under Filters, select from:
+Only trust email from addresses in my Safe senders and domains list and Safe mailing lists
+Block attachments, pictures, and links from anyone not in my Safe senders and domains list
+Select Save.
+Use this feature to block individuals or organizations.
+Open Blocked senders and domains and select Add.
+Type the email address or domain that you want to block, and press Enter.
+Select Save.
+To remove someone from a list, select   next to the email address or domain.
+You can have up to 1,024 addresses or domains in the Blocked senders and Safe senders lists. If you want to add more than that, try blocking domains instead of individual email addresses.
+Rules can help filter out specific words that repeatedly come from different or hidden email addresses.
+Open your Outlook.com Rules and select + Add new rule.
+Every rule needs at least three things: a name, a condition, and an action.
+Rules can also contain exceptions to conditions. You can add multiple conditions, actions, and exceptions at each step by choosing Add a condition, Add an action, and Add an exception.﻿
+For example, to create a rule that deletes all email with the word "weather" in the subject:Name = "Weather"; Condition = Subject includes "Weather"; Action = Delete
+Rules only work on email in your Inbox.
+If you don't want any more rules to run after this one does, select the Stop processing more rules check box. For more information, see Stop processing more rules in Outlook.com.
+Press Save to create your rule.
+When you post to a message board, newsgroup, chat room, or other public website, spell out your entire email address, for example, chesterbeane AT outlook DOT com. This way, a person can interpret your address, but the automated programs that spammers use often can't.
+Spammers get rich when people buy their "products." Don't reply to spam (even to unsubscribe), buy anything from an unfamiliar business, or agree to hold or transfer money for anyone. Beware of messages that appear to come from Microsoft and that ask for your password or threaten to close your account or expire your password. They're false.
+You can greatly reduce your risk from hackers, viruses, and worms if you have a firewall, keep your Windows and Microsoft Office software up to date, and install antivirus and anti-spyware software (and update all routinely).
+If you want to stop receiving newsletters or promotions, you can unsubscribe from your inbox.
+In your inbox, select a newsletter or promotional email.
+At the top of the reading pane, select Unsubscribe.
+When you shop online, companies sometimes pre-select check boxes that indicate you agree that it's fine to sell or give your email address to responsible parties. If you don't want to receive email from those companies, make sure you clear the check boxes.
+Avoid posting your email address on social networking sites, large Internet directories, or job-posting sites. Don't even post it on your own website, unless you disguise it as described in "Disguise your email address", below.
+When you sign up for web-based services such as banking, shopping, or newsletters, carefully read the privacy policy before you reveal your email address so you don't unwittingly agree to share confidential information.
+The privacy policy should outline the terms and circumstances regarding if or how the site will share your information. If a website doesn't post a privacy statement, consider taking your business elsewhere.

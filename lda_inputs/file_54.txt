@@ -1,0 +1,7 @@
+Email anti-spam technology is used to prevent malicious content from being delivered via email. These tools scan email messages, content, and attachments for potential threats and then filter or block suspicious messages from being delivered. Administrators can whitelist approved content or senders while also blacklisting or blocking communications from suspicious parties.
+Companies use email anti-spam tools to prevent their employees from being misled through phishing attacks or compromising local networks when downloading malware. They also prevent employees from delivering information to misidentified users, saving the business from potential breaches.
+All secure email gateway software possesses anti-spam or email filtering capabilities, but those tools also have additional features for comprehensive spam filtering, email encryption, and information archiving.
+To qualify for inclusion in the Email Anti-Spam category, a product must:
+Filter email content for malware or viruses
+Identify mislabeled senders or potential phishing attempts
+Provide blacklisting or blocking capabilities to restrict communication with suspicious parties

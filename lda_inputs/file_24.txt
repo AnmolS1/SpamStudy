@@ -1,0 +1,39 @@
+Keep unwanted emails out of your Comcast email account with spam blockers and email filters.
+Make Sure Your Inbox Is Safe
+Now that you've set up your Comcast email, you don't want your inbox to get bogged down by spam and other unwanted emails. Xfinity Connect lets you turn on Comcast spam filters and create other email filters to keep your inbox clean. Here's how to make sure your inbox stays organized and safe.
+Spam Filters
+Xfinity Connect email lets you set spam blockers with a Comcast email spam filter.
+Spam Filtering places emails designated as spam in a separate Spam folder.
+You can check and see if any legitimate email was marked as spam by accident and use the toolbar to mark it Not Spam.
+Emails marked as Spam and moved to the Spam folder will be deleted automatically after seven days.
+Turning Spam Filtering off sends all emails directly into your inbox – even those designated as spam.
+Follow the simple steps below to change your Comcast spam filter settings.
+Change Spam Filter Preferences
+Open Xfinity Connect.
+Click the Gear icon on the top-right of the navigation bar, then click Email Settings.
+From the menu on the left, click on Advanced Settings.
+Click the Automatically move spam and potentially harmful messages to the Spam folder option.
+Note: Enabling Spam filtering will move emails designated as spam to the Spam folder and delete them automatically after seven days.
+Emptying Spam and Trash Folders
+To empty your trash in Xfinity Connect, click on the Menu button next to Trash and click Empty trash.
+To erase individual messages, click the folder you want to open and select individual messages to delete. After selecting the messages, click the trash icon on the email toolbar.
+To empty your Spam folder, right-click the Menu button and select Empty Spam. This will erase all spam emails.
+Email Safe List
+The Email Safe List, found under Settings > Advanced Settings in Xfinity Connect, lets you list the only email addresses from which you want to receive emails.
+Note: If you use this feature, you will only receive messages from the addresses you specify. Messages from other addresses not included on the list will be rejected.
+Set Up Email Filters
+You can also set up multiple email filters with your Comcast email account. An email filter can help sort your messages into different folders, such as folders for all family or work emails.
+There are two parts to a filter: the condition, which determines if an email is affected by the filter, and the action, which determines what to do with the email.
+Create an Email Filter
+In Xfinity Connect, click the Gear icon on the top-right of the navigation bar, then click Email Settings.
+Select Filter Rules under Mail, and then select Add new rule.
+Enter a name for the filter in the Rule name field.
+Click Add condition to choose the criteria you want to filter.
+Click Contains to select the parameters of the filter. Check that the logic used is correct.
+Fill in the word or phrase you want to filter.
+Under Actions, click Add action. Choose what you want to happen to the applicable email(s).
+Depending on the selection, continue to fill out the actions you want to apply to the filtered email.
+A single filter can have multiple conditions and actions for how a message will be classified. Be sure that the logic is consistent for the outcome you want, and that the conditions and actions do not contradict.
+Click the trash icon to delete a filter Condition or Action.
+Click Save to save your filter.
+Back at the Mail Filter Rules page, you can also choose Edit to modify the filter rules or Disable to turn off the filter. Click the trash icon to delete the filter.

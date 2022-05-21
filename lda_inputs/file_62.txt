@@ -1,0 +1,25 @@
+Who out there loves to be inundated with unsolicited email? This digital wasteland of mysterious messages clogging your inbox. Also known as SPAM, appropriately named after that mysterious meat like substance that most want nothing to do with in a nutritional diet. Well, if you like SPAM this article is not for you. If you don’t like SPAM like us here in the community forums this article will help you learn how to block/unblock email by sender.
+You can block email messages from an unwanted sender. Messages will automatically delete from your inbox, spam, and trash folders. Unblocking is just as easy.
+Learn what to look for here.
+First, learn how to:
+Block an email address
+Sometimes it's necessary to block messages from a particular sender. Your AT&T email account makes it easy to block unwanted messages.
+Follow these steps to block an email address:
+Log in to your AT&T email account.
+Select the gear icon, and then select Settings from the top-right corner of the page.
+Select Blocked Addresses from the left-hand menu.
+Enter the address you'd like to block in the Add an address field.
+Select the Block button and then select Save. This email address is now blocked, and you will not be able to receive email messages from that address.
+Now, learn how to:
+Unblock an email address
+If you change your mind and want to unblock an email address, it's easy.
+Follow these steps to remove an email address from your blocked list:
+Go to the Blocked Addresses page.
+Select the email address you'd like to remove from the Blocked Addresses list.
+Highlight the address.
+Select the Remove button and then select Save. This will remove it from your list of blocked senders, and you can receive email from that address again.
+Additional information
+Learn more about blocking and unblocking
+When you block an email address, your AT&T email account will automatically delete messages sent to you from that account.
+You'll never see emails from blocked accounts in your inbox or any other email folders, including Spam and Trash.
+If the unwanted email is coming from your AT&T email account, your account may have been hacked. Learn how to identify and regain control of a hacked, phished, or compromised email account.

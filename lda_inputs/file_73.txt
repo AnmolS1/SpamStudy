@@ -1,0 +1,38 @@
+Know the different ways of configuring HES/HES - Inbound Filtering to stop receiving emails from spoofed senders. 
+Email spoofing is often an attempt to trick the user into making a damaging statement or releasing sensitive information (such as passwords).
+Email spoofing may occur in different forms, but all have a similar result: a user receives email that appears to have originated from a legitimate source when it actually was sent from a malicious one.
+To stop receiving emails from spoofed senders, choose any of the following options:
+Option 1: Check your HES configuration settings
+Make sure that the domain's MX record is properly redirected to HES / HES - Inbound Filtering. For more information, refer to the KB article: Redirecting Mail Exchange (MX) records to Hosted Email Security (HES).
+For the correct MX record for your account, check your HES / HES - Inbound Filtering Confirmation Email.
+Verify the action taken by HES/HES - Inbound Filtering on the spoofed email/s.
+Log on to the HES/HES - Inbound Filtering console.
+Go to Logs > Mail Tracking.
+Under Mail Tracking - Inbound Traffic, query the spoofed email address.
+Check if the spoofed sender is listed on the Approved Senders List on the HES / HES - Inbound Filtering console.
+If not, check if the end-user is registered to the HES/HES - Inbound Filtering Web EUQ. If the owner of the spoofed address is registered to HES Web EUQ, make sure that the address is also not listed in the Web-EUQ Approved Senders list. To do this, you can:
+Ask the owner of the spoofed email address.
+On the HES / HES - Inbound Filtering console, go to Administration > End-User password and then query the email address.
+If a corporate firewall is in place, configure the firewall to allow only the HES/HES – Inbound Filtering IP ranges. Otherwise, proceed to the next step.
+Increase the aggressiveness of the Dynamic IP Reputation Settings.
+Option 2: Create a policy for filtering spoofed emails
+Login to HES Console, Go to Inbound Protection > Policy.
+Click Add Rule.
+Fill out the following:
+Name(Name of the Rule)
+Enable Status
+Go to Recipients and Senders
+Go to Recipients, in the drop down list, select My domain, My Groups or Type address or domain of the recipients.
+Go to Senders then click Select addresses to choose My domain or Type address or domain of the recipients.
+Under Scanning Criteria, select No criteria, then set the "And message attributes match" to None.
+Under Actions, you may choose which action you want for the spoofed e-mails. The recommendations are Quarantine or Delete entire message.
+In this example, set "Then action is" to Quarantine message.
+Option 3: Use the Blocked Senders option
+Go to Inbound Protection > Blocked Senders.
+Add all your known spoofed senders or any sender you want to be blocked. A sender can be a specific email address or all senders from a domain.
+Option 4: Configure SPF Checking (Sender Policy Framework)
+Go to DNS and add TXT record:
+When using HES Outbound scanning, the following is the recommended SPF record:
+v=spf1 a:rout.hes.trendmicro.com include:spf.hes.trendmicro.com -all
+When you are not using HES Outbound scanning, the following is the recommended SPF record:
+v=spf1 ip4:IP_OF_YOUR_OUTGOING_MTA

@@ -1,0 +1,67 @@
+For most people, getting plenty of junk mail has become part of the daily routine. The image of our inbox flooded with unwanted emails, such as advertising messages, social network notifications, or phishing emails, is likely to make you feel annoyed and unprotected.
+You should never click on an unknown link, respond to an unsolicited email, or download a suspicious attachment. Even accidental opening of a spam message can make your inbox vulnerable for further intrusion. 
+DoNotPay is here to help you stop spam emails for good and keep your inbox safe and clean!
+To protect yourself against unwanted emails and possibly earn some money as compensation for the hassle of receiving junk mail, follow these steps:
+Log into your DoNotPay account through the web browser link
+Choose the Spam Collector option
+Enter your email address to connect it with DoNotPay
+When you receive a next spam email, you need to forward it to spam@donotpay.com
+DoNotPay will automatically unsubscribe you from the mailing list. The DoNotPay unsubscribe service doesn't require account details, so the service recognizes only those emails you want to get rid of.
+There is even a way to take revenge against email spammers. Here is how it works:
+Forward a spam message to spam@donotpay.com
+DoNotPay checks if there is a class-action lawsuit against the sender
+If there is one, you'll see a flag in the Spam Collector tab of your DoNotPay dashboard 
+Select Claim cash compensation to automatically submit to the settlement
+Spam emails are unlawful if you didn’t agree to receive them, or there’s no unsubscribe option available. If there is a class action lawsuit active against the sender, DoNotPay will notify you. You can join the lawsuit and get compensation if the class action is won.
+We'll show you how to stop emails on your computer with the top three service providers — Gmail, Yahoo, and Outlook.
+If you are a Gmail user who wants to protect yourself from junk emails, you can do it on your own following these steps:
+Go to your Inbox
+Open the email you want to block
+Click on the drop-down menu in the upper-right corner of the email by three vertically stacked dots
+Select Block the sender’s name
+Messages sent by the address will go to your spam folder in the future.
+To block spam emails in Outlook:
+Select the messages or senders you want to block
+From the top toolbar, choose Junk 
+Select  Block (or Spam > Block)
+Hit OK
+The messages you selected will be deleted. Outlook will add the sender's email address to the blocked senders list, so all future messages will be blocked from your mailbox.
+If you use Yahoo for email communication, here is how to stop spam emails:
+In your Yahoo account, select Settings
+Click Blocked Addresses
+In the Add an address field, click on Block 
+Enter an email address you want to block
+Click Block 
+Stopping an email on your Android or iOS works the same, but the interface looks slightly different. The steps are the following:
+Open the email from the sender you want to block
+Open a drop-down menu in the upper-right corner of the message by clicking three vertically stacked dots. Make sure it's not the corner of the app but the email
+Click on Block sender’s name
+You won't receive messages from the email address from now on.
+Dos
+Don’ts
+Create a separate email address when registering for online shopping
+Use a personal or business email address for online purchases and sign-ups
+Make sure an attachment is safe before you download it
+Publish your email address on the web unless it’s necessaryHide your email address
+Open messages that you suspect may be spam
+Statistics provided by EcoCycle say one could spend eight months of their life handling unwanted mail. An average American daily gets tons of credit card offers, prepaid envelopes, sales letters, clothes and furniture catalogs, brochures, leaflets, and other unwanted mailings. Junk mail not only wastes our time and space but can also be irritating for various reasons:
+Sorting, reading, and recycling take time away from your free time
+The abundance of paper makes a mess in your home or office
+Exposing your contact details represents a huge intrusion into your personal information 
+Last but not least, your carbon footprint is getting bigger as you keep receiving the mail you actually don’t need
+DoNotPay is happy to introduce you to our new feature, DoNotMail. Sign up for the service, and we can guarantee you'll stop receiving spam mail and therefore gain full control over your mailbox. You only need to take a snapshot of the unwanted mail and send it to us. Not only will you be permanently unsubscribed from the unsolicited paper mail, but you might additionally get compensation if you join the lawsuit against the sender, and the court finds their mailing practices illegal.
+DoNotPay is more than a spam email blocker. You can access the app in any web browser to cut red tape, avoid speeding tickets, or cancel that Planet Fitness membership you don’t use. Our services save you time and energy for more exciting aspects of life. 
+DoNotPay is great if you need help:
+Dealing with your credit cards issues
+Stopping your subscriptions or memberships
+Scheduling a DMV appointment fast and easy
+Disputing parking ticket fines
+Getting compensation for delayed or canceled flight
+Helping you delay paying bills you cannot pay when they’re due  
+Fighting traffic tickets
+Fighting stalking and harassment
+Exploring opportunities for refunds from companies
+Getting you through the phone queue when calling customer service departments
+Getting rid of speeding tickets
+Dealing with robocalls
+Preparing paperwork for court if there is a possibility of small claims

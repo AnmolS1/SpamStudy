@@ -1,0 +1,101 @@
+Are you getting a lot of spam messages through your website contact form? This can be really frustrating and time consuming to deal with.
+The good news is that there are automated ways to stop contact form spam in WordPress.
+In this article, we will share 5 different ways to reduce and block contact form spam in WordPress.
+Why You Need to Block Contact Form Spam
+Contact form spam is usually automated. It’s an issue even for small, little-known websites as it’s carried out by “bots” that automatically send spam.
+These spambots crawl websites and look for non-secure forms, so they can email you spammy links. 
+They may also try to break into your login form by using brute force attacks, which is one reason why WordPress security is so important.
+Sometimes, they can even look for vulnerabilities in your site’s forms, so they can hijack them to send malware or spam to other people. 
+This means that spam isn’t just a nuisance. Those spambots can be dangerous to your website, and your reputation.
+Let’s take a look at some proven methods for preventing contact form spam on your WordPress site.
+Choose the right plugin to combat contact form spam
+Using reCaptcha to block contact form spam
+Using invisible recaptcha to block contact form spam
+Using custom captcha to prevent contact form spam
+Prevent spam bots from seeing your contact form.
+1. Choosing the Right WordPress Form Plugin to Combat Spam
+Many WordPress contact form plugins don’t come with built-in spam protection. Those that do have some spam protection features often aren’t very reliable or easy to use.
+The most effective way to block contact form spam is by choosing the best WordPress contact form plugin.
+We recommend using WPForms, because it comes with built-in “honeypot” spam protection, which we’ll cover in a moment.
+It also has built-in reCAPTCHA and custom CAPTCHA functionality that lets you fight spam. We’ll be going through the different options you can use.
+First, you need to install and activate the WPForms plugin. If you’re not sure how to do that, then take a look at our step by step guide on how to install a WordPress plugin.
+Note: 3 out of the other 4 tips in this article also works on the free WPForms lite version as well.
+Once WPForms plugin is activated, you’ll need to create a contact form. 
+Simply head to WPForms » Add New, enter a name for your form, and select the ‘Simple Contact Form’ template. 
+WPForms will automatically create a basic contact form for you with fields for the person’s name, email address, and message:
+By default, WPForms will enable an anti-spam “honeypot” for you. This is an invisible field that users can’t see, but that bots will try to fill out. When that field is filled out, the form will be rejected as spam.
+You can check this setting on any of your forms under Settings » General. ‘Enable anti-spam honeypot’ should be automatically enabled.
+What if some spam is still getting through? Then you can use any of the below methods to stop spammers from using your contact form.
+2. Use ReCAPTCHA Checkbox to Block Contact Form Spam
+One straightforward way to stop the spambots getting through is to use ReCAPTCHA. This method also works with the lite version of WPForms.
+ReCAPTCHA is a free tool available from Google, and we use it in combination with WPForms built-in honeypot system.
+To add a reCAPTCHA checkbox to your form, you’ll need to first go to WPForms » Settings in your WordPress dashboard and click on the ‘reCAPTCHA’ tab.
+Next, you need to select ‘Checkbox reCAPTCHA v2’ by clicking on it. 
+To get your Site Key and Secret Key, you need to go to Google’s reCAPTCHA setup page.
+On the Google reCAPTCHA page, click the blue ‘Admin console’ button on the top right.
+If you’re not already logged into your G Suite account, then you’ll be prompted to login or create an account.
+Next, you’ll see a screen where you can register your site. You need to start by typing in a label for your site. This is for your own reference and will not be visible to users. 
+After that you need to select ‘reCaptcha v2’ and the ‘I’m not a robot’ checkbox option.
+Next, enter your website’s domain name.
+Your email address will already be present since you’re logged into your Google account. However, you can enter additional email addresses if you want.
+After that, you need to check the box to accept the terms of service and click the ‘Submit’ button at the bottom of the page.
+Next, you’ll see a page with a site key and secret key for your website. 
+You need to copy and paste the site key / secret key into your WPForms » Settings page in your WordPress dashboard. After that click on the ‘Save Settings’ at the bottom of that screen.
+Now, you can add the reCAPTCHA checkbox to your contact form.
+Find your form under WPForms » All Forms and then click to edit it.
+Once inside the form builder, click on the ‘reCAPTCHA’ field on the left hand side. You’ll see a message that tells you that reCAPTCHA has been enabled for the form. Simply click the ‘OK’ button to continue.
+You’ll now see the reCAPTCHA logo at the top of your form.
+Note: If you want to take reCAPTCHA off your form at any point, just click on the ‘reCAPTCHA’ field on the left again. You’ll see a message prompting you to confirm that you want to remove it.
+Once you’re done, make sure you save your form, so you can then add it to your website.
+Adding Your Contact Form to Your Website
+To add your form, go to your Contact page and click to add a new block. Select the ‘WPForms’ block by searching for it or by looking for it under ‘Widgets’.
+Next, select your form from the dropdown list, and it’ll be added to your page.
+When you preview or view your page, you should see the reCAPTCHA box at the bottom of your form.
+This should drastically reduce contact form spam on your website since it eliminates all automated spam submissions.
+3. Using Google Invisible reCAPTCHA to Block Contact Form Spam
+Some website owners don’t want their users to have to check a box in order to submit the contact form. This is where invisible reCAPTCHA comes in.
+Invisible reCAPTCHA works just like the regular reCAPTCHA, except there’s no checkbox.
+Instead, when the form is submitted, Google will determine whether it might be a bot submitting it. If so, Google will pop up the extra reCAPTCHA verification. If you want to see how it works, Google has a demo here.
+You can use invisible reCAPTCHA on your WPForms contact forms. It’s very similar to the process above for using a reCAPTCHA checkbox. 
+The first difference is that you need to select a different option when setting up reCAPTCHA with Google. Instead of picking the ‘I’m not a robot’ checkbox option, choose ‘Invisible reCAPTCHA badge’.
+Next, when you go to WPForms » Settings and click the ‘reCAPTCHA’ tab, you’ll need to select the ‘Invisible reCAPTCHA v2’ option:
+When you add the reCAPTCHA field to your contact form, it’ll now use the invisible reCAPTCHA. When users come to your form, it’ll look like this:
+The reCAPTCHA logo will always be on the bottom right of the screen.
+If the user wants to know more about reCAPTCHA on your site, then they can click that logo. It’ll expand to show links to Google’s privacy policy and terms of service. You should also update your own site’s privacy policy.
+Note: in the screenshot, you’ll see the option for reCAPTCHA v3, but we’re specifically not covering that since it has a lot of false positives and can block real users. We use and recommend reCAPTCHA v2 Checkbox option that we showed in our step 2 of the article.
+4. Using Custom Captcha to Block Contact Form Spam
+Some website owners don’t want to use Google’s reCAPTCHA on their site due to privacy concerns, or they simply want something not branded.
+In that case, you can use WPForms custom CAPTCHA addon which is part of the Pro plugin. 
+It lets you create custom math questions CAPTCHA or other custom questions that you can use as validation.
+To use this addon, you need to go to WPForms » Addons, find the Custom Captcha Addon, and click the ‘Install Addon’ button.
+The addon should install then activate automatically. 
+Once it’s installed, go to WPForms » All Forms and open up your contact form. Under ‘Fancy Fields’ you’ll find the ‘Captcha’ field. 
+Click on it and drag it onto your form. We recommend placing it just above the ‘Submit’ button.
+If you want to change the Captcha field from the default math question, click on it and select the type of Captcha you want to use. The options are ‘Math’ or ‘Question and Answer’. 
+When you choose the Math option, WPForms will generate random math questions, so it’s less predictable.
+If you’re choosing Question and Answer option, then we recommend adding at least a few questions there, so it’s harder to predict since WPForms will rotate them randomly.
+Once you’re happy with your form, save it, then add it to your Contact page. You can do so by creating a ‘WPForms’ block, as shown in the reCAPTCHA checkbox method.
+5. Prevent Spam Bots From Seeing Your Form
+Perhaps you don’t want to use reCAPTCHA or a custom captcha field on your form.
+Another way to prevent contact form spam is to stop bots from seeing your form. You could do this using password protection, or by only showing your form to registered users of your WordPress membership site.
+These methods might be overkill for your regular contact form, but they could work well in other situations.
+For instance, if you run a monthly Q&A for your email newsletter subscribers, you could create a form for them to submit questions. 
+Password Protecting Your Form Using WordPress’ Visibility Options
+This is a quick way to password protect your contact page.
+Go to the ‘Publish’ settings for your page then set the visibility to ‘Password Protected’. Pick a password for your page. This will be the same for all users.
+When you publish your page, it’ll look like this when people first arrive there. They’ll need to enter the password to see the page and the contact form.
+Once they’ve entered the password, they can use your form as normal.
+There are a couple of drawbacks to this method.
+First, your page will show the default WordPress message. This reads, “To view this protected post, enter the password below.” It isn’t easy to edit this.
+Second, your whole page will be protected, not just your form. This could be annoying if you want to have some content, such as FAQs, visible to all users.
+Password Protecting Your Form Using a WPForms Addon
+If you’re using the Pro version of WPForms, then you can install the Form Locker addon which lets you password protect your form itself, not your whole page.
+To install it, go to WPForms » Addons. Find the Form Locker Addon and click ‘Install Addon’. It should automatically activate.
+Next, find the form you want to protect under WPForms » All Forms. Click on it to edit it.
+Go to Settings » Form Locker. Check the ‘Enable Password Protection’ box and you’ll then see the options to enter your password and your message.
+Your contact page will now be visible to all users, with just the contact form hidden. The form will look like this before the password is entered:
+Showing Your Contact Page Only to Registered Users
+A final method is to only let users access your contact form if they’ve registered on your site. You could use a membership site plugin and protect your contact page so it can only be viewed by logged-in members.
+This is a great option if you want to offer a specific service to members only. There are several great membership site plugins you could use to do this.
+We hope this article has helped you learn how to block contact form spam in WordPress. You may also want to see our guide on how to create a business email address and our comparison of the best business phone services.
+If you liked this article, then please subscribe to our YouTube Channel for WordPress video tutorials. You can also find us on Twitter and Facebook. 

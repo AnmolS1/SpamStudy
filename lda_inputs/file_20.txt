@@ -1,0 +1,134 @@
+No one likes receiving spam emails. Not only are they annoying and time-consuming, but they can also be dangerous. It’s estimated that 94% of malware is delivered by spam emails, and other potential dangers include spyware, phishing, and ransomware.
+Loosely defined, spam refers to messages you don’t want to receive, which tend to be either commercial or deceptive in nature. Spam is as old as the internet, and despite considerable efforts to overcome it, it remains a problem. In this overview, we explain how to identify spam, how to report spam, how to block unwanted messages, and how to prevent spam.
+How to identify spam emails
+Sometimes it’s obvious when a message is spam. However, if it isn’t immediately apparent, there are some helpful signs you can look for:
+Check the sender’s address
+Most spam comes from email addresses that don’t make sense or appear as gibberish – for example, amazondeals@tX94002222aitx2.com or similar. By hovering over the sender's name, which itself may be spelled oddly, you can see the full email address. If you’re not sure if an email address is legitimate or not, you can put it into a search engine it to check.
+Consider what kind of information is being requested
+Legitimate companies don’t contact you out of the blue via unsolicited emails to ask you for personal information such as banking or credit card details, Social Security number and so on. In general, unsolicited messages telling you to 'verify account details' or 'update your account information' should be treated with caution.
+If you need to, navigate to the relevant website yourself – by typing the URL directly into your browser or searching for it via a search engine – and log in to your account without clicking on the link in the email.
+Be wary if the message is creating a sense of urgency
+Spammers often try to apply pressure by creating a sense of urgency. For example, the subject line may contain words like “urgent” or “immediate action required” – to pressure you into acting.
+Check whether the email uses your name
+Although some spam messages are sophisticated, a potential red flag is being addressed in vague terms, like “Dear Valued Customer” and so on. Legitimate companies to which you have subscribed will know your name and will address emails accordingly.
+Check grammar and spelling
+Typos and bad grammar are red flags. So too are odd phrasing or unusual syntax, which might result from the email being translated back and forth through Google Translate several times.
+Be wary of attachments
+Legitimate organizations avoid sending unsolicited emails with attachments since these are known to carry malware. If you receive an email from an unknown sender urging you to open an attachment, this is a sign of spam. Avoid opening attachments in unknown emails in case they download malware onto your device.
+Examples of spam emails and messages
+Spam emails fall into different categories. Some of the most common examples include:
+Ads – trying to sell you products or services. Sometimes these may be real but often, they are a scam.
+Spoofed emails – which impersonate legitimate organizations and attempt to fool you into handing over personal or confidential information via phishing.
+Money scams – these range from the notorious ‘Nigerian Prince’ scams to more sophisticated attempts to defraud, such as fake charity appeals.
+Malware warnings – which tell you that you have a malware infection on your devices, such as ransomware or a virus. Often these messages invite you to open an attachment or click on a link – which then downloads malware onto your device.
+Forced or accidental subscriptions - When you buy something online or sign up for a new app, you may inadvertently subscribe to newsletters. Some companies may use opaque tactics, so you subscribe without meaning to.
+Over-the-top promises – such as ‘get rich quick’ schemes, miracle diets, unbelievable discounts and offers, winning a prize draw or lottery, and so on.
+Chain letters – often a far-fetched story you need to pass on, otherwise 'something bad will happen to you.'
+How to reduce spam emails
+While spam filters – which we explain below – can help reduce spam, there are some email best practices you can follow to prevent spam from reaching you in the first place. These include:
+Be selective about what you sign up to:
+Only disclose your email address to organizations you trust. When you do share it, only opt-in to newsletters that you want to receive. Remember, reputable companies will make unsubscribing from marketing emails easy and transparent.
+Be careful about how you share your email address:
+We all share our email address with friends, family, and work contacts. But avoid posting it on public forums or on social media, where bots and spammers may capture it. Try to use your email address for as few services as possible – only the ones you genuinely use.
+Use different email addresses for different purposes:
+For example, an email address for work, another for close friends and family, and another more disposable one for sign-ups and subscriptions. If the latter is breached, you can abandon it, and it doesn’t pose a risk to your other accounts.
+Be careful how you react to spam messages:
+If you can avoid doing so, it’s best not to click on or open spam messages. When in doubt, be cautious by deleting messages you are unsure of. Never reply to a spam message – doing so alerts the scammers that yours is a live email address and invites yet more spam. Never click on links or open attachments in spam emails to avoid downloading malware or falling victim to a phishing attack.
+Should you unsubscribe from spam emails?
+If it’s a marketing newsletter from a company you know, which you no longer want to subscribe to, then you can hit unsubscribe. However, if it’s a spam email, it’s best not to unsubscribe (assuming it even offers this option). This is because any interaction with spammers is bad – unsubscribing lets them know you’re a potential prospect. In some cases, the unsubscribe link itself could be dangerous. It’s best to delete spam emails or using spam filtering or blocking.
+How to report spam emails
+Simply deleting spam emails won’t stop others from appearing in your inbox. But you can train your email provider to recognize which emails you would like to see and which you don’t. You can do this by using spam reporting features, which vary by the email provider. Some well-known examples include:
+How to mark spam messages in Gmail in web browser
+Place a checkmark next to any spam messages in Gmail by selecting the empty box to the left of the email.
+Go to the menu just above your inbox.
+Find the icon that looks like an exclamation symbol ( ! ) in a stop sign.
+Press it to mark the message as spam.
+If you have Gmail keyboard shortcuts enabled, you can also press ! (Shift+1).
+Gmail will confirm that the message and any conversations it's part of have been moved to spam.
+How to mark spam messages in Gmail in a mobile web browser
+Place a checkmark in the box to the left of the unwanted message or messages.
+You can also open the message you want to report.
+A new bar will appear, floating in the upper right of the screen. Press the down arrow iconto reveal the rest of the options.
+Select Report spamfrom the new extended menu.
+How to mark spam messages in Gmail in the Gmail app
+To report a message as spam in the Gmail app for Android and iOS mobile devices:
+In your inbox, tap the initials in front of one or more messages.
+The top menu will shift to show you the options for your selected message (s). Tap the menu icon, designated by three stacked dots, in the upper right corner of the screen.
+Another menu will expand to show an extended set of options. Choose Report spamfrom the list.
+How to mark spam messages in Outlook on a web browser
+Log in to your Outlook account.
+Go to your message listand select the junk message. To flag multiple messages as spam at one time, place a checkmark in the circle next to the message.
+Select Junk from the toolbar.
+In the Report as junkdialog box, select Report or Don't report the message to Microsoft.
+The message will move to the Junk Email
+The items in the Junk Emailfolder are deleted after 30 days.
+How to mark spam messages in Apple Mail
+On your iPhone, iPad, or iPod touch, open the message, tap the Flag at the bottom, then tap Move to Junk.
+On your Mac, select the message and click the Junk button in the Mail Or you can drag the message to the Junk folder in the sidebar.
+At iCloud.com, select the message, then click the Flag button and choose Move to Junk. Or you can drag the message to the Junk folder in the sidebar.
+Over time, your inbox should learn to automatically filter any emails like the ones you have been flagging into your spam folder, which will probably delete anything that’s been in there for longer than 30 days.
+It’s also a good idea to look at your spam folder occasionally to make sure that any emails you do want aren't ending up in there by mistake.
+How to filter spam emails
+As well as marking messages as spam, setting up spam filters is another way to combat spam. Again, they vary by email provider – some examples include:
+To configure the Gmail spam filter:
+Log in to your Gmail account.
+Click the Gear icon at the top right and then click Settings.
+Go to Filtersand Blocked Addresses and click Create a new filter.
+In the From section, type the email address of the sender you want to keep out of your spam folder.
+Click Create filter.
+To configure the Outlook.com spam filter:
+Go to Settings.
+Select View all Outlook settings.
+Select Mail.
+Select Junk email.
+In the Filters section, select the Block attachments, pictures, and links from anyone not in my Safe senders and domains list check box.
+Select Save.
+To configure Apple Mail spam filter:
+To view or edit the junk mail filter, select Preferencesfrom the Mail
+Click the Junk Mail 
+Confirm that the box next to Enable junk mail filtering has a checkmark in it. If not, click it.
+Choose from three basic options for how Mail can handle junk:
+Mark as junk mail, but leave in my inbox.
+Move it to the Junk mailbox.
+Perform custom actionsand click Advanced to configure. You can set up additional filters to perform custom actions on junk mail.
+Select any of the exempt messages options to exempt messages from the junk filter. They are:
+Sender of message is in your Address Book or Contacts app. 
+Sender of message is in your Previous Recipients.
+Message was addressed using your full name.
+To configure the Thunderbird spam filter:
+Go to the Thunderbird hamburger menu and select Options> Account Settings.
+For each account, go to the Junk Settingssection and select Enable adaptive junk mail controls for this account.
+Select 
+How to block unwanted emails
+Sometimes, blocking may be a better option when you want to stop receiving messages from unwanted senders. The time to block is when you no longer wish to receive messages from individual senders – these emails won’t look like typical spam, so they may confuse the spam filter more than they help. By contrast, spam emails don’t usually have identifiable email addresses that remain the same, so blocking won't stem the flow of spam.
+The process for blocking is different for each email provider and device. For example:
+How to block emails in Gmail
+Open the message sent by the unwanted party.
+In the top right corner, click the Moreoption or the three vertical lines.
+Click Block[sender].
+Click on the Report as spamoption if you want to report the message.
+How to block emails in Outlook and Hotmail
+Choose a message from the unwanted sender you want to block.
+From the Outlook menu bar, select message > Junk Mail.
+Click on Block Sender. Outlook can then add this sender's email address to the blocked list and filter out any future messages from them.
+If you want to undo this action, go to Tools > Junk Email Preferences. Go to the Blocked Senders tab, click on the specific email address, then choose Remove Selected Sender.
+How to block emails on an iPhone or iPad
+Blocking unwanted emails using iPhone Contacts:
+Make sure the email address of the person you want to block is in the Contacts app. If it isn’t, you need to make an entry for this sender.
+Open Settings, then Mail > Threading options. Tap Blocked Sender Options.
+Click on Blocked, then choose Add New.
+Tap on the contact you created for the unwanted email sender.
+Enable mail in iCloud so it syncs this preference across all your Apple devices.
+Blocking unwanted emails using the Mail app:
+Open an email from the unwanted contact.
+Click on the name of the sender.
+TapFrom in the header and choose Block This Contact.
+You can unblock senders by going to Settings > Mail > Blocked. Find the name of the blocked sender and hit Unblock.
+Protecting yourself from spam messages
+As well as practicing good email security, using spam filters, and blocking unwanted messages, here are three further steps you can take:
+Enable multi-factor authentication
+Using multi-factor or two-factor authentication means even if a phishing attack compromises your username and password, hackers won't be able to overcome the additional authentication requirements tied to your account.
+Consider using a third-party spam filter
+Your email service provider may have its own filter, but using it with anti-spam software can provide an additional layer of cybersecurity. This is because emails travel through two spam filters before they reach your inbox. So if junk gets through one spam filter, the other should catch it. Look for an anti-spam filter that works with your email provider.
+Use comprehensive antivirus software
+Suppose you do fall victim to a spam email by clicking on a malicious link or inadvertently downloading malware. In that case, a good antivirus solution such as Kaspersky Total Security will recognize the malware and prevent it from damaging your device or network.

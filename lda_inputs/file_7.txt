@@ -1,0 +1,105 @@
+Spam emails, otherwise known as junk mail, are uninvited bulk-sent email messages delivered to an inbox. You probably receive email spam and marketing messages regularly. But there’s one difference between a spam message and marketing message: permission.
+Generally, legitimate marketing emails are sent by businesses once you opt in to receive them. They allow you to subscribe to a newsletter, sign up for services, read members-only content, or share messages via email and social media.
+Spam messages often come from illegitimate email addresses, and may contain explicit or illegal content. These emails often use scare tactics, contain typos and misleading information, and are sent in bulk from an anonymous sender. They seldom contain an unsubscribe link, and if it does, that link may be embedded with malware. This could lead to cybercriminals gaining access to your computer, smartphone, and other devices.
+There are ways to help slow the tide of unwanted emails. So, here are the five simple ways you can take to help eliminate spam emails.
+Most email services, such as Gmail, Yahoo Mail, Microsoft Outlook, and Apple Mail have algorithms that filter out spam and junk mail by tucking them away in a folder.
+But if you find a spam email in your regular inbox, don't delete the message — mark it as spam. Marking a suspicious email as spam will send it to the spam folder. Moving forward, if you receive any more emails from this address, the spam filter will know no to let it into your inbox.
+Click on the square next to the email → Click the stop sign icon
+Click the box next to the email or on multiple emails  → Click on the shield icon
+Click on the box next to the email → Click on Junk Email Options in the menu → Click on the Block button 
+Click the email message → Click on the “X” marked trash can (Junk Mail) icon 
+A trained email filter can track and flag addresses that have been blacklisted or contain suspicious phrases like “cheap,” “Viagra,” or “free.” 
+There is a golden rule to dealing with spam emails: if it looks like a spam message, it probably is — so delete it without clicking or downloading anything. Such messages may contain software that tells the sender you've opened the email, confirming you have an active account, which may lead to even more spam messages. 
+Some malware programs can steal your email address and use it to resend spam messages under the guise of a legitimate address. For example, imposters could pose as someone you know, like a friend, relative, or colleague.
+If the message in question appears to come from someone you know, contact them outside of your email. 
+Here are few options for deleting spam emails for good. 
+Click on the empty box to check the message.
+In the top menu click on the stop sign.
+In the dropdown menu, click Report Spam.
+Click on the Delete All Spam Messages Now option.
+Detailed instructions are available on Google's support page.
+Check the box next to the email. 
+Click on the shield in the above menu. 
+Click the Report Spam option.
+Navigate to the spam folder.
+Click the Delete Emails option.
+Detailed instructions are available on the Yahoo! help page.
+In the inbox area, click the email. 
+In the top menu, click on the Junk Mail option. 
+Click on the Junk Email tab in the side menu.
+Click the metal trash can to empty the folder.
+Detailed instructions are available on the Microsoft Office support page.
+Select the Junk Mail option in the left side menu. 
+Highlight the desired messages. 
+Click on the metal trash can (Delete selected messages) icon.
+Detailed instructions are available on the Apple support page. 
+When you block spam messages, they're sent to a spam folder. Over time, this folder grows with the flagged messages. So, you’ll want to occasionally empty.
+While not completely fool- proof, here are five key factors to look for in a suspicious email.
+Requesting personal information 
+The sender requests your personal information like address, Social Security number, or banking information.
+Irregular email address
+The email has a suspicious domain name or uses uncommon characters in the address.
+Unknown and unfamiliar senders
+Fake emails from people posing as influencers, high-ranking officials or legitimate companies. These companies may claim you’ve made purchases when you haven’t.
+Messages that require immediate action
+These emails contain action words like, "Immediate," “Limited Time,” and “Urgent" in the title box or subject line.
+Email contains typos 
+Many fake emails will contain basic typos and errors like misspelling your name or have poor grammar usage.
+Giving out your email address can increase the amount of spam email you receive. So if it’s not essential to share, keep it private. Also, consider changing your email privacy settings. Here’s how:
+Log-in to your Google account. 
+Go to the Security Checkup option to see the devices, security events and other email addresses and devices connected to your Gmail account. 
+Adjust the toggle switches to turn features on or off. 
+Perform the same process for the Personal Information and Privacy settings. 
+Log-in to your Yahoo! Mail Account.
+Click on the gear icon. 
+Click the Account Information option.
+In the Account Security section, click on the Generate app password option. 
+Click on your account icon in the upper-right corner of the screen.
+In the menu list, click My Account. 
+Click on the Privacy and Security options to change the settings. 
+Click the apple icon in the upper left corner of the screen. 
+Click on System Preferences. 
+Click on the Security and Privacy option. 
+If you post on social media or leave online comments, don’t post your email. If you have no choice, it might help to create a separate email address to be used solely for social media purposes, thus helping to ensure your main email address remains private.
+Your email service provider may have its own filter but pairing it with a third-party spam filter can provide an additional layer of cybersecurity. The emails will travel through two spam filters to reach your inbox. So if it gets through one spam filter, the other should catch it. 
+Effective spam filters can protect your devices against malware threats, attacks, and undesirable content. Look for an anti-spam filter that works with your email provider and addresses your own needs. 
+If the spam keeps on rolling in, it could mean your email address was exposed in a data breach. It can be hard to prevent spam when cybercriminals have your information. One option in this case is to change your email address.
+With free email services like Gmail, it's easy to create multiple accounts so you can limit the spam that appears in your primary inbox. Here’s how:
+Start by registering for a new account with your current email service. 
+Next, notify your contacts from your new account that you've changed email addresses.
+Finally, navigate to the Settings section and add the new email address to forward incoming emails from your old account.
+After creating a new address, you may want to set it up so that you still receive emails from your old address. You can do this by adjusting the forwarding settings.
+Forwarding your email address allows you to update your contact information on all accounts tied to your original email account. You can do it in four easy steps:
+In the old email account, go to the Settings option.
+Click the Forwarding and POP/IMAP tab. 
+In the Add a forwarding address box, enter the new email address. 
+Click “Next” to verify the process.
+Be sure to keep both accounts open for a few months, so you can redirect any remaining messages to the new account.
+Unsubscribing from email lists is an ideal way to keep a low profile. Marketers often get your email address from online forms, social media, and scraping tools, and purchase your information from other companies. So, the less you subscribe to, the less these marketers and spammers can find your address.
+The Federal Trade Commission requires companies that send commercial or bulk emails to comply with the CAN-SPAM Act. Initiated in 2003, the law helps set rules and requirements for messages sent; one of the rules is that companies must always provide information for how to opt out of their emails. Non-compliance with these regulations can cost up to $43,280 in penalties from the FTC. 
+While the law doesn't prevent marketers from sending spam emails, it does provide a way to stop them from filling your inbox. Here are two ways to unsubscribe from individual and bulk emails.
+Most marketing emails will have unsubscribe buttons at the bottom of the email. Some email clients, like Gmail, will also show an unsubscribe button up at the top near the To: and From:.
+In the inbox search bar, type "Unsubscribe." 
+Click the down arrow next to the box and click on the Create Filter button. 
+Click the Delete and Apply Filter to Matching Conversations boxes. 
+Create the filter.
+This will move all the selected emails to the trash. In a few clicks, you've unsubscribed and eliminated multiple emails for good. 
+Now that you know how to look for and get rid of spam emails, it’s important to know the most common types of threats.
+Spam emails are annoying enough, but some of them can put your digital safety at risk. Some spam messages contain viruses, malware, and other cyberthreats. Here are a few to watch for.
+Trojan horses come disguised as a legitimate program. Even if you think you know how to verify whether an email is legitimate, a trojan horse uses deception to get past those defense mechanisms. 
+For instance, they can hide inside free software downloads or arrive as an email attachment, possibly from someone you know.
+When you open the email, the trojan installs malicious code — typically spyware or viruses — designed to create problems on your computer. 
+It may allow an attacker to control your computer, lock you out, steal your data, account information or email addresses. Installing anti-malware software may help you catch these trojans.
+To help avoid trojan horses, avoid clicking on pop-up messages on your computer. If you are seeing a lot of pop-ups, consider running an antivirus scan.    
+Zombies are a type of malware that also comes in email attachments. They turn your computer into a server and sends spam to other computers. You may not know that your computer is compromised, but it may slow down considerably or the battery may drain quickly. Meanwhile, your computer may be sending out waves of spam or attacking web pages.
+One way to avoid zombies is to avoid opening attachments or clicking links in emails from your spam folder.
+Phishing emails often try to mimic messages from legitimate financial companies or other businesses you may use. The spam phishing email will ask you to go to a fraudulent or spoofed website to re-enter your credit card number or verify your password. It’s a scheme to capture that personal information.
+Vishers will try to have you call them on the phone to provide your personal information. Keep in mind that reputable businesses would not make such requests by email or phone.
+Perform a Google search on the company to verify legitimacy to avoid phishing scams.  
+For vishers, if you don't recognize the number, let the caller leave a voice-mail message. Local or not, only respond to calls that are in your phone book. 
+Sometimes, cyber thieves use old-school scams that might seem legitimate but are fake offers. These play on your desires or good nature: You've won a lot of money or someone urgently needs your help. 
+In reality, you haven’t won a lottery or a cruise around the world. And you haven’t been selected by a foreign prince to receive $10 million, in exchange for the use of your bank account number. 
+Look for phrases of urgency like, “Immediate,” and “Act Now” in the email’s title to avoid lottery scams and fake offers. Refer back to the Delete Emails section of this post for additional characteristics to look for. 
+So far, there is no such thing as a "do not email" list for spam. Until there is, you'll have to take care of spam yourself. 
+Fortunately, there are good tools to help you do that. Most email programs include spam filters that can help detect and isolate spam. Many internet service providers filter out spam, so it never reaches your computer. But it's wise to install and run anti-virus security software that can eliminate viruses that may already live on your computer.
+Should spam slip through these filters, take the simplest approach to suspicious emails and click Delete.

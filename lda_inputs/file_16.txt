@@ -1,0 +1,17 @@
+Frank Miller (and no, I don’t know if he’s that Frank Miller) asked if there was “a way to stop or reduce the spam mail that I receive?”
+Short of cutting yourself off from the Internet, there’s no way to eliminate spam entirely. The best you can do is filter out most of it, and even that has some unfortunate consequences.
+Your email client (the local program or cloud-based service you use to access and send email) almost certainly filters spam, moving suspicious messages to a separate folder. But it’s not perfect. Some spam tricks the filter and ends up in your inbox. And some legitimate messages, called false positives, end up in the spam folder.
+While we can’t remove these errors entirely, we can reduce them.
+When you find spam in your inbox, don’t just delete it. Select it, and tell your mail client that this particular message is spam. How you do this depends on your client. For instance, if you’re using Gmail’s website, click the Report spam button in the toolbar (the icon looks like an exclamation point inside a stop sign).
+You also need to train the client about your false positives. Once a day, go through your spam folder looking for messages that don’t belong there. When you find one, select it and tell the client that it made a mistake. In Gmail, you click the Not spam button.
+If your mail client is halfway decent, it will learn from these mistakes…but only if you train it.
+If you recognize something as spam before you open it, don’t open it. If you open it and then realize it’s spam, close it. Do not click a link or a button, or download a file, from a message that you even remotely suspect is spam.
+If you opened a spam because it appeared to be coming from a friend or co-worker, contact them immediately and let them know that their account has been compromised.
+The more people who have your email address, the more spam you’re going to get. So keep your address close to your chest.
+Don’t publish it on the web unless you absolutely have to. (I have to, and it’s not fun.) And if you have to, use a different address for that purpose.
+Use disposable email addresses when you’re not comfortable sharing your real one. I use Blur, a free Chrome and Firefox extension, for that purpose. Other options include spamex and mailshell.
+Most of the major security suites come with an anti-spam filter that can augment the one on your client—but only if that client is local. In other words, they can work with Office’s Outlook program, but not with Outlook.com.
+Back in April, AV-Comparatives published an Anti-Spam Test report to see how well these tools worked. ESET Smart Security 9 got the highest score for catching spam and integrating with Outlook.
+This is a very drastic option, but if you’ve responded to spam in the past or haven’t hidden your address, and are therefore overloaded with spam, it may be your best option.
+Of course you’ll have to inform your legitimate contacts about the change, and you’ll probably have to keep both addresses for a few months. But once you can get rid of the old address, your spam count should plummet. You may want to read my article on changing your address.
+Note: When you purchase something after clicking links in our articles, we may earn a small commission.

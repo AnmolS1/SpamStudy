@@ -1,0 +1,20 @@
+Spam emails are the electronic equivalent of all that junk mail you throw out after emptying the mailbox. Spam is primarily made up of unsolicited emails trying to sell you something or trick you into giving away crucial personal data.
+If you have an email account, chances are you’ve seen at least a few of these obnoxious spam messages.
+Foreign banking scams (like that famed Nigerian prince who needs your help)
+Phishing scams seeking out your personal info
+“Make money fast” or “get rich quick” schemes
+Solicitations for online dating
+Ads for “miracle” medical cures
+Ads from pornographic websites
+Chain mail (Forward this message to six friends to get a super prize!)
+Offers to help you improve your business, your love life, your hair growth, etc.
+The only way to completely eradicate spam from your life is to drop email altogether. Because that’s an unrealistic option for most of us, let’s look at ways to minimize the amount of spam coming your way.
+All email services come with mailbox filters that help you sort out what kinds of emails you receive and where they go. You want to send emails from unknown senders to a junk folder where they’ll be automatically deleted after a set number of days.
+Just keep in mind that sometimes legitimate emails may get erroneously relegated to the junk folder, so make sure to check it periodically and mark any senders you know as safe.
+For extra protection install a third-party spam filter like Avast to block and delete blacklisted email addresses and scan for bad links and attachments.
+If a spam email somehow makes it into your inbox, be sure to mark it as spam so your email provider will recognize it as such in the future.
+When you recognize a message as spam, don’t open it. If you open it before you realize it’s spam, hit delete. Never respond to a spam email, click on an unknown link, or open an unknown attachment.
+4. Lock down your email address  
+Try to minimize how many people have access to your email address. If you can get away with it, don’t post your email on any public websites or forums—including social media and job-hunting websites.
+If you have to post an email address online, consider setting up an alternate or disposable email account to keep your main email hidden. Check out Blur  to learn more about disposable email.
+Get extra help keeping out spam emails with anti-malware software that looks for suspicious elements before the email can make it to your inbox.

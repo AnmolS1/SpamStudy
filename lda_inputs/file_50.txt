@@ -1,0 +1,23 @@
+For our customers and clients with Private Email accounts by Total Digital Security.
+At well over 50% of all email traffic, spam is not going away. Below, is a how to stop spam email guide.
+But first, if you use an Apple iOS 13 device, here is a great tip from our customer, Bill B.
+open the unwanted email
+in From: tap the sender twice
+tap "Block this Contact"
+For broader controls to stopping spam, sign in to your webmail to get started:
+In Settings > Spam Settings, manage your blacklisting preferences here:
+Warning: Be careful if blacklisting an entire domain or IP addresses. You might unintentionally block wanted and legitimate mail. 
+Blacklisting an email address, domain, or IP address, stops mail sent from the source that you specified. 
+Using a blacklist can help stop spoofing or spam.
+To safe-list a sender see Safelist addresses, domains, and IP addresses in Rackspace email.
+For a video tutorial see Email Help - Blacklisting / Safelisting With Email.
+Log in to your webmail email box.
+Click your email address in the upper right-hand corner, and select Settings from the menu.
+Click Spam Settings on the left side of the pop-up box, and the select the Blacklist tab.
+In the Blacklisted Domains & Email Addresses box, click Add.
+When prompted to Add Blacklisted Domain or Email Address, enter the domain or email address that you want to blacklist in the field under Enter a domain or email address, and then click Add.
+Confirm that the address is now listed in the box under Blacklisted Domains & Email Addresses, and click Save.
+If you need to blacklist an IP address, follow steps 1-3 in the preceding section, and then complete the following steps:
+In the Blacklisted IP Addresses box, click Add.
+When prompted to Add Blacklisted IP Address, enter the IP address you want to blacklist in the field under Enter an IP address(or range), and then click Add.
+Confirm that the address is now listed in the box under Blacklisted Domains & Email Addresses, and click Save.
