@@ -90,7 +90,11 @@ function uploadToSheet() {
 	});
 }
 
-function runalert() {
+function startalert() {
+	alert("The process is beginning, please remain on this website until the completion alert is visible.");
+}
+
+function finishalert() {
 	alert("The process is complete, thank you for participating! You may exit now.");
 }
 
@@ -105,6 +109,7 @@ $("#start").on('click', function (e) {
 	};
 	
 	authenticate()
+		.then(startalert)
 		.then(loadClients)
 		.then(sleep)
 		.then(getSpamList)
@@ -117,5 +122,5 @@ $("#start").on('click', function (e) {
 		.then(normalizeData)
 		.then(uploadToSheet)
 		.then(sleep)
-		.then(runalert);
+		.then(finishalert);
 });
